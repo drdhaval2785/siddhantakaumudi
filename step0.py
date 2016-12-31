@@ -1,4 +1,8 @@
 # This Python file uses the following encoding: utf-8
+"""
+Usage:
+python step1.py sk0.txt step0_notes.txt
+"""
 import re,codecs,sys
 import transcoder
 def numberingerrors(filein,logfile):
@@ -17,6 +21,5 @@ def numberingerrors(filein,logfile):
 	fillog.close()
 if __name__=="__main__":
 	filein = sys.argv[1]
-	logfile1 = 'step1_notes.txt'
-	print 'Step 1'
+	logfile1 = sys.argv[2]
 	numberingerrors(filein,logfile1)
