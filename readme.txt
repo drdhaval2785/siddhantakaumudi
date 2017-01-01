@@ -7,7 +7,7 @@
 # Step 0 - Manual corrections
 
 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt.
-2. Added missing 2139-2150 sUtras manually in sk0.txt. 3158 is missing in original SK text also (uNAdi sUtras are there in its place.)
+2. Added missing 2139-2150 sUtras manually in sk0.txt. 
 3. sarvasamAsazeSaprakaraNam is missing.  - Added manually.
 4. prakaraNa headings were missing. - Added manually.
 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually.
@@ -15,7 +15,7 @@
 8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि
 9. 1209 verb number are missing in original. Made adjustment in step1.py logic.
 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. (by `diff siddhantakaumudi.txt sk0.txt > sk0_manual.txt`).
-
+11. sUtra 3158 is missing in original SK text also (uNAdi sUtras are there in its place.) Therefore only 3977 sUtras are present instead of 3978 as in printed text.
 # Step 1 - Mechanical changes and add markup
 
 1. Add space after the sUtra number. (2264)धात्वादेः षः सः -> (2264) धात्वादेः षः सः
@@ -23,9 +23,11 @@
 3. Change ।। -> ॥
 4. (अ) -> ॒ and (स्व) -> ॑
 5. ।शकन्ध्वादिषु पररूपं वाच्यम् (वा)।। depicts a vArtika. Try to preserve this information while correcting the spaces after and before ॥ and ।.
-5a {%...%} for vArtika.
-5b {%?...?%} Questionable vArtikas. There is a small subset 251 items following regex `'।[^ ।]([^।]+)।।'` which also has vArtikas (without (वा) at the end). See ।पितुर्भ्रातरि व्यत्।।. They are marked with {%?...?%}. Question mark shows that it needs to be verified whether they actually are vArtikas or not.
-	They are noted in sk1_notes.txt. Need manual examination and confirmation whether they are actually vArtikas or not.
+	5a {%...%} for vArtika.
+	5b {%?...?%} Questionable vArtikas. There is a small subset 251 items following regex `'।[^ ।]([^।]+)।।'` which also has vArtikas (without (वा) at the end). See ।पितुर्भ्रातरि व्यत्।।. They are marked with {%?...?%}. Question mark shows that it needs to be verified whether they actually are vArtikas or not.
+	5c {%??...??%} Very doubtful vArtikas. 143 such cases `'।([^ ।][^।0-9]+)।'` regex.
+	5b and 5c need manual examination and confirmation whether they are actually vArtikas or not.
+	Ideal is to make them uniformly in format of 5a in sk0.txt itself manually, so that it is consistent throughout.
 6. Figures in bracket is SK rule number `(2264)`. Figures with two dashes are AS rule number `6-1-64`. Figures without bracktes are reference to SK rule.
 There is a slight issue with the rule without bracket referring to only SK rules. They may also refer to verb number or something else too.
 """
@@ -36,9 +38,9 @@ In the present example 2123 refers to SK rule, whereas 20 refers to the 20th ver
 There is a possibility of identifying SK rule reference by regex `X इति` or `X इत्‍`or `X इती`.
 Another check is - verb numbers will be in chronologic order. If there is some number which is not chronologic, it is highly probable that it is rule number.
 Suggested approach - 
-6a {#...#} encoding for SK rule.
-6b {@...@} encoding for AS rule.
-6c {*...*} encoding for internal reference to SK rule.
-6d {$...$} encoding for verb number or other stuff (if they are found out).
-
-7. After all corrections, change >1 space to 1 space and remove trailing space.
+	6a {#...#} encoding for SK rule.
+	6b {@...@} encoding for AS rule.
+	6c {*...*} encoding for internal reference to SK rule.
+	6d {$...$} encoding for verb number or other stuff (if they are found out).
+7. ःढ़द्य; -> ऊ
+8. After all corrections, change >1 space to 1 space and remove trailing space.

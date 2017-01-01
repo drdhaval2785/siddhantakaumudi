@@ -1,6 +1,7 @@
-Step 1 - Manually correcting misordered sUtras. ; denotes that this has been corrected.
-2138,2151 - Actually missing.
-3168 actually missing. This is not seen even in SK itself.
+Step 0 - 
+1. Manually correcting misordered sUtras. ; denotes that this has been corrected.
+2. 2138,2151 - Actually missing. Added manually.
+3. 3168 actually missing. This is not seen even in SK itself. So not added.
 ;14,25
 ;25,16
 ;33,47
@@ -76,4 +77,5 @@ Step 1 - Manually correcting misordered sUtras. ; denotes that this has been cor
 ;1186,2188
 ;2188,2314
 __________
-Step 2
+Step 1
+
