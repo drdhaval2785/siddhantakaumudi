@@ -31,23 +31,25 @@ def step1(filein,filout,logfile):
 		elif re.search(u' [0-9]{1,4} ',line):
 			m = re.findall(u' ([0-9]{1,4}) ',line)
 			for member in m:
-				#print member
 				if int(sksutranum[0]) > 2164 and int(sksutranum[0]) < 2829 and int(member) == rootnum+1: # Ignore roots having the same markup as internal references to SK.
 					rootnum = int(member)
 					line = line.replace(member,'{$'+member+'$}')
 					fillog.write('$ '+sksutranum[0]+' '+member+'\n')
+					print '$', sksutranum[0], member
 					if member == '1208': # 1209 is missing in original too.
 						rootnum = int(member)+1
 				elif int(member) <= 5:
+					print ';', sksutranum[0], member
 					fillog.write('; '+sksutranum[0]+' '+member+'\n')
 				else:
+					print '*', sksutranum[0], member
 					line = line.replace(member,'{*'+member+'*}')
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
-		elif re.search(u'[0-9]{2,4} ',line):
-			m = re.findall('([0-9]{2,4}) ',line)
-			line = re.sub('([0-9]{2,4}) ','{*\g<1>*} ',line)
-			print sksutranum[0], m
+		elif re.search(u'[0-9]{2,4}।',line):
+			m = re.findall(u'([0-9]{2,4})।',line)
+			line = re.sub(u'([0-9]{2,4})।',u'{*\g<1>*}।',line)
 			for member in m:
+				print '*', sksutranum[0], member
 				fillog.write('* '+sksutranum[0]+' '+member+'\n')
 			
 		# Point 4
