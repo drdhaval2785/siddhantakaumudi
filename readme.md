@@ -26,9 +26,13 @@
 5. ।शकन्ध्वादिषु पररूपं वाच्यम् (वा)।। depicts a vArtika. Try to preserve this information while correcting the spaces after and before ॥ and ।.
 
 	5.1. {%...%} for vArtika.
+	
 	5.2. {%?...?%} Questionable vArtikas. There is a small subset 251 items following regex `'।[^ ।]([^।]+)।।'` which also has vArtikas (without (वा) at the end). See ।पितुर्भ्रातरि व्यत्।।. They are marked with {%?...?%}. Question mark shows that it needs to be verified whether they actually are vArtikas or not.
+	
 	5.3. {%??...??%} Very doubtful vArtikas. 143 such cases `'।([^ ।][^।0-9]+)।'` regex.
+	
 	5b and 5c need manual examination and confirmation whether they are actually vArtikas or not.
+	
 	Ideal is to make them uniformly in format of 5a in sk0.txt itself manually, so that it is consistent throughout.
 
 6. Figures in bracket is SK rule number `(2264)`. Figures with two dashes are AS rule number `6-1-64`. Figures without bracktes are reference to SK rule.
@@ -43,8 +47,11 @@ Another check is - verb numbers will be in chronologic order. If there is some n
 Suggested approach - 
 
 	6.1. {#...#} encoding for SK rule.
+
 	6.2. {@...@} encoding for AS rule.
+
 	6.3. {*...*} encoding for internal reference to SK rule.
+
 	6.4. {$...$} encoding for verb number or other stuff (if they are found out).
 
 7. ःढ़द्य; -> ऊ
