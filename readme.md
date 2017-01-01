@@ -51,4 +51,7 @@ Suggested approach -
 	6.4. {$...$} encoding for verb number or other stuff (if they are found out).
 
 7. ःढ़द्य; -> ऊ
-8. After all corrections, change >1 space to 1 space and remove trailing space.
+
+8. ञ्ञ is wrongly duplicated for most of the time. Have to find out a way to correct it mechanically. Pending. 1551 occurrences. Majority were errors. Converted to ञ. Should look out for errors.
+
+9. After all corrections, change >1 space to 1 space and remove trailing space.

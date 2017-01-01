@@ -68,7 +68,8 @@ def step1(filein,filout,logfile):
 		line = line.replace(u'। ।',u'॥')
 		# Club multiple spaces into one.
 		line = re.sub('[ ]+',' ',line)
-		# Pending.
+		# Step 8
+		line = line.replace(u'ञ्ञ',u'ञ')
 		line = re.sub('[\-]([0-9]{2,4}) ','-{*\g<1>*} ',line)
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
 		# When there are two same numbers in a line, they are double qouted. Removing the outer one (wrong one).
