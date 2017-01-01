@@ -36,12 +36,7 @@
 	Ideal is to make them uniformly in format of 5a in sk0.txt itself manually, so that it is consistent throughout.
 
 6. Figures in bracket is SK rule number `(2264)`. Figures with two dashes are AS rule number `6-1-64`. Figures without bracktes are reference to SK rule.
-There is a slight issue with the rule without bracket referring to only SK rules. They may also refer to verb number or something else too.
-
-	e.g.
-	(2264)धात्वादेः षः सः    6-1-64 
-	धातोरादेः षस्य सः स्यात्। सात्पदाद्योः 2123 इति षत्वनिषेधः। अनुस्वदते। सस्वदे। स्वर्दते। सस्वर्दे । 20 उर्द माने क्रीडायां च।।
-
+There is a slight issue with the rule without bracket referring to only SK rules. They may also refer to verb number or something else too. e.g. `(2264)धात्वादेः षः सः    6-1-64 धातोरादेः षस्य सः स्यात्। सात्पदाद्योः 2123 इति षत्वनिषेधः। अनुस्वदते। सस्वदे। स्वर्दते। सस्वर्दे । 20 उर्द माने क्रीडायां च।।`
 In the present example 2123 refers to SK rule, whereas 20 refers to the 20th verb under examination.
 There is a possibility of identifying SK rule reference by regex `X इति` or `X इत्‍`or `X इती`.
 Another check is - verb numbers will be in chronologic order. If there is some number which is not chronologic, it is highly probable that it is rule number.
