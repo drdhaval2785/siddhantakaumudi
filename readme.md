@@ -38,7 +38,8 @@
 6. Figures in bracket is SK rule number `(2264)`. Figures with two dashes are AS rule number `6-1-64`. Figures without bracktes are reference to SK rule.
 There is a slight issue with the rule without bracket referring to only SK rules. They may also refer to verb number or something else too.
 
-	```(2264)धात्वादेः षः सः    6-1-64 
+	```
+	(2264)धात्वादेः षः सः    6-1-64 
 	धातोरादेः षस्य सः स्यात्। सात्पदाद्योः 2123 इति षत्वनिषेधः। अनुस्वदते। सस्वदे। स्वर्दते। सस्वर्दे । 20 उर्द माने क्रीडायां च।।
 	```
 
