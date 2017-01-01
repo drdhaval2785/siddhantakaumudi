@@ -11,6 +11,7 @@ def step1(filein,filout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
 	fillog = codecs.open(logfile,'w','utf-8')
+	fillog.write('; denotes unchanged item. $ denotes verb number. * denotes internal SK reference\n')
 	sksutranum = []
 	rootnum = 0
 	for line in fin:
@@ -21,22 +22,34 @@ def step1(filein,filout,logfile):
 		# Questionable vArtikas. Noted in sk1_notes.txt. Needs manual examination. If they are not vArtikas, their preceding and ending | need correction in sk0.txt for future automated generation of sk1.txt from sk0.txt.
 		if re.search(u'।[^ ।]([^।]+)।।',line):
 			line = re.sub(u'।([^ ।][^।0-9]+)।।',u'{%?\g<1>?%} ।।',line)
+		# sUtra references
 		if re.match('[(]([0-9]+)[)]',line):
 			# Points 1,6a,6b
 			sksutranum = re.findall(u'^[(]([0-9]+)[)]',line)
 			line = re.sub(u'^[(]([0-9]+)[)]([^0-9]+)([\-0-9]+)','{#\g<1>#} \g<2>{@\g<3>@}',line) # (1)हलन्त्यम्    1-3-3 -> {#1#} हलन्त्यम्    {@1-3-3@}
-			#print 'SK', sksutranum[0]
+		# Internal references of SK / verb numbers in tiGanta prakaraNa.
 		elif re.search(u' [0-9]{1,4} ',line):
-			m = re.findall(' ([0-9]{1,4}) ',line)
+			m = re.findall(u' ([0-9]{1,4}) ',line)
 			for member in m:
 				#print member
 				if int(sksutranum[0]) > 2164 and int(sksutranum[0]) < 2829 and int(member) == rootnum+1: # Ignore roots having the same markup as internal references to SK.
 					rootnum = int(member)
-					if member == '1208':
+					line = line.replace(member,'{$'+member+'$}')
+					fillog.write('$ '+sksutranum[0]+' '+member+'\n')
+					if member == '1208': # 1209 is missing in original too.
 						rootnum = int(member)+1
+				elif int(member) <= 5:
+					fillog.write('; '+sksutranum[0]+' '+member+'\n')
 				else:
-					fillog.write(sksutranum[0]+' '+member+'\n')
-				#fillog.write(sksutranum[0]+' '+member+'\n')
+					line = line.replace(member,'{*'+member+'*}')
+					fillog.write('* '+sksutranum[0]+' '+member+'\n')
+		elif re.search(u'[0-9]{2,4} ',line):
+			m = re.findall('([0-9]{2,4}) ',line)
+			line = re.sub('([0-9]{2,4}) ','{*\g<1>*} ',line)
+			print sksutranum[0], m
+			for member in m:
+				fillog.write('* '+sksutranum[0]+' '+member+'\n')
+			
 		# Point 4
 		line = line.replace(u'(अ)',u'॒')
 		line = line.replace(u'(स्व)',u'॑')

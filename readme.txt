@@ -12,6 +12,9 @@
 4. prakaraNa headings were missing. - Added manually.
 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually.
 6. Last one portion of svaraprakaraNam page 775 is missing. Added manually.
+8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि
+9. 1209 verb number are missing in original. Made adjustment in step1.py logic.
+10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. (by `diff siddhantakaumudi.txt sk0.txt > sk0_manual.txt`).
 
 # Step 1 - Mechanical changes and add markup
 
@@ -39,5 +42,3 @@ Suggested approach -
 6d {$...$} encoding for verb number or other stuff (if they are found out).
 
 7. After all corrections, change >1 space to 1 space and remove trailing space.
-8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि
-1168 verb is missing in original.
