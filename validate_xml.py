@@ -21,13 +21,14 @@ def read_something(xpathexpression):
 		if len(children) > 0:
 			for child in children:
 				print child.tag, child.text.encode('utf-8')
+				print child.items()
 		else:
 			print memtag, memtext.encode('utf-8')
+			print member.items()
 			
 if __name__=="__main__":
 	if len(sys.argv) > 1:
 		#read_something('//vArtika[@saMSayaH="1"]')
-		print sys.argv[1]
 		read_something(sys.argv[1])
 	elif not os.path.isfile('sk.dtd'):
 			validate_without_dtd()
