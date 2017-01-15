@@ -1,0 +1,15 @@
+<!ELEMENT sidDAntakOmudI ANY>
+<!ELEMENT prakaraRa (#PCDATA | sUtra | prakaraRAnta | SKsandarBaH | DAtukramaH | vArtika)*>
+<!ELEMENT sUtra (SK, sUtramUlam, AS, vivaraRam)+>
+<!ELEMENT SK (#PCDATA)>
+<!ELEMENT sUtramUlam (#PCDATA)>
+<!ELEMENT AS (#PCDATA)>
+<!ELEMENT vivaraRam (#PCDATA | vArtika | SKsandarBaH | DAtukramaH )*>
+<!ELEMENT vArtika (#PCDATA | SKsandarBaH)*>
+<!ELEMENT SKsandarBaH (#PCDATA)>
+<!ELEMENT DAtukramaH (#PCDATA)>
+<!ELEMENT prakaraRAnta (#PCDATA)>
+<!ATTLIST prakaraRa 
+	prakaraRanAman CDATA #REQUIRED>
+<!ATTLIST vArtika 
+	saMSayaH CDATA #REQUIRED>

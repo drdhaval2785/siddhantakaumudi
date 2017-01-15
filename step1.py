@@ -16,13 +16,13 @@ def step1(filein,filout,logfile):
 	rootnum = 0
 	for line in fin:
 		# Point 5a
-		if re.search(u'।([^।]+)([(]वा[)][ ]*।)',line):
-			line = re.sub(u'।([^।]+)([(]वा[)][ ]*।)',u'{%\g<1>%} (वा)।',line)
+		if re.search(u'।([^।{]+)([(]वा[)][ ]*।)',line):
+			line = re.sub(u'।([^।{]+)([(]वा[)][ ]*।)',u'।{%\g<1>%} (वा)।',line)
 		# Point 5b. 
 		# Questionable vArtikas. Noted in sk1_notes.txt. Needs manual examination. If they are not vArtikas, their preceding and ending | need correction in sk0.txt for future automated generation of sk1.txt from sk0.txt.
-		if re.search(u'।[^ ।]([^।]+)।।',line):
-			line = re.sub(u'।([^ ।][^।0-9]+)।।',u'{%?\g<1>?%} ।।',line)
-		if re.search(u'।[^ ।{]([^।]+)।',line):
+		if re.search(u'।[^ ।{]([^।]+)।।',line):
+			line = re.sub(u'।([^ ।{][^।0-9]+)।।',u'।{%?\g<1>?%} ।।',line)
+		if re.search(u'।[^ ।{]([^।{]+)।',line):
 			line = re.sub(u'।([^ ।{][^।0-9]+)।',u'।{%??\g<1>??%} ।',line)
 		# sUtra references
 		if re.match('[(]([0-9]+)[)]',line):
@@ -33,7 +33,7 @@ def step1(filein,filout,logfile):
 			# Internal references of SK / verb numbers in tiGanta prakaraNa.
 			if re.search(u' [0-9]{1,4} ',line):
 				m = re.findall(u' ([0-9]{1,4}) ',line)
-				print '1', sksutranum[0], m
+				#print '1', sksutranum[0], m
 				for member in m:
 					if int(sksutranum[0]) > 2164 and int(sksutranum[0]) < 2829 and int(member) == rootnum+1: # Ignore roots having the same markup as internal references to SK.
 						rootnum = int(member)
@@ -51,7 +51,7 @@ def step1(filein,filout,logfile):
 						fillog.write('* '+sksutranum[0]+' '+member+'\n')
 			if re.search(u'[^*]([0-9]{2,4})([^0-9\-@#$%^*])',line):
 				m = re.findall(u'[^*]([0-9]{2,4})[^ 0-9\-@#$%^*]',line)
-				print '3', sksutranum[0], m
+				#print '3', sksutranum[0], m
 				line = re.sub(u'([^*])([0-9]{2,4})([^ 0-9\-@#$%^*])',u'\g<1>{*\g<2>*}\g<3>',line)
 				for member in m:
 					#print '*', sksutranum[0], member
