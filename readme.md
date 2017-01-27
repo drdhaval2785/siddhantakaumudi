@@ -54,7 +54,9 @@ Suggested approach -
 
 8. ञ्ञ is wrongly duplicated for most of the time. Have to find out a way to correct it mechanically. Pending. 1551 occurrences. Majority were errors. Converted to ञ. Should look out for errors.
 
-9. After all corrections, change >1 space to 1 space and remove trailing space.
+9. श्र्व -> श्र
+
+10. After all corrections, change >1 space to 1 space and remove trailing space.
 
 # Step 2
 

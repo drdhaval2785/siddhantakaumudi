@@ -76,6 +76,7 @@ def step1(filein,filout,logfile):
 		line = re.sub(u'[{][@#$%*][{]','{',line)
 		line = re.sub(u'[}][@#$%*][}]','}',line)
 		line = line.replace(u'ःढ़द्य;',u'ऊ')
+		line = line.replace(u'श्र्व',u'श्व')
 		# [^#@*$%\?\-][0-9]+[^0-9#@*$%\?\-] is the regex which gave missed out internal references. Smaller than 10 can be ignored (accent/verse number etc). Now completed incorporating it in code.
 		fout.write(line)
 	fin.close()

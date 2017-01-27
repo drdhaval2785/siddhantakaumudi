@@ -11,5 +11,3 @@
 <!ELEMENT prakaraRAnta (#PCDATA)>
 <!ATTLIST prakaraRa 
 	prakaraRanAman CDATA #REQUIRED>
-<!ATTLIST vArtika 
-	saMSayaH CDATA #REQUIRED>
