@@ -16,6 +16,8 @@
 9. 1209 verb number are missing in original. Made adjustment in step1.py logic.
 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. (by `diff siddhantakaumudi.txt sk0.txt > sk0_manual.txt`).
 11. sUtra 3158 is missing in original SK text also (uNAdi sUtras are there in its place.) Therefore only 3977 sUtras are present instead of 3978 as in printed text.
+12. Some vArtika markups were fishy. Corrected them manually. See issue 1.
+
 
 # Step 1 - Mechanical changes and add markup
 
