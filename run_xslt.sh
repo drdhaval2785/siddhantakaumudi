@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-# Reusable function
 function run_xslt {
     xsltproc --debug --output $OUTFILE --encoding $ENCODING $XSLT $INFILE
 }

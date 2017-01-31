@@ -42,7 +42,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
    <span id="SK{.}"><b><xsl:value-of select="."/>:</b></span>
 </xsl:template>
 <xsl:template match="AS">
-   (<xsl:value-of select="."/>)
+   (<a href="http://avg-sanskrit.org/sutras/{.}.html"><xsl:value-of select="."/></a>)
 </xsl:template>
 <xsl:template match="vivaraRam">
   <div><xsl:apply-templates/></div>
