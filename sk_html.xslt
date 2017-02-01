@@ -1,5 +1,6 @@
-<xsl:transform version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:regexp="http://exslt.org/regular-expressions">
 
 <xsl:template match="/">
   <html>
@@ -13,6 +14,23 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <body>
       <h1 class="center">सिद्धान्तकौमुदिः</h1>
       <xsl:apply-templates/>
+      
+      <h2 class="index">धतुसूचि: (संगणितः)</h2>
+      <xsl:for-each select="//DAtukramaH">
+	<div class="indexelem"><a href="#D{.}"><xsl:value-of select="."/></a>
+	<xsl:choose>
+	  <xsl:when test="contains(./following-sibling::text()[1], '।')">
+	    <xsl:value-of select="substring-before(./following-sibling::text()[1],'।')"/>
+	  </xsl:when>
+	  <xsl:when test="contains(./following-sibling::text()[1], '॥')">
+	    <xsl:value-of select="substring-before(./following-sibling::text()[1],'॥')"/>
+	  </xsl:when>
+	  <xsl:otherwise>
+	    <xsl:value-of select="./following-sibling::text()[1]"/>
+	  </xsl:otherwise>
+	</xsl:choose>
+	</div>
+      </xsl:for-each>
     </body>
   </html>
 </xsl:template>
@@ -59,5 +77,5 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 
 
-</xsl:transform>
+</xsl:stylesheet>
 
