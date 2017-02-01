@@ -78,3 +78,13 @@ Validate XML
 
 3c. Validation done to see whether the XML conforms to the DTD file or not.
 
+# Step 4: Generate HTML and EPUB
+
+Convert to HTML using XSLT file sk_html.xslt. 
+
+Convert HTML to EPUB using ebook-convert (from the Calibre toolkit)
+
+4. Run `./run_xslt.sh` to produce sk.html (requires libxslt to be installed)
+
+4. Run `./run_epub.sh` to produce sk.epub (requires Calibre to be installed)
+
