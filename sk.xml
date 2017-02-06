@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sidDAntakOmudI SYSTEM "sk.dtd">
-<sidDAntakOmudI>
-<header>
-<sourceDesc>Dr. H. N. Bhat posted a docx file on a google group on 2016-12-26 at https://groups.google.com/forum/#!searchin/bvparishat/siddhantakaumudi$20unicode|sort:relevance/bvparishat/iYYVe5sFaFM/tPBIEFvcDAAJ. The digital file has no description of source from where it was encoded nor who encoded it.</sourceDesc>
-<revHistory>
-<version>1.0.0</version>
-<date>2016-12-27</date>
-<changelog>First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 2. Added missing 2139-2150 sUtras manually in sk0.txt. 3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 4. prakaraNa headings were missing. - Added manually. 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file.</changelog>
-<person>Dr. Dhaval Patel</person>
-<email>drdhaval2785@gmail.com</email>
-</revHistory>
-<revHistory>
-<version>1.1.0</version>
-<date>2017-01-06</date>
-<changelog>Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4</changelog>
-<person>Dr. Dhaval Patel</person>
-<email>drdhaval2785@gmail.com</email>
-</revHistory>
-</header>
+<TEI xml:id="__SK" cmlnd="http://www.tei-c.org/ns/1.0">
+
+<teiHeader xml:lang="en">
+<fileDesc>
+<titleStmt>
+<title>Siddhantakaumudi</title>
+<respStmt>
+<persName>Dr. Dhaval Patel</persName>
+<resp>Creation and updation of XML</resp>
+</respStmt>
+<respStmt>
+<persName>Dr. H. N. Bhat</persName>
+<resp>Supply of base docx file.</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>Dr. Dhaval Patel</authority>
+<availability status="open"></availability>
+<date>2017-02-06</date>
+</publicationStmt>
+<notesStmt>
+<note>Dr. H. N. Bhat posted a docx file on a google group on 2016-12-26 at https://groups.google.com/forum/#!searchin/bvparishat/siddhantakaumudi$20unicode|sort:relevance/bvparishat/iYYVe5sFaFM/tPBIEFvcDAAJ. The digital file has no description of source from where it was encoded nor who encoded it.</note>
+</noteStmt>
+<sourceDesc>
+<bibl>
+<title>Siddhantakaumudi</title>
+<publisher>Unknown</publisher>
+<date>Unknown</date>
+</bibl>
+</sourceDesc>
+</fileDesc>
+<encodingDes>
+<p>The e-text is in Devanagari script</p>
+</encodingDes>
+<revisionDesc>
+<change who="Dr. Dhaval Patel" when="2016-12-27">1.0.0 - First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 2. Added missing 2139-2150 sUtras manually in sk0.txt. 3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 4. prakaraNa headings were missing. - Added manually. 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. </change>
+<change who="Dr. Dhaval Patel" when="2017-01-06">1.1.0 - Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4 </change>
+</revisionDesc>
+</teiHeader>
 <prakaraRa prakaraRanAman="संज्ञाप्रकरणम्‌">
 <sUtra>
 <SK>1</SK><sUtramUlam> हलन्त्यम् </sUtramUlam><AS>1-3-3</AS>
