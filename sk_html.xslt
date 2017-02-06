@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </style>
     </head>
     <body>
-      <h1 class="center">सिद्धान्तकौमुदिः</h1>
+      <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
     </body>
   </html>
