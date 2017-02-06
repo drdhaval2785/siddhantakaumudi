@@ -17,7 +17,8 @@
       
       <h2 class="index">धतुसूचि: (संगणितः)</h2>
       <xsl:for-each select="//DAtukramaH">
-	<div class="indexelem"><a href="#D{.}"><xsl:value-of select="."/></a>
+        <xsl:sort select="./following-sibling::text()[1]"/>
+	<div class="indexelem">
 	<xsl:choose>
 	  <xsl:when test="contains(./following-sibling::text()[1], '।')">
 	    <xsl:value-of select="substring-before(./following-sibling::text()[1],'।')"/>
@@ -29,6 +30,7 @@
 	    <xsl:value-of select="./following-sibling::text()[1]"/>
 	  </xsl:otherwise>
 	</xsl:choose>
+	<a href="#D{.}"><xsl:value-of select="."/></a>
 	</div>
       </xsl:for-each>
     </body>
