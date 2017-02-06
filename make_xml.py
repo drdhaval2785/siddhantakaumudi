@@ -11,6 +11,24 @@ import transcoder
 starttext = '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE sidDAntakOmudI SYSTEM "sk.dtd">\n<sidDAntakOmudI>'
 endtext = '</vivaraRam></sUtra></sidDAntakOmudI>'
 
+# Tuples have the following information (version, date, changelog, person, email)
+def revhistory():
+	historydata = [
+		('1.0.0','2016-12-27','First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 2. Added missing 2139-2150 sUtras manually in sk0.txt. 3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 4. prakaraNa headings were missing. - Added manually. 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file.','Dr. Dhaval Patel','drdhaval2785@gmail.com'),
+		('1.1.0','2017-01-06','Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4','Dr. Dhaval Patel','drdhaval2785@gmail.com'),
+	]
+	headertext = '<header>\n'
+	for (version, date, changelog, person, email) in historydata:
+		headertext += '<revHistory>\n'
+		headertext += '<version>'+version+'</version>\n'
+		headertext += '<date>'+date+'</date>\n'
+		headertext += '<changelog>'+changelog+'</changelog>\n'
+		headertext += '<person>'+person+'</person>\n'
+		headertext += '<email>'+email+'</email>\n'
+		headertext += '</revHistory>\n'
+	headertext += '</header>'
+	return headertext.decode('utf-8')
+
 def add_tags(x):
 	x = re.sub(r'{#','</vivaraRam>\n</sUtra>\n<sUtra>\n<SK>',x)
 	x = re.sub(r'#}','</SK><sUtramUlam>',x)
@@ -55,7 +73,7 @@ def add_tags(x):
 fin = codecs.open('sk1.txt','r','utf-8')
 input = fin.read()	
 fout = codecs.open('sk.xml','w','utf-8')
-input = starttext + '\n' + input + '\n' + endtext + '\n'
+input = starttext + '\n' + revhistory() + '\n' + input + '\n' + endtext + '\n'
 output = add_tags(input)
 fout.write(output+'\n')
 #print output.encode('utf-8')

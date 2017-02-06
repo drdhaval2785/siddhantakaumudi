@@ -1,3 +1,10 @@
+<!ELEMENT header (revHistory)*>
+<!ELEMENT revHistory (#PCDATA | version | date | changelog | person | email)*>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT changelog (#PCDATA)>
+<!ELEMENT person (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
 <!ELEMENT sidDAntakOmudI ANY>
 <!ELEMENT prakaraRa (#PCDATA | sUtra | prakaraRAnta | SKsandarBaH | DAtukramaH | vArtika)*>
 <!ELEMENT sUtra (SK, sUtramUlam, AS, vivaraRam)+>
