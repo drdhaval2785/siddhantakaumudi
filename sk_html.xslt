@@ -33,9 +33,34 @@
 	<a href="#D{.}"><xsl:value-of select="."/></a>
 	</div>
       </xsl:for-each>
+      <h2 class="index">Document Information</h2>
+      <h3>Revision History</h3>
+      <table border="1">
+      <tr>
+        <th>Version</th>
+        <th>Date</th>
+	<th>Person</th>
+	<th>Email</th>
+	<th>Changelog</th>
+      </tr>
+      <xsl:for-each select="//header/revHistory">
+        <tr>
+          <td><xsl:value-of select="version"/></td>
+          <td><xsl:value-of select="date"/></td>
+          <td><xsl:value-of select="person"/></td>
+          <td><xsl:value-of select="email"/></td>
+          <td><xsl:value-of select="changelog"/></td>
+        </tr>
+      </xsl:for-each>
+      </table>
+      <h3>Original Source</h3>
+         <xsl:value-of select="//header/sourceDesc"/>
     </body>
   </html>
 </xsl:template>
+
+<xsl:template match="header"/>
+
 
 <xsl:template match="prakaraRa">
   <h2 class="center chapter">अथ <xsl:value-of select="./@prakaraRanAman"/></h2>
