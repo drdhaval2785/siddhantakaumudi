@@ -30,7 +30,7 @@ if __name__=="__main__":
 	if len(sys.argv) > 1:
 		#read_something('//vArtika[@saMSayaH="1"]')
 		read_something(sys.argv[1])
-	elif not os.path.isfile('sk.dtd'):
-			validate_without_dtd()
 	else:
-		validate_with_dtd()
+		validate_without_dtd()
+		#validate_with_dtd
+	
