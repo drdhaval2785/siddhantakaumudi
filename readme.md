@@ -1,3 +1,10 @@
+# Where are the files ?
+
+1. https://drdhaval2785.github.io/siddhantakaumudi/
+2. XML file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk.xml
+3. HTML file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.html
+4. epub file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.epub
+
 # Download and extraction
 
 1. Downloaded Siddhanta Kaumudi - Text only.zip file from mail of Dr. H. N. Bhat dated 26 Dec 2016.
