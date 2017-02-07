@@ -12,7 +12,7 @@
       </style>
     </head>
     <body>
-      <h1 class="center">सिद्धान्तकौमुदिः</h1>
+      <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
       
       <h2 class="index">धतुसूचि: (संगणितः)</h2>
