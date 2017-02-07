@@ -4,6 +4,7 @@
 2. XML file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk.xml
 3. HTML file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.html
 4. epub file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.epub
+5. txt file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk1.txt
 
 # Download and extraction
 
