@@ -7,13 +7,6 @@
     <head>
       <meta charset="UTF-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script>
-	$( function() {
-	$( document ).tooltip();
-	} );
-      </script>
       <style>
 	.center {
 	text-align: center;
@@ -112,7 +105,7 @@
    <span id="D{.}"><b><xsl:value-of select="."/></b></span>
 </xsl:template>
 <xsl:template match="SKsandarBaH">
-   <a href="#SK{.}" title="#SK{.}"><sup><xsl:value-of select="."/></sup></a>
+   <a href="#SK{.}" title="{//sUtra[SK=current()]/sUtramUlam}"><sup><xsl:value-of select="."/></sup></a>
 </xsl:template>
 
 
