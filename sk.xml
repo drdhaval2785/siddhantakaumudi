@@ -38,6 +38,8 @@
 <change who="Dr. Dhaval Patel" when="2017-01-06">1.1.0 - Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4 </change>
 </revisionDesc>
 </teiHeader>
+<text>
+<body>
 
 <div type="prakaraRa">
 <div type="prakaraRanAman">संज्ञाप्रकरणम्‌</div>
@@ -24434,8 +24436,12 @@
 	 </div>
 </div>
 <div type="prakaraRAnta">स्वरप्रकरणम्‌</div>
-		<div type="colophon">इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।
-		तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥</div>
+		इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।
+		तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥
 </div>
+
+
+</body>
+</text>
 </TEI>
 

@@ -9,7 +9,7 @@ import re,codecs,sys
 import transcoder
 
 starttext = '<?xml version="1.0" encoding="UTF-8"?>\n<TEI xml:id="__SK" cmlnd="http://www.tei-c.org/ns/1.0">\n'
-endtext = '</div></div></div>'
+endtext = '</body>\n</text>\n</div></div></div>'
 
 # Tuples have the following information (version, date, changelog, person, email)
 def revhistory():
@@ -20,7 +20,7 @@ def revhistory():
 	headertext = '<teiHeader xml:lang="en">\n<fileDesc>\n<titleStmt>\n<title>Siddhantakaumudi</title>\n<respStmt>\n<persName>Dr. Dhaval Patel</persName>\n<resp>Creation and updation of XML</resp>\n</respStmt>\n<respStmt>\n<persName>Dr. H. N. Bhat</persName>\n<resp>Supply of base docx file.</resp>\n</respStmt>\n</titleStmt>\n<publicationStmt>\n<authority>Dr. Dhaval Patel</authority>\n<availability status="open"></availability>\n<date>2017-02-06</date>\n</publicationStmt>\n<notesStmt>\n<note>Dr. H. N. Bhat posted a docx file on a google group on 2016-12-26 at https://groups.google.com/forum/#!searchin/bvparishat/siddhantakaumudi$20unicode|sort:relevance/bvparishat/iYYVe5sFaFM/tPBIEFvcDAAJ. The digital file has no description of source from where it was encoded nor who encoded it.</note>\n</notesStmt>\n<sourceDesc>\n<bibl>\n<title>Siddhantakaumudi</title>\n<publisher>Unknown</publisher>\n<date>Unknown</date>\n</bibl>\n</sourceDesc>\n</fileDesc>\n<encodingDes>\n<p>The e-text is in Devanagari script</p>\n</encodingDes>\n<revisionDesc>\n'
 	for (version, date, changelog, person, email) in historydata:
 		headertext += '<change who="'+person+'" when="'+date+'">'+version+' - '+changelog+' '+'</change>\n'
-	headertext += '</revisionDesc>\n</teiHeader>'
+	headertext += '</revisionDesc>\n</teiHeader>\n<text>\n<body>'
 	return headertext.decode('utf-8')
 
 def add_tags(x):
@@ -101,6 +101,7 @@ def add_tags1(x):
 	x = x.replace('<div type="DAtukramaH">226</div>5</div>','<div type="SKsandarBaH">2265</div>')
 	x = re.sub(u'</div>\n</div>\n<div type="prakaraRAnta">तिङन्तप्रत्ययमालाप्रकरणम्‌</div>',u'\n<div type="prakaraRAnta">तिङन्तप्रत्ययमालाप्रकरणम्‌</div>',x)
 	x = re.sub(u'इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।(\W+)तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥\W+</div>\W+</div>',u'<div type="colophon">इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।\g<1>तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥</div>\n</div>\n</TEI>',x)
+	x = x.replace('</body>\n</text>\n</div>','</body>\n</text>\n</TEI>')
 	return x
 
 fin = codecs.open('sk1.txt','r','utf-8')
