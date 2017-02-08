@@ -3,11 +3,24 @@
 		xmlns:regexp="http://exslt.org/regular-expressions">
 
 <xsl:template match="/">
-  <html>
+  <html xmlns="http://www.w3.org/1999/xhtml" lang="sa" xml:lang="sa">
     <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script>
+	$( function() {
+	$( document ).tooltip();
+	} );
+      </script>
       <style>
 	.center {
 	text-align: center;
+	}
+	label {
+	display: inline-block;
+	width: 5em;
 	}
       </style>
     </head>
@@ -30,10 +43,10 @@
 	    <xsl:value-of select="./following-sibling::text()[1]"/>
 	  </xsl:otherwise>
 	</xsl:choose>
-	<a href="#D{.}"><xsl:value-of select="."/></a>
+	<a href="#D{.}" title="#D{.}"><xsl:value-of select="."/></a>
 	</div>
       </xsl:for-each>
-      <h2 class="index">Document Information</h2>
+      <h2 class="index" lang="en">Document Information</h2>
       <h3>Revision History</h3>
       <table border="1">
       <tr>
@@ -87,7 +100,7 @@
    <span id="SK{.}"><b><xsl:value-of select="."/>:</b></span>
 </xsl:template>
 <xsl:template match="AS">
-   (<a href="http://avg-sanskrit.org/sutras/{.}.html"><xsl:value-of select="."/></a>)
+   (<a title="AVG {.}" href="http://avg-sanskrit.org/sutras/{.}.html" target="_blank"><xsl:value-of select="."/></a>)
 </xsl:template>
 <xsl:template match="vivaraRam">
   <div><xsl:apply-templates/></div>
@@ -99,7 +112,7 @@
    <span id="D{.}"><b><xsl:value-of select="."/></b></span>
 </xsl:template>
 <xsl:template match="SKsandarBaH">
-   <a href="#SK{.}"><sup><xsl:value-of select="."/></sup></a>
+   <a href="#SK{.}" title="#SK{.}"><sup><xsl:value-of select="."/></sup></a>
 </xsl:template>
 
 
