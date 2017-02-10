@@ -10,6 +10,7 @@ import transcoder
 def tryverb(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
+	lastverb = 0
 	for line in fin:
 		if re.search(u'। [0-9]{1,4} [^ ]+ [^।]+।',line):
 			lin = line.split(u'।')
@@ -17,6 +18,12 @@ def tryverb(filein,fileout,logfile):
 				out = re.findall(u' [0-9]{1,4} [^ ]+ [^।]+',mem)
 				for member in out:
 					print member.encode('utf-8')
+					verbnums = re.findall('[0-9]{1,4}',member)
+					if int(verbnums[0]) == lastverb + 1:
+						lastverb = int(verbnums[-1])
+					if int(verbnums[-1]) == 1208:
+						lastverb = int(verbnums[0]) + 1
+						
 		
 def step1(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
