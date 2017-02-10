@@ -1,8 +1,9 @@
 <xsl:stylesheet version="1.0"
+		xmlns:t="http://www.tei-c.org/ns/1.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:regexp="http://exslt.org/regular-expressions">
 
-<xsl:template match="/">
+<xsl:template match="//t:TEI">
   <html>
     <head>
       <style>
@@ -13,10 +14,10 @@
     </head>
     <body>
       <h1 class="center">सिद्धान्तकौमुदी</h1>
-      <xsl:apply-templates select="./TEI/text/body"/>
+      <xsl:apply-templates/>
       
       <h2 class="index">धतुसूचि: (संगणितः)</h2>
-      <xsl:for-each select="//div[@type='dhātukramaḥ']">
+      <xsl:for-each select="//t:div[@type='dhātukramaḥ']">
         <xsl:sort select="./following-sibling::text()[1]"/>
 	<div class="indexelem">
 	<xsl:choose>
@@ -41,7 +42,7 @@
 	<th>Person</th>
 	<th>Changelog</th>
       </tr>
-      <xsl:for-each select="//teiHeader/revisionDesc/change">
+      <xsl:for-each select="//t:teiHeader/t:revisionDesc/t:change">
         <tr>
           <td><xsl:value-of select="./@when"/></td>
           <td><xsl:value-of select="./@who"/></td>
@@ -53,59 +54,50 @@
   </html>
 </xsl:template>
 
-
-<xsl:template match="TEI">
-    TEI
-    <xsl:apply-templates/> 
+<xsl:template match="t:teiHeader">
 </xsl:template>
 
-
-<xsl:template match="teiHeader">
-  teiHeader
+<xsl:template match="t:text">
   <xsl:apply-templates/> 
 </xsl:template>
 
-<xsl:template match="text">
+<xsl:template match="t:body">
   <xsl:apply-templates/> 
 </xsl:template>
 
-<xsl:template match="body">
-  <xsl:apply-templates/> 
+<xsl:template match="t:div[@type='prakaraṇa']">
+  <h2 class="center chapter"><xsl:value-of select="./t:head"/></h2>
+  <xsl:apply-templates select="t:div[@type='sūtra_with_explanation']"/>
+  <div class="center"><em><xsl:value-of select="./t:trailer"/></em></div>
 </xsl:template>
 
-<xsl:template match="div[@type='prakaraṇa']">
-  <h2 class="center chapter"><xsl:value-of select="./head"/></h2>
-  <xsl:apply-templates select="div[@type='sūtra_with_explanation']"/>
-  <div class="center"><em><xsl:value-of select="./trailer"/></em></div>
-</xsl:template>
-
-<xsl:template match="div[@type='sūtra_with_explanation']">
+<xsl:template match="t:div[@type='sūtra_with_explanation']">
   <div>
     <xsl:apply-templates/>
   </div>
 </xsl:template>
 
-<xsl:template match="ab[@type='sūtra']">
+<xsl:template match="t:ab[@type='sūtra']">
   <b><xsl:apply-templates/></b>
-   (<a href="http://avg-sanskrit.org/sutras/{.}.html" title="AVG {./label[@type='AS']}" target="_blank"><xsl:value-of select="./label[@type='AS']"/></a>)
+   (<a href="http://avg-sanskrit.org/sutras/{.}.html" title="AVG {./t:label[@type='AS']}" target="_blank"><xsl:value-of select="./t:label[@type='AS']"/></a>)
 </xsl:template>
 
-<xsl:template match="label[@type='SK']">
+<xsl:template match="t:label[@type='SK']">
    <span id="SK{.}"><b><xsl:value-of select="."/>:</b></span>
 </xsl:template>
-<xsl:template match="label[@type='AS']">
+<xsl:template match="t:label[@type='AS']">
 </xsl:template>
-<xsl:template match="p">
+<xsl:template match="t:p">
   <p><xsl:apply-templates/></p>
 </xsl:template>
-<xsl:template match="div[@type='vārtika']">
+<xsl:template match="t:div[@type='vārtika']">
    <em><xsl:value-of select="."/></em>
 </xsl:template>
-<xsl:template match="div[@type='dhātukramaḥ']">
+<xsl:template match="t:div[@type='dhātukramaḥ']">
    <span id="D{.}"><b><xsl:value-of select="."/></b></span>
 </xsl:template>
-<xsl:template match="div[@type='SKsandarbhaḥ']">
-   <a href="#SK{.}" title="{//ab[label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
+<xsl:template match="t:div[@type='SKsandarbhaḥ']">
+   <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
 </xsl:template>
 </xsl:stylesheet>
 
