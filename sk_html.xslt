@@ -3,16 +3,19 @@
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		xmlns:regexp="http://exslt.org/regular-expressions">
 
-<xsl:template match="//t:TEI">
-  <html>
-    <head>
-      <style>
-	.center {
-	text-align: center;
-	}
-      </style>
-    </head>
-    <body>
+  <xsl:template match="//t:TEI">
+    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
+    <html>
+      <head>
+	<meta charset="utf-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style>
+	  .center {
+	  text-align: center;
+	  }
+	</style>
+      </head>
+      <body>
       <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
       
