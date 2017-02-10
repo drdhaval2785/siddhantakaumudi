@@ -7,7 +7,16 @@ python step1.py sk0.txt sk1.txt step1_notes.txt
 """
 import re,codecs,sys
 import transcoder
-def step1(filein,filout,logfile):
+def tryverb(filein,fileout,logfile):
+	fin = codecs.open(filein,'r','utf-8')
+	fout = codecs.open(fileout,'w','utf-8')
+	for line in fin:
+		if re.search(u'। [0-9]{1,4} [^ ]+ [^।]+।',line):
+			out = re.findall(u'। [0-9]{1,4} [^ ]+ [^।]+।',line)
+			for member in out:
+				print member.encode('utf-8')
+		
+def step1(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
 	fillog = codecs.open(logfile,'w','utf-8')
@@ -87,3 +96,5 @@ if __name__=="__main__":
 	fileout = sys.argv[2]
 	logfile = sys.argv[3]
 	step1(filein,fileout,logfile)
+	tryverb(filein,fileout,logfile)
+	
