@@ -69,7 +69,7 @@ def add_tags1(x):
 	x = re.sub(u'</p>\n</div>\n<div type="sūtra_with_explanation" n="1">',u'<div type="sūtra_with_explanation" n="1">',x)
 	x = re.sub(u'\n(॥ अथ [^॥]+ ॥)',u'\n<div type="prakaraṇa">\n<head>\g<1></head>',x)
 	x = re.sub(u'</head>\W+</p>\W+</div>',u'</head>\n',x)
-	x = re.sub(u'{[*]',u'<div type="SKsandarbhaH">',x)
+	x = re.sub(u'{[*]',u'<div type="SKsandarbhaḥ">',x)
 	x = re.sub(u'[*]}',u'</div>',x)
 	x = re.sub(u'{[$]',u'<div type="dhātukramaḥ">',x)
 	x = re.sub(u'[$]}',u'</div>',x)
@@ -91,10 +91,10 @@ def add_tags1(x):
 	x = x.replace(u'</p>\n</div>\n<div type="sūtra_with_explanation" n="2563">',u'<div type="sūtra_with_explanation" n="2563">') # Some odd entries handled now onwards
 	x = x.replace(u'</p>\n</div>\n<div type="sūtra_with_explanation" n="2679">',u'<div type="sūtra_with_explanation" n="2679">') # Some odd entries handled now onwards
 	x = x.replace(u'</p>\n</div>\n<trailer>। इति सवसमासशेषप्रकरणम्‌ ।</trailer>',u'<trailer>। इति सवसमासशेषप्रकरणम्‌ ।</trailer>')
-	x = x.replace(u'<div type="SKsandarbhaH">21<div type="dhātukramaḥ">7</div>9</div>',u'<div type="SKsandarbhaH">2179</div>')
+	x = x.replace(u'<div type="SKsandarbhaḥ">21<div type="dhātukramaḥ">7</div>9</div>',u'<div type="SKsandarbhaḥ">2179</div>')
 	x = re.sub(u'<div type="prakaraṇanāman">तद्धिकाधिकारप्रकरणे अपत्यादिविकारान्तार्थसाधारणप्रत्ययाः</div>\W+</div>\n</div>\n<div type="sūtra">',u'<div type="prakaraṇanāman">तद्धिकाधिकारप्रकरणे अपत्यादिविकारान्तार्थसाधारणप्रत्ययाः</div>\n<div type="sūtra">',x)
 	x = re.sub(u'। इति तद्धिकाधिकारप्रकरणे अपत्यादिविकारान्तार्थसाधारणप्रत्ययाः ।',u'</p>\n</div>\n<trailer>। इति तद्धिकाधिकारप्रकरणे अपत्यादिविकारान्तार्थसाधारणप्रत्ययाः ।</trailer>',x)
-	x = x.replace(u'<div type="dhātukramaḥ">226</div>5</div>',u'<div type="SKsandarbhaH">2265</div>')
+	x = x.replace(u'<div type="dhātukramaḥ">226</div>5</div>',u'<div type="SKsandarbhaḥ">2265</div>')
 	x = re.sub(u'<head>॥ अथ तिङन्तप्रत्ययमालाप्रकरणम्‌ ॥</head>',u'<head>॥ अथ तिङन्तप्रत्ययमालाप्रकरणम्‌ ॥</head>\n<p>',x)
 	x = re.sub(u'</p>\W+</div>\W+<trailer>। इति तिङन्तप्रत्ययमालाप्रकरणम्‌ ।</trailer>',u'</p>\W+<trailer>। इति तिङन्तप्रत्ययमालाप्रकरणम्‌ ।</trailer>',x)
 	x = re.sub(u'इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।(\W+)तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥\W+</div>\W+</body>',u'<div type="colophon">इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।\g<1>तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥</div>\n</div>\n</body>',x)
