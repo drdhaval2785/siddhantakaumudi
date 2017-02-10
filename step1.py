@@ -12,9 +12,11 @@ def tryverb(filein,fileout,logfile):
 	fout = codecs.open(fileout,'w','utf-8')
 	for line in fin:
 		if re.search(u'। [0-9]{1,4} [^ ]+ [^।]+।',line):
-			out = re.findall(u'। [0-9]{1,4} [^ ]+ [^।]+।',line)
-			for member in out:
-				print member.encode('utf-8')
+			lin = line.split(u'।')
+			for mem in lin:
+				out = re.findall(u' [0-9]{1,4} [^ ]+ [^।]+',mem)
+				for member in out:
+					print member.encode('utf-8')
 		
 def step1(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
