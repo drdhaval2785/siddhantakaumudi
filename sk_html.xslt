@@ -19,7 +19,7 @@
       <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
       
-      <h2 class="index">धतुसूचि: (संगणितः)</h2>
+      <h2 class="index">धातुसूचि: (संगणितः)</h2>
       <xsl:for-each select="//t:div[@type='dhātukramaḥ']">
         <xsl:sort select="./following-sibling::text()[1]"/>
 	<div class="indexelem">
