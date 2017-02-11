@@ -20,21 +20,14 @@
       <xsl:apply-templates/>
       
       <h2 class="index">धातुसूचि: (संगणितः)</h2>
-      <xsl:for-each select="//t:div[@type='dhātukramaḥ']">
-        <xsl:sort select="./following-sibling::text()[1]"/>
+      <xsl:for-each select="//t:div[@type='dhātuḥ']">
+        <xsl:sort select="substring-after(./text(),' ')"/>
 	<div class="indexelem">
-	<xsl:choose>
-	  <xsl:when test="contains(./following-sibling::text()[1], '।')">
-	    <xsl:value-of select="substring-before(./following-sibling::text()[1],'।')"/>
-	  </xsl:when>
-	  <xsl:when test="contains(./following-sibling::text()[1], '॥')">
-	    <xsl:value-of select="substring-before(./following-sibling::text()[1],'॥')"/>
-	  </xsl:when>
-	  <xsl:otherwise>
-	    <xsl:value-of select="./following-sibling::text()[1]"/>
-	  </xsl:otherwise>
-	</xsl:choose>
-	<a href="#D{.}"><xsl:value-of select="."/></a>
+	  <xsl:value-of select="substring-after(./text(),' ')"/>
+	  <!-- FIXME -->
+	  <xsl:value-of select="parent::t:div[@type='dhātvarthaḥ']/text()"/>
+	  <a href="#D{substring-before(./text(),' ')}">
+	  <xsl:value-of select="substring-before(./text(),' ')"/></a>
 	</div>
       </xsl:for-each>
       <h2 class="index">Document Information</h2>
@@ -96,8 +89,11 @@
 <xsl:template match="t:div[@type='vārtika']">
    <em><xsl:value-of select="."/></em>
 </xsl:template>
-<xsl:template match="t:div[@type='dhātukramaḥ']">
-   <span id="D{.}"><b><xsl:value-of select="."/></b></span>
+<xsl:template match="t:div[@type='dhātvarthaḥ']">
+  <xsl:apply-templates/>
+</xsl:template>
+<xsl:template match="t:div[@type='dhātuḥ']">
+   <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="substring-after(./text(),' ')"/></b></span>
 </xsl:template>
 <xsl:template match="t:div[@type='SKsandarbhaḥ']">
    <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
