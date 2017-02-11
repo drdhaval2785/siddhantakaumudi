@@ -58,7 +58,8 @@ Suggested approach -
 
 	6.3. {*...*} encoding for internal reference to SK rule.
 
-	6.4. {$...$} encoding for verb number or other stuff (if they are found out).
+	6.4. {$ {!verbnum verb!}+ verbmeaning$} encoding for verb number or other stuff (if they are found out). + sign depicts there can be more than one such occurrences. e.g. {$ {!31 युतृ!} {!32 जुदृ!} भासने$}
+	
 
 7. ःढ़द्य; -> ऊ
 

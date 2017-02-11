@@ -71,8 +71,12 @@ def add_tags1(x):
 	x = re.sub(u'</head>\W+</p>\W+</div>',u'</head>\n',x)
 	x = re.sub(u'{[*]',u'<div type="SKsandarbhaḥ">',x)
 	x = re.sub(u'[*]}',u'</div>',x)
-	x = re.sub(u'{[$]',u'<div type="dhātukramaḥ">',x)
+	#x = re.sub(u'{[$]',u'<div type="dhātukramaḥ">',x)
+	#x = re.sub(u'[$]}',u'</div>',x)
+	x = re.sub(u'{[$]',u'<div type="dhātvarthaḥ">',x)
 	x = re.sub(u'[$]}',u'</div>',x)
+	x = re.sub(u'{[!]',u'<div type="dhātuḥ">',x)
+	x = re.sub(u'[!]}',u'</div>',x)
 	x = re.sub(u'{[%]([^%]*)[%]}',u'<div type="vārtika">\g<1></div>',x)
 	x = re.sub(u'।<div type="vārtika">',u'<div type="vārtika">',x)
 	x = x.replace(u'XXXXXXXXXXXXXXXXXXXX',u'</div>')
@@ -99,6 +103,7 @@ def add_tags1(x):
 	x = re.sub(u'</p>\W+</div>\W+<trailer>। इति तिङन्तप्रत्ययमालाप्रकरणम्‌ ।</trailer>',u'</p>\W+<trailer>। इति तिङन्तप्रत्ययमालाप्रकरणम्‌ ।</trailer>',x)
 	x = re.sub(u'इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।(\W+)तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥\W+</div>\W+</body>',u'<div type="colophon">इत्थं वैदिकशब्दानां दिङ्मात्रमिह दर्शितम्‌ ।\g<1>तदस्तु प्रीतये श्रीमद्भवानीविश्वनाथयोः ॥</div>\n</div>\n</body>',x)
 	x = x.replace(u'</body>\n</text>\n</div>',u'</body>\n</text>\n</TEI>')
+	x = x.replace(u'बुध्यती ॥<div type="dhātukramaḥ">3</div> ॥ बन्धि',u'बुध्यती ॥3 ॥ बन्धि')
 	return x
 
 fin = codecs.open('sk1.txt','r','utf-8')
