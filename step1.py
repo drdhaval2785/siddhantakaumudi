@@ -92,16 +92,16 @@ def step1(filein,fileout,logfile):
 		# Club multiple spaces into one.
 		line = re.sub('[ ]+',' ',line)
 		# Step 8
-		line = line.replace(u'ञ्ञ',u'ञ')
 		line = re.sub('[\-]([0-9]{2,4}) ','-{*\g<1>*} ',line)
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
 		# When there are two same numbers in a line, they are double qouted. Removing the outer one (wrong one).
 		line = re.sub(u'[{][@#$%*][{]','{',line)
 		line = re.sub(u'[}][@#$%*][}]','}',line)
-		line = line.replace(u'ःढ़द्य;',u'ऊ')
-		line = line.replace(u'श्र्व',u'श्व')
 		for (base,rep) in replistforverbs:
 			line = line.replace(base,rep)
+		line = line.replace(u'ञ्ञ',u'ञ')
+		line = line.replace(u'ःढ़द्य;',u'ऊ')
+		line = line.replace(u'श्र्व',u'श्व')
 		# [^#@*$%\?\-][0-9]+[^0-9#@*$%\?\-] is the regex which gave missed out internal references. Smaller than 10 can be ignored (accent/verse number etc). Now completed incorporating it in code.
 		fout.write(line)
 	fin.close()
