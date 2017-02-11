@@ -10,20 +10,25 @@ import transcoder
 def tryverb(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
+	fillog = codecs.open(logfile,'w','utf-8')
 	lastverb = 0
+	output = []
 	for line in fin:
 		if re.search(u'। [0-9]{1,4} [^ ]+ [^।]+।',line):
 			lin = line.split(u'।')
 			for mem in lin:
 				out = re.findall(u' [0-9]{1,4} [^ ]+ [^।]+',mem)
 				for member in out:
-					print member.encode('utf-8')
 					verbnums = re.findall('[0-9]{1,4}',member)
 					if int(verbnums[0]) == lastverb + 1:
+						tagged = '{$' + re.sub(' ([0-9]{1,4} [^ ]+)',' {!\g<1>!}',member) + '$}'
+						fillog.write(member+'\n')
+						fillog.write(tagged+'\n')
+						output.append((member,tagged))
 						lastverb = int(verbnums[-1])
 					if int(verbnums[-1]) == 1208:
 						lastverb = int(verbnums[0]) + 1
-						
+	return output
 		
 def step1(filein,fileout,logfile):
 	fin = codecs.open(filein,'r','utf-8')
@@ -32,6 +37,7 @@ def step1(filein,fileout,logfile):
 	fillog.write('; denotes unchanged item. $ denotes verb number. * denotes internal SK reference\n')
 	sksutranum = []
 	rootnum = 0
+	replistforverbs = tryverb(filein,fileout,'verbdata.txt')
 	for line in fin:
 		# Point 5a
 		if re.search(u'।([^।{]+)([(]वा[)][ ]*।)',line):
@@ -55,7 +61,8 @@ def step1(filein,fileout,logfile):
 				for member in m:
 					if int(sksutranum[0]) > 2164 and int(sksutranum[0]) < 2829 and int(member) == rootnum+1: # Ignore roots having the same markup as internal references to SK.
 						rootnum = int(member)
-						line = line.replace(member,'{$'+member+'$}')
+						pass
+						#line = line.replace(member,'{$'+member+'$}')
 						fillog.write('$ '+sksutranum[0]+' '+member+'\n')
 						#print '$', sksutranum[0], member
 						if member == '1208': # 1209 is missing in original too.
@@ -74,8 +81,6 @@ def step1(filein,fileout,logfile):
 				for member in m:
 					#print '*', sksutranum[0], member
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
-
-			
 		# Point 4
 		line = line.replace(u'(अ)',u'॒')
 		line = line.replace(u'(स्व)',u'॑')
@@ -95,15 +100,18 @@ def step1(filein,fileout,logfile):
 		line = re.sub(u'[}][@#$%*][}]','}',line)
 		line = line.replace(u'ःढ़द्य;',u'ऊ')
 		line = line.replace(u'श्र्व',u'श्व')
+		for (base,rep) in replistforverbs:
+			line = line.replace(base,rep)
 		# [^#@*$%\?\-][0-9]+[^0-9#@*$%\?\-] is the regex which gave missed out internal references. Smaller than 10 can be ignored (accent/verse number etc). Now completed incorporating it in code.
 		fout.write(line)
 	fin.close()
 	fout.close()
 	fillog.close()
+			
 if __name__=="__main__":
 	filein = sys.argv[1]
 	fileout = sys.argv[2]
 	logfile = sys.argv[3]
 	step1(filein,fileout,logfile)
-	tryverb(filein,fileout,logfile)
+	#tryverb(filein,fileout,'verbdata.txt')
 	
