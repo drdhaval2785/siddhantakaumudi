@@ -22,9 +22,10 @@
       <xsl:for-each select="//t:div[@type='dhātuḥ']">
         <xsl:sort select="substring-after(./text(),' ')"/>
 	<div class="indexelem">
-	  <xsl:value-of select="substring-after(./text(),' ')"/>
-	  <!-- FIXME -->
-	  <xsl:value-of select="parent::t:div[@type='dhātvarthaḥ']/text()"/>
+	  <b><xsl:value-of select="substring-after(./text(),' ')"/></b><xsl:text> </xsl:text>
+	  <xsl:for-each select="parent::t:div[@type='dhātvarthaḥ']/text()">
+	    <xsl:value-of select="normalize-space(.)"/><xsl:text> </xsl:text>
+	  </xsl:for-each>	
 	  <a href="#D{substring-before(./text(),' ')}">
 	  <xsl:value-of select="substring-before(./text(),' ')"/></a>
 	</div>
@@ -99,7 +100,7 @@
   <xsl:apply-templates/>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātuḥ']">
-   <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="."/></b></span>
+  <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="."/></b></span>
 </xsl:template>
 <xsl:template match="t:div[@type='SKsandarbhaḥ']">
    <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
