@@ -31,6 +31,10 @@
 	</div>
       </xsl:for-each>
       <h2 class="index">Document Information</h2>
+      <h3>Licence</h3>
+      <xsl:apply-templates select="//t:teiHeader/t:fileDesc//t:availability"/>
+      <h3>Original Source</h3>
+      <xsl:apply-templates select="//t:teiHeader/t:fileDesc/t:notesStmt/t:note"/>
       <h3>Revision History</h3>
       <table border="1">
       <tr>
@@ -105,5 +109,22 @@
 <xsl:template match="t:div[@type='SKsandarbhaḥ']">
    <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
 </xsl:template>
+
+<xsl:template match="t:ref">
+  <a href="{./@target}"><xsl:value-of select="."/></a>
+</xsl:template>
+
+<xsl:template match="t:list">
+  <ul>
+    <xsl:apply-templates/>
+  </ul>
+</xsl:template>
+<xsl:template match="t:item">
+  <li>
+    <xsl:apply-templates/>
+  </li>
+</xsl:template>
+
+
 </xsl:stylesheet>
 
