@@ -50,8 +50,20 @@
 </editorialDecl>
 </encodingDes>
 <revisionDesc>
-<change who="Dr. Dhaval Patel" when="2016-12-27">1.0.0 - First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 2. Added missing 2139-2150 sUtras manually in sk0.txt. 3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 4. prakaraNa headings were missing. - Added manually. 5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. </change>
+<change who="Dr. Dhaval Patel" when="2016-12-27">1.0.0 - First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 
+2. Added missing 2139-2150 sUtras manually in sk0.txt. 
+3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 
+4. prakaraNa headings were missing. - Added manually. 
+5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 
+6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 
+8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 
+9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 
+10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. </change>
 <change who="Dr. Dhaval Patel" when="2017-02-06">1.1.0 - Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4 </change>
+<change who="Karthikeyan Madathil" when="2017-02-12">1.1.1 - 1. Added sUtra detail on mouse hover. 
+2. External links open in new tab. 
+3. Latest HTML file is hosted on https://drdhaval2785.github.io/siddhantakaumudi for online viewing. </change>
+<change who="Dr. Dhaval Patel" when="2017-02-12">1.2.0 - 1. Captured all verbs with meaning and number in XML itself. See https://github.com/drdhaval2785/siddhantakaumudi/issues/6 for details. </change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
