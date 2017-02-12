@@ -74,7 +74,14 @@
 
 <xsl:template match="t:ab[@type='sūtra']">
   <b><xsl:apply-templates/></b>
-   (<a href="http://avg-sanskrit.org/sutras/{t:label[@type='AS']}.html" title="AVG {./t:label[@type='AS']}" target="_blank"><xsl:value-of select="./t:label[@type='AS']"/></a>)
+  <xsl:choose>
+    <xsl:when test="t:label[@type='AS']='0-0-0' or t:label[@type='AS']='0-0-1'">
+       (<xsl:value-of select="./t:label[@type='AS']"/>)
+    </xsl:when>
+    <xsl:otherwise>
+          (<a href="http://avg-sanskrit.org/sutras/{t:label[@type='AS']}.html" title="AVG {./t:label[@type='AS']}" target="_blank"><xsl:value-of select="./t:label[@type='AS']"/></a>)
+    </xsl:otherwise>
+  </xsl:choose>   
 </xsl:template>
 
 <xsl:template match="t:label[@type='SK']">
