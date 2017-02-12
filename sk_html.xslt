@@ -4,7 +4,6 @@
 		xmlns:regexp="http://exslt.org/regular-expressions">
 
   <xsl:template match="//t:TEI">
-    <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
     <html>
       <head>
 	<meta charset="utf-8" /> 
@@ -93,7 +92,7 @@
   <xsl:apply-templates/>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātuḥ']">
-   <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="substring-after(./text(),' ')"/></b></span>
+   <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="."/></b></span>
 </xsl:template>
 <xsl:template match="t:div[@type='SKsandarbhaḥ']">
    <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
