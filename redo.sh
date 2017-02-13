@@ -8,6 +8,6 @@ echo "Step 3 - Validating sk.xml file for errors."
 python validate_xml.py
 echo "Step 4 - Creating HTML from XML. (Requires libxslt)"
 ./run_xslt.sh
-echo "Step 5 - Creating epub from HTML. (Requires Calibre)"
-./run_epub.sh
+#echo "Step 5 - Creating epub from HTML. (Requires Calibre)"
+#./run_epub.sh
 
