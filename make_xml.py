@@ -77,6 +77,7 @@ def add_tags1(x):
 	x = re.sub(u'[$]}',u'</div>',x)
 	x = re.sub(u'{[!]',u'<div type="dhātuḥ">',x)
 	x = re.sub(u'[!]}',u'</div>',x)
+	x = re.sub(u'[[]\(प\)([^]]*)[]]',u'<div type="paribhāṣā">\g<1></div>',x)
 	x = re.sub(u'{[%]([^%]*)[%]}',u'<div type="vārtika">\g<1></div>',x)
 	x = re.sub(u'।<div type="vārtika">',u'<div type="vārtika">',x)
 	x = x.replace(u'XXXXXXXXXXXXXXXXXXXX',u'</div>')
