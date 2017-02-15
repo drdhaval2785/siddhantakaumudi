@@ -12,6 +12,18 @@
 	  .center {
 	  text-align: center;
 	  }
+	  .vartika {
+	  font-style: italic;
+	  }
+	  .paribhasha {
+	  text-decoration: underline;
+	  }
+	  .dhatu {
+	  font-weight: bold;
+	  }
+	  .sutra {
+	  font-weight: bold;
+	  }
 	</style>
       </head>
       <body>
@@ -22,7 +34,7 @@
       <xsl:for-each select="//t:div[@type='dhātuḥ']">
         <xsl:sort select="substring-after(./text(),' ')"/>
 	<div class="indexelem">
-	  <b><xsl:value-of select="substring-after(./text(),' ')"/></b><xsl:text> </xsl:text>
+	  <span class="dhatu" title="धातुः"><xsl:value-of select="substring-after(./text(),' ')"/></span><xsl:text> </xsl:text>
 	  <xsl:for-each select="parent::t:div[@type='dhātvarthaḥ']/text()">
 	    <xsl:value-of select="normalize-space(.)"/><xsl:text> </xsl:text>
 	  </xsl:for-each>	
@@ -78,7 +90,7 @@
 </xsl:template>
 
 <xsl:template match="t:ab[@type='sūtra']">
-  <b><xsl:apply-templates/></b>
+  <span class="sutra" title="सूत्रं"><xsl:apply-templates/></span>
   <xsl:choose>
     <xsl:when test="t:label[@type='AS']='0-0-0' or t:label[@type='AS']='0-0-1'">
        (<xsl:value-of select="./t:label[@type='AS']"/>)
@@ -90,7 +102,7 @@
 </xsl:template>
 
 <xsl:template match="t:label[@type='SK']">
-   <span id="SK{.}"><b><xsl:value-of select="."/>:</b></span>
+   <span id="SK{.}"><xsl:value-of select="."/>:</span>
 </xsl:template>
 <xsl:template match="t:label[@type='AS']">
 </xsl:template>
@@ -98,13 +110,16 @@
   <p><xsl:apply-templates/></p>
 </xsl:template>
 <xsl:template match="t:div[@type='vārtika']">
-   <em><xsl:value-of select="."/></em>
+   <span class="vartika" title="वार्तिक"><xsl:value-of select="."/></span>
+</xsl:template>
+<xsl:template match="t:div[@type='paribhāṣā']">
+  <span class="paribhasha" title="परिभाषा"><xsl:value-of select="."/></span>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātvarthaḥ']">
   <xsl:apply-templates/>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātuḥ']">
-  <span id="D{substring-before(./text(),' ')}"><b><xsl:value-of select="."/></b></span>
+  <span id="D{substring-before(./text(),' ')}" class="dhatu" title="धातुः"><xsl:value-of select="."/></span>
 </xsl:template>
 <xsl:template match="t:div[@type='SKsandarbhaḥ']">
    <a href="#SK{.}" title="{//t:ab[t:label=current()]/text()}" ><sup><xsl:value-of select="."/></sup></a>
