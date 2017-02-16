@@ -90,7 +90,7 @@
 </xsl:template>
 
 <xsl:template match="t:ab[@type='sūtra']">
-  <span class="sutra" title="सूत्रं"><xsl:apply-templates/></span>
+  <span class="sutra" title="सूत्रम्‌"><xsl:apply-templates/></span>
   <xsl:choose>
     <xsl:when test="t:label[@type='AS']='0-0-0' or t:label[@type='AS']='0-0-1'">
        (<xsl:value-of select="./t:label[@type='AS']"/>)
@@ -110,7 +110,7 @@
   <p><xsl:apply-templates/></p>
 </xsl:template>
 <xsl:template match="t:div[@type='vārtika']">
-   <span class="vartika" title="वार्तिक"><xsl:value-of select="."/></span>
+   <span class="vartika" title="वार्तिकम्‌"><xsl:value-of select="."/></span>
 </xsl:template>
 <xsl:template match="t:div[@type='paribhāṣā']">
   <span class="paribhasha" title="परिभाषा"><xsl:value-of select="."/></span>

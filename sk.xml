@@ -65,6 +65,8 @@
 3. Latest HTML file is hosted on https://drdhaval2785.github.io/siddhantakaumudi for online viewing. </change>
 <change who="Dr. Dhaval Patel" when="2017-02-12">1.2.0 - 1. Captured all verbs with meaning and number in XML itself. See https://github.com/drdhaval2785/siddhantakaumudi/issues/6 for details. 
 2. Added pratyAhAra section and maGgalAcaraNam. See issue 12. </change>
+<change who="Dr. Dhaval Patel" when="2017-02-15">1.3.0 - 1. Added paribhāṣās. See issue 11. </change>
+<change who="Karthikeyan Madathil" when="2017-02-15">1.3.1 - 1. Added minimal stylesheet in HTML. See issue 25. </change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
