@@ -116,7 +116,9 @@
   <span class="paribhasha" title="परिभाषा"><xsl:value-of select="."/></span>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātvarthaḥ']">
-  <xsl:apply-templates/>
+  <span class="dhatu" >
+    <xsl:apply-templates/>
+  </span>
 </xsl:template>
 <xsl:template match="t:div[@type='dhātuḥ']">
   <span id="D{substring-before(./text(),' ')}" class="dhatu" title="धातुः"><xsl:value-of select="."/></span>
