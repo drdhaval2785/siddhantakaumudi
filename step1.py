@@ -85,6 +85,12 @@ def step1(filein,fileout,logfile):
 				for member in m:
 					#print '*', sksutranum[0], member
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
+			# Add internal references to phiTsUtras
+			if re.search(u' फि[0-9]{1,4} ',line):
+				m = re.findall(u' (फि[0-9]{1,4}) ',line)
+				line = re.sub(u' (फि[0-9]{1,4}) ',u' {*\g<1>*} ',line)
+				for member in m:
+					fillog.write('* '+sksutranum[0]+' '+member+'\n')
 		# Point 4
 		line = line.replace(u'(अ)',u'॒')
 		line = line.replace(u'(स्व)',u'॑')
