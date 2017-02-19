@@ -67,6 +67,8 @@
 2. Added pratyAhAra section and maGgalAcaraNam. See issue 12. </change>
 <change who="Dr. Dhaval Patel" when="2017-02-15">1.3.0 - 1. Added paribhāṣās. See issue 11. </change>
 <change who="Karthikeyan Madathil" when="2017-02-15">1.3.1 - 1. Added minimal stylesheet in HTML. See issue 25. </change>
+<change who="Karthikeyan Madathil" when="2017-02-19">1.3.2 - 1. Added dhātu meaning inside boldface. See issue 26. </change>
+<change who="Dr. Dhaval Patel" when="2017-02-19">1.4.0 - 1. Added phiṭsūtras. See issue 8. </change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
