@@ -101,6 +101,8 @@ def step1(filein,fileout,logfile):
 		line = line.replace(u'। ।',u'॥')
 		# Club multiple spaces into one.
 		line = re.sub('[ ]+',' ',line)
+		# Issue 29
+		line = re.sub(u'॥([0-9])',u'॥ \g<1>',line)
 		# Step 8
 		line = re.sub('[\-]([0-9]{2,4}) ','-{*\g<1>*} ',line)
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
