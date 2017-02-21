@@ -38,14 +38,16 @@ def basedata():
 	sutratextonlyspaceless = []
 	for member in ASdata:
 		(a,b,c) = member.split(':')
+		orig = c.decode('utf-8')
 		c = c.decode('utf-8')
 		c = transcoder.transcoder_processString(c,'deva','slp1')
 		c = c.replace(u'\u200c',u'')
 		c = c.replace(u'\u200d',u'')
 		c = c.replace(u"'",u"")
+		c = re.sub('[NYRnmM]','M',c)
 		a = a.replace('.','-')
-		sutrawise[a] = c
-		sutratextonly.append(c.replace(' ',''))
+		sutrawise[a] = orig
+		sutratextonly.append(orig)
 		sutrawisespaceless[a] = c
 		sutratextonlyspaceless.append(c.replace(' ',''))
 	return sutrawise, sutratextonly, sutrawisespaceless, sutratextonlyspaceless
@@ -59,6 +61,7 @@ class sutra():
 		c = unicode(transcoder.transcoder_processString(self.base,'deva','slp1'))
 		c = c.replace(u'\u200c',u'')
 		c = c.replace(u'\u200d',u'')
+		c = re.sub('[NYRnmM]','M',c)
 		self.text = c
 		self.num = m.group(3)
 		self.sk = m.group(1)
