@@ -11,6 +11,11 @@ def validate_with_dtd():
 	parser = ET.XMLParser(dtd_validation=True)
 	tree = ET.parse('sk.xml', parser)
 	print "No error found in XML file."
+def validate_with_dtd1():
+	dtd = ET.DTD('sk.dtd')
+	tree = ET.parse('sk.xml')
+	print dtd.validate(tree)
+	print dtd.error_log.filter_from_errors()[0]
 def read_something(xpathexpression):
 	parser = ET.XMLParser(dtd_validation=True)
 	tree = ET.parse('sk.xml', parser)
@@ -31,6 +36,7 @@ if __name__=="__main__":
 		#read_something('//vArtika[@saMSayaH="1"]')
 		read_something(sys.argv[1])
 	else:
-		validate_without_dtd()
-		#validate_with_dtd
+		#validate_without_dtd()
+		#validate_with_dtd()
+		validate_with_dtd1()
 	

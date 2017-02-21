@@ -44,11 +44,11 @@
 </bibl>
 </sourceDesc>
 </fileDesc>
-<encodingDes>
+<encodingDesc>
 <editorialDecl>
 <p>The e-text is in Devanagari script</p>
 </editorialDecl>
-</encodingDes>
+</encodingDesc>
 <revisionDesc>
 <change who="Dr. Dhaval Patel" when="2016-12-27">1.0.0 - First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 
 2. Added missing 2139-2150 sUtras manually in sk0.txt. 

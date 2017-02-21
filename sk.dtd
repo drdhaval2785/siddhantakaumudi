@@ -1,21 +1,8 @@
-<!ELEMENT header (revHistory | sourceDesc)*>
-<!ELEMENT revHistory (#PCDATA | version | date | changelog | person | email)*>
-<!ELEMENT version (#PCDATA)>
-<!ELEMENT date (#PCDATA)>
-<!ELEMENT changelog (#PCDATA)>
-<!ELEMENT person (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT sourceDesc (#PCDATA)>
-<!ELEMENT sidDAntakOmudI ANY>
-<!ELEMENT prakaraRa (#PCDATA | sUtra | prakaraRAnta | SKsandarBaH | DAtukramaH | vArtika)*>
-<!ELEMENT sUtra (SK, sUtramUlam, AS, vivaraRam)+>
-<!ELEMENT SK (#PCDATA)>
-<!ELEMENT sUtramUlam (#PCDATA)>
-<!ELEMENT AS (#PCDATA)>
-<!ELEMENT vivaraRam (#PCDATA | vArtika | SKsandarBaH | DAtukramaH )*>
-<!ELEMENT vArtika (#PCDATA | SKsandarBaH)*>
-<!ELEMENT SKsandarBaH (#PCDATA)>
-<!ELEMENT DAtukramaH (#PCDATA)>
-<!ELEMENT prakaraRAnta (#PCDATA)>
-<!ATTLIST prakaraRa 
-	prakaraRanAman CDATA #REQUIRED>
+<!ELEMENT TEI (teiHeader | text)*>
+<!ATTLIST TEI xml:id ID "Dhaval__SK">
+<!ATTLIST TEI xmlns CDATA "http://www.tei-c.org/ns/1.0">
+<!ELEMENT teiHeader (fileDesc | encodingDesc | revisionDesc)*>
+<!ATTLIST teiHeader xml:lang CDATA "en">
+<!ELEMENT fileDesc (titleStmt | publicationStmt | notesStmt | sourceDesc)*>
+<!ELEMENT titleStmt (title | respStmt)*>
+<!ELEMENT respStmt (persName | resp)*>
