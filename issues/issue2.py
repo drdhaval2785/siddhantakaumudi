@@ -45,6 +45,9 @@ def basedata():
 		c = c.replace(u'\u200d',u'')
 		c = c.replace(u"'",u"")
 		c = re.sub('[NYRnmM]','M',c)
+		c = re.sub('cC','C',c)
+		c = re.sub('-','',c)
+		c = c.replace('.','')
 		a = a.replace('.','-')
 		sutrawise[a] = orig
 		sutratextonly.append(orig)
@@ -62,6 +65,9 @@ class sutra():
 		c = c.replace(u'\u200c',u'')
 		c = c.replace(u'\u200d',u'')
 		c = re.sub('[NYRnmM]','M',c)
+		c = re.sub('cC','C',c)
+		c = re.sub('-','',c)
+		c = c.replace('.','')
 		self.text = c
 		self.num = m.group(3)
 		self.sk = m.group(1)
