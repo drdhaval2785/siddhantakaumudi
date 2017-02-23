@@ -22,7 +22,7 @@ fin = codecs.open('sk1.txt','r','utf-8')
 input = fin.readlines()	
 fin.close()
 output = ''
-fout = codecs.open('docs/sk.babylon','w','utf-8')
+fout = codecs.open('docs/siddhAnta-kaumudI.babylon','w','utf-8')
 for line in input:
 	if re.match(u'{#([0-9]+)#}(.*){@([0-9-]+)@}',line):
 		output += add_tags1(line)
