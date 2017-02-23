@@ -13,7 +13,7 @@ def add_tags1(x):
 	m = re.search(u'{#([0-9]+)#}(.*){@([0-9-]+)@}',x)
 	sutra = m.group(2).strip()
 	num = transcoder.transcoder_processString(m.group(3).strip(),'slp1','deva')
-	result = '\n\n'+num+'|'+sutra+'|'+sutra+' '+num+'|'+num+' '+sutra+'\n'
+	result = '\n\n'+num+'|'+sutra+'|'+sutra+' '+num+'|'+num+' '+sutra+'\n'+sutra+' '+num+' <BR> '
 	result = result.replace('-','.')
 	result = result.replace(u'\n\n०.०.०',u'०.०.०')
 	return result
