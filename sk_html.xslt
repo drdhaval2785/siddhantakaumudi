@@ -24,17 +24,23 @@
 	  .sutra {
 	  font-weight: bold;
 	  }
+	  table, th, td {
+	  border: 1px solid black;
+	  }
 	</style>
       </head>
       <body>
       <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
       <h2 class="index">प्रदर्शनदृष्टान्तसूचि:</h2>
-      <ul>
-	<li> <span class="sutra">एतादृशं सूत्रं</span></li>
-	<li> <span class="paribhasha">एतादृशी परिभाषा</span></li>
-	<li> <span class="vartika">एतादृशी वार्तिका</span></li>
-      </ul>
+      <table>
+	<tr> <td>सूत्रं</td><td><span class="sutra" title="सूत्रम्‌"><span id="SK1">1:</span> हलन्त्यम् </span> (1-3-3)</td></tr>
+	<tr> <td>परिभाषा</td><td><span class="paribhasha">यत्रानेकविधमान्तर्यं तत्र स्थानत आन्तर्यं बलीयः</span></td></tr>
+	<tr> <td>वार्तिका</td><td><span class="vartika">यणः प्रतिषेधो वाच्यः</span></td>
+	</tr>
+	<tr> <td>धातु:</td><td><span class="dhatu"> <span id="D1" class="dhatu" title="धातुः">1 भू</span> सत्तायाम्</span></td>
+	</tr>
+      </table>
       <h2 class="index">धातुसूचि: (संगणितः)</h2>
       <xsl:for-each select="//t:div[@type='dhātuḥ']">
         <xsl:sort select="substring-after(./text(),' ')"/>
