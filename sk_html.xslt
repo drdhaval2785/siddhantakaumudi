@@ -29,7 +29,12 @@
       <body>
       <h1 class="center">सिद्धान्तकौमुदी</h1>
       <xsl:apply-templates/>
-      
+      <h2 class="index">प्रदर्शनदृष्टान्तसूचि:</h2>
+      <ul>
+	<li> <span class="sutra">एतादृशं सूत्रं</span></li>
+	<li> <span class="paribhasha">एतादृशी परिभाषा</span></li>
+	<li> <span class="vartika">एतादृशी वार्तिका</span></li>
+      </ul>
       <h2 class="index">धातुसूचि: (संगणितः)</h2>
       <xsl:for-each select="//t:div[@type='dhātuḥ']">
         <xsl:sort select="substring-after(./text(),' ')"/>
