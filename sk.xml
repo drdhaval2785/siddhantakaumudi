@@ -71,6 +71,10 @@
 <change who="Dr. Dhaval Patel" when="2017-02-19">1.4.0 - 1. Added phiṭsūtras. See issue 8. </change>
 <change who="Dr. Dhaval Patel" when="2017-02-23">1.4.1 - 1. Made spelling corrections in the sUtras. See issue #2 for details. </change>
 <change who="Dr. Dhaval Patel" when="2017-02-23">1.5.0 - 1. Added .babylon format for stardict dictionary usage. See https://github.com/sanskrit-coders/stardict-sanskrit/issues/15 for details. </change>
+<change who="Karthikeyan Madathil" when="2017-03-09">1.5.1 - 1. Added Siddhanta font as default web fonts. See https://github.com/drdhaval2785/siddhantakaumudi/issues/27. 
+2. Added a small description of various features in HTML file. See https://github.com/drdhaval2785/siddhantakaumudi/issues/31. </change>
+<change who="Dr. Dhaval Patel" when="2017-03-09">1.5.2 - 1. Corrected some typographical errors. See https://github.com/drdhaval2785/siddhantakaumudi/issues/32 , https://github.com/drdhaval2785/siddhantakaumudi/issues/34 , https://github.com/drdhaval2785/siddhantakaumudi/issues/36 , https://github.com/drdhaval2785/siddhantakaumudi/issues/38 , https://github.com/drdhaval2785/siddhantakaumudi/issues/39 for details. 
+2. Corrected 26 entries having ?? in sk1.txt. See https://github.com/drdhaval2785/siddhantakaumudi/issues/29. </change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
@@ -854,7 +858,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="123">
-<ab type="sūtra" n="123"><label type="SK">123</label><label type="AS">8-4-24</label> नश्चापदान्तस्य झलि </ab>
+<ab type="sūtra" n="123"><label type="SK">123</label><label type="AS">8-3-24</label> नश्चापदान्तस्य झलि </ab>
 <p> 
 नस्य मस्य चापदान्तस्य झल्यनुस्वारः स्यात् । यशांसि । आक्रंस्यते । झलि किम् । मन्यते ॥
 </p>
@@ -872,7 +876,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="126">
-<ab type="sūtra" n="126"><label type="SK">126</label><label type="AS">8-2-35</label> मो राजि समः क्वौ </ab>
+<ab type="sūtra" n="126"><label type="SK">126</label><label type="AS">8-3-25</label> मो राजि समः क्वौ </ab>
 <p> 
 क्विबन्ते राजतौ परे समो मस्य म एव स्यात् । सम्राट् ॥
 </p>
@@ -989,7 +993,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="145">
-<ab type="sūtra" n="145"><label type="SK">145</label><label type="AS">8-1-72</label> संहितायाम् </ab>
+<ab type="sūtra" n="145"><label type="SK">145</label><label type="AS">6-1-72</label> संहितायाम् </ab>
 <p> 
 इत्यधिकृत्य ॥
 </p>
@@ -1863,7 +1867,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="286">
-<ab type="sūtra" n="286"><label type="SK">286</label><label type="AS">8-2-85</label> रायो हलि </ab>
+<ab type="sūtra" n="286"><label type="SK">286</label><label type="AS">7-2-85</label> रायो हलि </ab>
 <p> 
 रैशब्दस्याऽऽकारोऽन्तादेशः स्याद्धलि विभक्तौ । अचि आयादेशः । राः । रायौ । रायः । रायम् । रायौ । रायः । राया । राभ्यामित्यादि । इत्यैदन्ताः ।
 	 ग्लौः । ग्लावौ । ग्लावः । ग्लावम् । ग्लावौ । ग्लावः । इत्यादि । औतोऽम्शसोरितीह न प्रवर्तते । ऐऔजिति सूत्रेण ओदौतोः सावर्ण्याऽभावज्ञापनात् । इत्यौदन्ताः ॥
@@ -2354,7 +2358,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="364">
-<ab type="sūtra" n="364"><label type="SK">364</label><label type="AS">6-1-12</label> अर्वणस्त्रसावनञः </ab>
+<ab type="sūtra" n="364"><label type="SK">364</label><label type="AS">6-4-127</label> अर्वणस्त्रसावनञः </ab>
 <p> 
 नञा रहितस्यार्वन्नन्तस्याङ्गस्य तृ इत्यन्तादेशः स्थान्न तु सौ । उगित्त्वान्नुम् । अर्वन्तौ । अर्वन्तः । अर्वन्तम् । अर्वन्तौ । अर्वतः । अर्वता । अर्वद्भ्यामित्यादि ॥ अनञः किम् । अनर्वा । यज्ववत् ॥ 
 </p>
@@ -2409,7 +2413,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="373">
-<ab type="sūtra" n="373"><label type="SK">373</label><label type="AS">3-2-93</label> ऋत्विग्दधृक्स्रग्दिगुष्णिगञ्चुयुजिक्रुञ्चां च </ab>
+<ab type="sūtra" n="373"><label type="SK">373</label><label type="AS">3-2-59</label> ऋत्विग्दधृक्स्रग्दिगुष्णिगञ्चुयुजिक्रुञ्चां च </ab>
 <p> 
 एभ्यः क्विन्स्यात् । अलाक्षणिकमपि किंचित्कार्यं निपातनाल्लभ्यते । निरुपपदाद्युजेः क्विन् । कनावितौ ॥
 </p>
@@ -2476,7 +2480,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="384">
-<ab type="sūtra" n="384"><label type="SK">384</label><label type="AS">7-1-94</label> त्वाहौ सौ </ab>
+<ab type="sūtra" n="384"><label type="SK">384</label><label type="AS">7-2-94</label> त्वाहौ सौ </ab>
 <p> 
 युष्मदस्मदोर्मपर्यन्तस्य त्व अह इत्येतावादेशौ स्तः सौ परे ॥
 </p>
@@ -2643,7 +2647,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="412">
-<ab type="sūtra" n="412"><label type="SK">412</label><label type="AS">8-2-72</label> आमन्त्रितं पूर्वमविद्यमानवत् </ab>
+<ab type="sūtra" n="412"><label type="SK">412</label><label type="AS">8-1-72</label> आमन्त्रितं पूर्वमविद्यमानवत् </ab>
 <p> 
 स्पष्टम् । अग्ने तव । देवास्मान्पाहि । अग्ने नय । अग्न इन्द्र वरुण । इह युष्मदस्मदोरादेशस्तिङन्तनिघात आमन्त्रितनिघातश्च न । सर्वादा रक्ष देव नः इत्यत्र तु देवेत्यस्याविद्यमानवद्भावेऽपि ततः प्राचीनं रक्षेत्येतदाश्रित्यादेशः । एवं इमं मे गङ्गे यमुने इति मन्त्रे यमुन इत्यादिभ्यः प्राचीनामन्त्रिताविद्यमानवद्भावेऽपि मेशब्दमेवाश्रित्य सर्वेषां निघातः ॥ 
 </p>
@@ -2655,7 +2659,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="414">
-<ab type="sūtra" n="414"><label type="SK">414</label><label type="AS">6-4-103</label> पादः पत् </ab>
+<ab type="sūtra" n="414"><label type="SK">414</label><label type="AS">6-4-130</label> पादः पत् </ab>
 <p> 
 पाच्छब्दान्तं यदङ्गं भं तदवयवस्य पाच्छब्दस्य पदादेशः स्यात् । सुपदः । सुपदा । सुपद्भ्यामित्यादि ॥ अग्निं मन्थतीत्यग्निमत् । अग्निमद् । अग्निमथौ । अग्निमथः । अग्निमद्भ्यामित्यादि । ऋत्विग् <div type="SKsandarbhaḥ">373</div> इत्यादिसूत्रेणाञ्चेः सुप्युपपदे क्विन् ॥ 
 </p>
@@ -2680,7 +2684,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="418">
-<ab type="sūtra" n="418"><label type="SK">418</label><label type="AS">6-3-96</label> विष्वग्देवयोश्च टेरद्र्यञ्चतावप्रत्यये </ab>
+<ab type="sūtra" n="418"><label type="SK">418</label><label type="AS">6-3-92</label> विष्वग्देवयोश्च टेरद्र्यञ्चतावप्रत्यये </ab>
 <p> 
 अनयोः सर्वनाम्नश्च टेरद्र्यादेशः स्यादप्रत्ययान्तेऽञ्चतौ परे । अदद्रि-अञ्च इति स्थिते यण् ॥
 </p>
@@ -5174,7 +5178,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="824">
-<ab type="sūtra" n="824"><label type="SK">824</label><label type="AS">1-4-21</label> उपज्ञोपक्रमं तदाद्याचिख्यासायाम् </ab>
+<ab type="sūtra" n="824"><label type="SK">824</label><label type="AS">2-4-21</label> उपज्ञोपक्रमं तदाद्याचिख्यासायाम् </ab>
 <p> 
 उपज्ञान्तः उपक्रमान्तश्च तत्पुरुषो नपुंसकं स्यात् तयोरुपज्ञायमानोपक्रम्यमाणयोरादिः प्राथम्यं चेदाख्यातुमिष्यते । पाणिनेरुपज्ञा पाणिन्युपज्ञं ग्रन्थः । नन्दोपक्रमं द्रोणः ॥ 
 </p>
@@ -5773,7 +5777,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="922">
-<ab type="sūtra" n="922"><label type="SK">922</label><label type="AS">6-3-23</label> देवताद्वन्द्वे च </ab>
+<ab type="sūtra" n="922"><label type="SK">922</label><label type="AS">6-3-26</label> देवताद्वन्द्वे च </ab>
 <p> 
 इहोत्तरपदे परे आनङ् । मित्रावरुणौ ॥ <div type="vārtika">वायुशब्दप्रयोगे प्रतिषेधः </div> (वा) ॥ अग्निवायू । वाय्वग्नी । पुनर्द्वन्द्वग्रहणं प्रसिद्धसाहचर्यस्य परिग्रहार्थम् । तेन ब्रह्मप्रजापती इत्यादौ नानङ् । एतद्धि नैकहविर्भागित्वेन श्रुतं नापि लोके प्रसिद्धं साहचर्यम् ॥ 
 </p>
@@ -7213,7 +7217,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1154">
-<ab type="sūtra" n="1154"><label type="SK">1154</label><label type="AS">6-4-138</label> ये चाभावकर्मणोः </ab>
+<ab type="sūtra" n="1154"><label type="SK">1154</label><label type="AS">6-4-168</label> ये चाभावकर्मणोः </ab>
 <p> 
 यादौ तद्धिते परेऽन्प्रकृत्या स्यान्न तु भावकर्मणोः । राजन्यः । श्वशुर्यः । जातिग्रहणाच्छूद्रादावुत्पन्नो राजनः ॥
 </p>
@@ -7478,7 +7482,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1198">
-<ab type="sūtra" n="1198"><label type="SK">1198</label><label type="AS">4-1-178</label> अणिञोरनार्षयोर्गुरूपोत्तमयोः ष्यङ् गोत्रे </ab>
+<ab type="sūtra" n="1198"><label type="SK">1198</label><label type="AS">4-1-78</label> अणिञोरनार्षयोर्गुरूपोत्तमयोः ष्यङ् गोत्रे </ab>
 <p> 
 त्र्यादीनामन्त्यमुत्तमं तस्य समीपमुपोत्तमम्,गौत्रे यावणिञौ विहितावनार्षौ तदन्तयोर्गुरूवोत्तमयोः प्रातिपदिकयोः स्त्रियां ष्यङादेशः स्यात् ॥ <div type="paribhāṣā"> निर्दिश्यमानस्यादेशा भवन्ति</div> इत्यणिञोरेव । षङावितौ । यङश्चाप् -(सू<div type="SKsandarbhaḥ">528</div>) कुमुदगन्धेरपत्यं स्त्री कौमुदगन्ध्या । वाराह्या । अनार्षयोः किम् ? वासिष्ठी । वैश्वामित्री । गुरुपोत्तमयोः किम् । औपगवी । जातिलक्षणो ङीष् । गौत्रे किम् । अहिच्छत्रे जाता आहिच्छत्री ॥
 </p>
@@ -7490,7 +7494,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1200">
-<ab type="sūtra" n="1200"><label type="SK">1200</label><label type="AS">4-1-70</label> क्रौड्यादिभ्यश्च </ab>
+<ab type="sūtra" n="1200"><label type="SK">1200</label><label type="AS">4-1-80</label> क्रौड्यादिभ्यश्च </ab>
 <p> 
 स्त्रियां ष्यङ् प्रत्ययः स्यात् । अगुरूपोत्तमार्थोऽनणिञर्थश्चारम्भः । क्रौड्या । व्याड्या । (ग)सूत युवत्याम् । सूत्या । (ग)भोज क्षत्रिये । भोज्या ॥
 </p>
@@ -7717,7 +7721,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1237">
-<ab type="sūtra" n="1237"><label type="SK">1237</label><label type="AS">4-2-31</label> कालेभ्यो भववत् </ab>
+<ab type="sūtra" n="1237"><label type="SK">1237</label><label type="AS">4-2-34</label> कालेभ्यो भववत् </ab>
 <p> 
 मासिकम् । प्रावृषेण्यम् ॥
 </p>
@@ -8134,7 +8138,7 @@
 <div type="sūtra_with_explanation" n="1306">
 <ab type="sūtra" n="1306"><label type="SK">1306</label><label type="AS">4-2-87</label> कुमुदनडवेतसेभ्यो ड्मतुप् </ab>
 <p> 
-कुमुद्वान् । नड्वान् । वेतस्वान् । आद्ययोःझयः <div type="SKsandarbhaḥ">1898</div> इति अन्त्ये मादुपधायाः--<div type="SKsandarbhaḥ">1897</div> इति वक्ष्यमाणेन वः ॥ <div type="vārtika">महिषाच्चेति वक्तव्यम् </div> (वा) ॥ महिष्मान्नाम देशः ॥
+कुमुद्वान् । नड्वान् । वेतस्वान् । आद्ययोः झयः <div type="SKsandarbhaḥ">1898</div> इति अन्त्ये मादुपधायाः--<div type="SKsandarbhaḥ">1897</div> इति वक्ष्यमाणेन वः ॥ <div type="vārtika">महिषाच्चेति वक्तव्यम् </div> (वा) ॥ महिष्मान्नाम देशः ॥
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1307">
@@ -8263,7 +8267,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1327">
-<ab type="sūtra" n="1327"><label type="SK">1327</label><label type="AS">4-2-106</label> तीररूप्योत्तरपदादञ्ञौ </ab>
+<ab type="sūtra" n="1327"><label type="SK">1327</label><label type="AS">4-2-106</label> तीररूप्योत्तरपदादञौ </ab>
 <p> 
 यथासंख्येन । काकतीरम् । पाल्वलतीरम् । शैवरूप्यम् । तीररूप्यान्तादिति नोक्तम् । बहुच्पूर्वान्माभूत् । बाहुरूप्यम् ॥
 </p>
@@ -8341,7 +8345,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1340">
-<ab type="sūtra" n="1340"><label type="SK">1340</label><label type="AS">4-2-116</label> काश्यादिभ्यष्ठञ्ञिठौ </ab>
+<ab type="sūtra" n="1340"><label type="SK">1340</label><label type="AS">4-2-116</label> काश्यादिभ्यष्ठञिठौ </ab>
 <p> 
 इकार उच्चारणार्थः । काशिकी । काशिका । बैदिकी । बैदिका ॥ (ग) आपदादिपूर्वपदात्कालान्तात् ॥ आपदादिराकृतिगणः । आपत्कालिकी । आपत्कालिका ॥
 </p>
@@ -8551,7 +8555,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1375">
-<ab type="sūtra" n="1375"><label type="SK">1375</label><label type="AS">4-2-5</label> परावराधमोत्तमपूर्वाच्च </ab>
+<ab type="sūtra" n="1375"><label type="SK">1375</label><label type="AS">4-3-5</label> परावराधमोत्तमपूर्वाच्च </ab>
 <p> 
 परार्ध्यम् । अवरार्थम् । अधमार्ध्यम् । उत्तमार्ध्यम् ॥
 </p>
@@ -9357,7 +9361,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1509">
-<ab type="sūtra" n="1509"><label type="SK">1509</label><label type="AS">4-3-129</label> छन्दोगौक्थिकयाज्ञिकबह्वृचनटाञ्ञ्यः </ab>
+<ab type="sūtra" n="1509"><label type="SK">1509</label><label type="AS">4-3-129</label> छन्दोगौक्थिकयाज्ञिकबह्वृचनटाञ्यः </ab>
 <p> 
 छन्दोगानां धर्म आम्नायो वा छान्दोग्यम् । औक्थिक्यम् । याज्ञिक्यम् । बाह्वृच्यम् । नाट्यम् ॥ <div type="vārtika">चरणाद्धर्माम्नाययोः </div> (वा) ॥ इत्युक्तं तत्साहचर्यान्नटशब्दादपि तयोरेव ॥
 </p>
@@ -10427,7 +10431,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1683">
-<ab type="sūtra" n="1683"><label type="SK">1683</label><label type="AS">7-3-19</label> परिमाणान्तस्यासंज्ञाशाणयोः </ab>
+<ab type="sūtra" n="1683"><label type="SK">1683</label><label type="AS">7-3-17</label> परिमाणान्तस्यासंज्ञाशाणयोः </ab>
 <p> 
 उत्तरपदवृद्धिः स्यात् ञिदादौ । परमनैष्किकः । असंज्ञा इति किम् । पञ्च कलापाः परिमाणमस्य पाञ्चकलापिकम् । तदस्य परिमाणम् (सू<div type="SKsandarbhaḥ">1723</div>) इति ठञ् । असमासग्रहणं ज्ञापकं भवति इत्यतः प्राक् तदन्तविधिरिति । तेन सुगव्यम्-यवापूप्यमित्यादि ॥ इत ऊर्ध्वं तु ॥ <div type="vārtika">संख्यापूर्वपदानां तदन्तग्रहणं प्राग्वतेरिष्यते तच्चालुकि </div> (वा) ॥ पारायणिकः । द्वैपारायणिकः । अलुकि इति किम् । द्वाभ्यां शूर्पभ्यां क्रीतं द्विशूर्पम् । द्विशूर्पेण क्रीते शूर्पादञ् (सू<div type="SKsandarbhaḥ">1691</div>) माभूत् किंतु ठञ् । द्विशौर्पिकम् ॥
 </p>
@@ -10559,13 +10563,13 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1705">
-<ab type="sūtra" n="1705"><label type="SK">1705</label><label type="AS">5-2-39</label> गोद्व्यचोऽसंख्यापरिमाणाश्वादेर्यत् </ab>
+<ab type="sūtra" n="1705"><label type="SK">1705</label><label type="AS">5-1-39</label> गोद्व्यचोऽसंख्यापरिमाणाश्वादेर्यत् </ab>
 <p> 
 गोर्निमित्तं संयोग उत्पातो वा गव्यः । द्व्यचः । धन्यः । यशस्यः । स्वर्ग्यः । गोद्व्यचः किम् । विजयस्य वैजयिकः । असंख्या इत्यादि किम् । पञ्चानां पञकम् । सप्तकम् । प्रास्थिकम् । खारीकम् । अश्वादि-आश्विकम् । आस्मिकम् ॥ <div type="vārtika">ब्रह्मवर्चसादुपसंख्यानम् </div> (वा) ॥ ब्रह्मवर्चस्यम् ॥
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1706">
-<ab type="sūtra" n="1706"><label type="SK">1706</label><label type="AS">5-1-80</label> पुत्राच्छ च </ab>
+<ab type="sūtra" n="1706"><label type="SK">1706</label><label type="AS">5-1-40</label> पुत्राच्छ च </ab>
 <p> 
 चाद्यत् । पुत्रीयः । पुत्र्यः ॥
 </p>
@@ -11773,7 +11777,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1903">
-<ab type="sūtra" n="1903"><label type="SK">1903</label><label type="AS">5-2-16</label> प्राणिस्थादातो लजन्यतरस्याम् </ab>
+<ab type="sūtra" n="1903"><label type="SK">1903</label><label type="AS">5-2-96</label> प्राणिस्थादातो लजन्यतरस्याम् </ab>
 <p> 
 चूडालः । चूडवान् । प्राणिस्थात्किम् । शिखावान्दीपः । आतः किम् । हस्तवान् ॥<div type="vārtika">प्राण्यङ्गादेव </div> (वा) ॥ नेह । मेधावान् । प्रत्ययस्वरेणैव सिद्धे अन्तोदात्तत्वे चूडालोऽसीत्यादौ स्वरितो वानुदात्ते पदादौ <div type="SKsandarbhaḥ">3659</div> इति स्वरितबाधनार्थश्चकारः ॥
 </p>
@@ -12098,7 +12102,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="1956">
-<ab type="sūtra" n="1956"><label type="SK">1956</label><label type="AS">5-3-1</label> पर्यभिभ्यां च </ab>
+<ab type="sūtra" n="1956"><label type="SK">1956</label><label type="AS">5-3-9</label> पर्यभिभ्यां च </ab>
 <p> 
 आभ्यां तसिल् स्यात् ॥ <div type="vārtika">सर्वोभयार्थाभ्यामेव </div> (वा) ॥ परितः । सर्वत इत्यर्थः । अभतः । उभयत इत्यर्थः ॥
 </p>
@@ -12397,7 +12401,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2005">
-<ab type="sūtra" n="2005"><label type="SK">2005</label><label type="AS">5-2-57</label> द्विवचनविभज्योपपदे तरबीयसुनौ </ab>
+<ab type="sūtra" n="2005"><label type="SK">2005</label><label type="AS">5-3-57</label> द्विवचनविभज्योपपदे तरबीयसुनौ </ab>
 <p> 
 द्वयोरेकस्यातिशये विभक्तव्ये चोपपदे सुप्तिङन्तादेतौ स्तः । पूर्वयोरपवादः । अयमनयोरतिशयेनलघुर्लघुतरः । लघीयान् । उदीच्याः प्राच्येभ्यः पटुतराः । पटीयांसः ॥
 </p>
@@ -12565,7 +12569,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2033">
-<ab type="sūtra" n="2033"><label type="SK">2033</label><label type="AS">5-4-78</label> बह्वचो मनुष्यनाम्नष्ठज्वा </ab>
+<ab type="sūtra" n="2033"><label type="SK">2033</label><label type="AS">5-3-78</label> बह्वचो मनुष्यनाम्नष्ठज्वा </ab>
 <p> 
 पूर्वसूत्रद्वयविषये ॥
 </p>
@@ -12668,7 +12672,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2050">
-<ab type="sūtra" n="2050"><label type="SK">2050</label><label type="AS">5-3-94</label> अवक्षेपणे कन् </ab>
+<ab type="sūtra" n="2050"><label type="SK">2050</label><label type="AS">5-3-95</label> अवक्षेपणे कन् </ab>
 <p> 
 व्याकरणकेन गर्वितः व्याकरणकः । येनेतरः कुत्स्यते तदिहोदाहरणम् । स्वतः कुत्सिते तु कुत्सिते <div type="SKsandarbhaḥ">2029</div> इत्यस्य ॥
 </p>
@@ -13477,7 +13481,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2182">
-<ab type="sūtra" n="2182"><label type="SK">2182</label><label type="AS">7-4-54</label> अभ्यासे चर्च </ab>
+<ab type="sūtra" n="2182"><label type="SK">2182</label><label type="AS">8-4-54</label> अभ्यासे चर्च </ab>
 <p> 
 अभ्यासे झलां चरः स्युर्जशश्च । झशां जशः खयां चरः । तत्रापि प्रकृतिजशां प्रकृतिजशः प्रकृतिचरां प्रकृतिचर इति विवेक आन्तरतम्यात् ॥
 </p>
@@ -13808,7 +13812,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2237">
-<ab type="sūtra" n="2237"><label type="SK">2237</label><label type="AS">3-1-35</label> इजादेश्च गुरुमतोऽनृच्छः </ab>
+<ab type="sūtra" n="2237"><label type="SK">2237</label><label type="AS">3-1-36</label> इजादेश्च गुरुमतोऽनृच्छः </ab>
 <p> 
 इजादिर्यो धातुर्गुरुमानृच्छत्यन्यस्तत आम् स्याल्लिटि । आमो मकारस्य नेत्त्वम् । आस्कासोरामूविधानाज्ज्ञापकात् ॥
 </p>
@@ -13978,7 +13982,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2265">
-<ab type="sūtra" n="2265"><label type="SK">2265</label><label type="AS">8-2-79</label> उपधायां च </ab>
+<ab type="sūtra" n="2265"><label type="SK">2265</label><label type="AS">8-2-78</label> उपधायां च </ab>
 <p> 
 धातोरुपदाभूतयो रेफवकारयोर्हल्परयोः परत इको दीर्घः स्यात् । ऊर्दते । उर्दांचक्रे ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">21 कुर्द</div> <div type="dhātuḥ">22 खुर्द</div> <div type="dhātuḥ">23 गुर्द</div> <div type="dhātuḥ">24 गुद</div> क्रीडायामेव</div> । कूर्दते । चुकूर्दे । गूर्दते । गोदते । जुगुदे ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">25 षूद</div> क्षरणे</div> । सूदते । सुषूदे ॥ -- सेक्, सृप, 
 सृ, स्तृ, सृज्, स्तॄ, स्त्याऽन्ये दन्त्याजन्तसादयः । एकाचः षोपदेशाः ष्वष्क्, स्विद्, स्वद, स्वञ्ज, स्वप्, स्मिङः ॥ 1 ॥ दन्त्यः केवलदन्त्यो नतु तन्तोष्ठजोऽपि, ष्वष्कादीनां पृथग्ग्रहणाज्ज्ञापकात् ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">26 ह्राद</div> अव्यक्ते शब्दे</div> । ह्रादते । जह्रादे ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">27 ह्लादी</div> सुखे च</div> । चादव्यक्ते शब्दे । ह्लादते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">28 स्वाद्</div> आस्वादने </div>। स्वादते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">29 पर्द</div> कुत्सिते शब्दे</div> । गुदरवे इत्यर्थः । पर्दते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">30 यती</div> प्रयत्ने</div> । यतते । येते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">31 युतृ</div> <div type="dhātuḥ">32 जुदृ</div> भासने</div> । योतते । युयुते । जोतते । जुजुते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">33 विथृ</div> <div type="dhātuḥ">34 वेथृ</div> याचने</div> । विविथे । विवेथे ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">35 श्रथि</div> शैथिल्ये</div> । श्रन्थते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">36 ग्रथि</div> कौटिल्ये</div> । ग्रन्थते ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">37 कत्थ</div> श्लाघायाम्</div> । कत्थते । एधादयोऽनुदात्तेतो गताः ॥
@@ -14488,7 +14492,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2346">
-<ab type="sūtra" n="2346"><label type="SK">2346</label><label type="AS">7-3-72</label> मिदेर्गुणः </ab>
+<ab type="sūtra" n="2346"><label type="SK">2346</label><label type="AS">7-3-82</label> मिदेर्गुणः </ab>
 <p> 
 मिदेरिको गुणः स्यादित्संज्ञकशकारादौ प्रत्यये । एश आदिशित्त्वाभावान्नाभावेन गुणः । मिमिदे । अमिदत् । अमेदिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">744 ञिष्विदा</div> स्नेहनमोचनयोः</div> । मोहनयोरित्येके । स्वेदते । सिष्विदे । अस्विदत् । अस्वेदिष्ट । ञिक्ष्विदा चेत्येके । अक्ष्विदत् । अक्ष्वेदिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">745 रुच</div> दीप्तावभिप्रीतौ च</div> । रोचते सूर्यः । हरये । रोचते भक्तिः । अरुचत् । अरोचिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">746 घुट</div> परिवर्तने</div> । घोटते । जुघुटे । अघुटत् । अघोटिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">747 रुट</div> <div type="dhātuḥ">748 लुट</div> <div type="dhātuḥ">749 लुठ</div> प्रतिघाते अरुटत्</div> । अरोटिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">750 शुभ</div> दीप्तौ</div> ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">751 क्षुभ</div> संचलने</div> ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">752 णभ</div> <div type="dhātuḥ">753 तुभ</div> हिंसायाम्</div> । आद्योऽभावेऽपि । नभन्तामन्यके समे । मा भूवन्नन्यके सर्वे इति निरुक्तम् । अनभत् । अनभिष्ट । अतुभत् । अतोभिष्ट । इमौ दिवादी क्र्यादी च ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">754 स्रंसु</div> <div type="dhātuḥ">755 ध्वंसु</div> <div type="dhātuḥ">756 भ्रंसु</div> अवस्रंसने</div> । ध्वंसु गतौ च । अङि नलोपः । अस्रसत् । अस्रंसिष्ट । नास्रसत्करिणां ग्रैवमिति रघुकाव्ये । भ्रंशु इत्यपि केचित्पेठुः । अत्र तृतीय एव तालव्यान्त इत्यन्ये । भ्रशु भ्रंशु अधः पतन इति दिवादौ ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">757 स्रम्भु</div> विश्वासे</div> । अस्रभत् । अस्रम्भिष्ट । दन्त्यादिरयम् । तालव्यादिस्तु प्रमादे गतः ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">758 वृतु</div> वर्तने</div> । वर्तते ॥
 </p>
@@ -14739,7 +14743,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2386">
-<ab type="sūtra" n="2386"><label type="SK">2386</label><label type="AS">3-1-14</label> श्रुवः शृ च </ab>
+<ab type="sūtra" n="2386"><label type="SK">2386</label><label type="AS">3-1-74</label> श्रुवः शृ च </ab>
 <p> 
 श्रुवः शृ इत्यादेशः स्यात् श्नुप्रत्यश्च शब्विषये । शपोऽपवादः श्नोर्ङित्त्वादद्धातोर्गुणो न । शृणोति । शृणुतः ॥
 </p>
@@ -15023,7 +15027,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2432">
-<ab type="sūtra" n="2432"><label type="SK">2432</label><label type="AS">2-4-34</label> आर्धधातुके </ab>
+<ab type="sūtra" n="2432"><label type="SK">2432</label><label type="AS">2-4-35</label> आर्धधातुके </ab>
 <p> 
  इत्यधिकृत्य ॥
 </p>
@@ -15061,7 +15065,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2438">
-<ab type="sūtra" n="2438"><label type="SK">2438</label><label type="AS">3-1-42</label> अस्यतिवक्तिख्यातिभ्योऽङ् </ab>
+<ab type="sūtra" n="2438"><label type="SK">2438</label><label type="AS">3-1-52</label> अस्यतिवक्तिख्यातिभ्योऽङ् </ab>
 <p> 
 एभ्यश्च्लेरङ् । अख्यत् । अख्यत । अक्शासीत् । अक्शास्त ॥ <div type="vārtika">वर्जने ख्शाञ् नेष्टः </div> (वा) ॥ समचक्षिष्टेत्यादि ॥
 	अथ पृच्यन्ता अनुदात्तेतः- ॥<div type="dhātvarthaḥ"> <div type="dhātuḥ">1018 ईर</div> गतौ कम्पने च</div> ॥ ईर्ते । ईरांचक्रे । ईरीता । ईरिष्यते । ईर्ताम् । ईर्ष्व । ईर्ध्वम् । ऐरिष्ट ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1019 ईड</div> स्तुतौ</div> । ईट्टे ॥
@@ -15081,7 +15085,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2441">
-<ab type="sūtra" n="2441"><label type="SK">2441</label><label type="AS">7-1-21</label> शीङः सार्वधातुके गुणः </ab>
+<ab type="sūtra" n="2441"><label type="SK">2441</label><label type="AS">7-4-21</label> शीङः सार्वधातुके गुणः </ab>
 <p> 
 क्ङिति च-(सू <div type="SKsandarbhaḥ">2217</div>) इत्यस्यापवादः । शेते । शयाते ॥
 </p>
@@ -15101,7 +15105,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2444">
-<ab type="sūtra" n="2444"><label type="SK">2444</label><label type="AS">7-3-94</label> तुरुस्तुशम्यमः सार्वधातुके </ab>
+<ab type="sūtra" n="2444"><label type="SK">2444</label><label type="AS">7-3-95</label> तुरुस्तुशम्यमः सार्वधातुके </ab>
 <p> 
 एभ्यः परस्य सार्वधातुकस्य हलादेस्तिङ ईड्वा स्यात् । नाभ्यस्तस्य -(सू<div type="SKsandarbhaḥ">2403</div>) इत्यतोऽनुवृत्तिसंभवे पुनः सार्वधातुकग्रहणमपिदर्थम् । रवीति । रौति । रुवीतः । रुतः । हलादेः किम् । रुवन्ति । तिङः किम् । शाम्यति । सार्वधातुके किम् । आशिषि रूयात् । विध्यादौ तु रुयात् । रूवीयात् । अरावीत् । अरविष्यत् । तु इति सौत्रो धातुर्गतिवृद्धिहिंसासु । अयं च लुग्विकरण इति स्मरन्ति । तवीति । तौति । तुवीतः । तुतः । तोता । तोष्यति ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1035 णु</div> स्तुतौ</div> । नौति । नविता ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1036 टुक्षु</div> शब्दे</div> । क्षौति क्षविता ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1037 क्ष्णु</div> तेजने</div> । क्ष्णौति । क्ष्णविता ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1038 ष्णु</div> प्रस्रवणे</div> । स्नौति । सुष्णाव । स्नविता । स्नुयात् । स्नूयात् ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1039 ऊर्णुञ्</div> आच्छादने</div> ॥
 </p>
@@ -15149,7 +15153,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2452">
-<ab type="sūtra" n="2452"><label type="SK">2452</label><label type="AS">7-3-13</label> ब्रुव ईट् </ab>
+<ab type="sūtra" n="2452"><label type="SK">2452</label><label type="AS">7-3-93</label> ब्रुव ईट् </ab>
 <p> 
 ब्रुवः परस्य हलादेः पित ईट् स्यात् । आत्थ इत्यत्र स्थानिवद्भावात्प्राप्तोऽयं झलीति थत्वविधानान्न भवति । ब्रवीति । ब्रूतः । ब्रुवन्ति । ब्रूते । आर्धधातुकाधिकारे ॥
 </p>
@@ -15762,7 +15766,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2545">
-<ab type="sūtra" n="2545"><label type="SK">2545</label><label type="AS">6-3-92</label> तृणह इम् </ab>
+<ab type="sūtra" n="2545"><label type="SK">2545</label><label type="AS">7-3-92</label> तृणह इम् </ab>
 <p> 
 तृहः श्नमि कृते इमागमः स्याद्धलादौ पिति । तृणेढि । तृण्ढः । ततर्ह । तर्हिता । अतृणेट् । हिनस्ति । जिहिंस । हिंसिता ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1458 उन्दी</div> क्लेदने</div> । उनत्ति । उन्तः । उन्दन्ति । उन्दाञ्चकार । औनत् । औन्ताम् । औन्दन् । औनः । औनत् । औनदम् ।<div type="dhātvarthaḥ"> <div type="dhātuḥ">1459 अञ्जू</div> व्यक्तिम्रक्षणकान्तिगतिषु </div>। अनक्ति । अङ्क्तः । अञ्जन्ति । आनञ्ज । आनञ्जिथ । आनङ्क्थ । अङ्क्ता । अञ्जिता । अङ्ग्धि । अनजानि । आनक् ॥
 </p>
@@ -16044,7 +16048,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2587">
-<ab type="sūtra" n="2587"><label type="SK">2587</label><label type="AS">6-4-4</label> लोपः पिबतेरीच्चाभ्यासस्य </ab>
+<ab type="sūtra" n="2587"><label type="SK">2587</label><label type="AS">7-4-4</label> लोपः पिबतेरीच्चाभ्यासस्य </ab>
 <p> 
 पिबतेरुपधाया लोपः स्यादभ्यासस्य ईदन्तादेशश्च चङ्परे णौ । अपीप्यत् । अर्तिह्री-- <div type="SKsandarbhaḥ">2570</div> इति पुक् । अर्पयति । ह्रेपयति । व्लेपयति । रेपयति । यलोपः । क्नोपयति । क्ष्मापयति । स्थापयति ॥
 </p>
@@ -16597,7 +16601,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2675">
-<ab type="sūtra" n="2675"><label type="SK">2675</label><label type="AS">3-1-29</label> नमो वरिवश्चित्रङः क्यच् </ab>
+<ab type="sūtra" n="2675"><label type="SK">2675</label><label type="AS">3-1-19</label> नमो वरिवश्चित्रङः क्यच् </ab>
 <p> 
 करणे इत्यनुवृत्तेः क्रियाविशेषे पूजायां परिचर्यायामाश्चर्ये च । नमस्यति देवान् । पूजयतीत्यर्थः । वरिवस्यति गुरून् । शुश्रूषत इत्यर्थः । चित्रीयते । विस्मयत इत्यर्थः । विस्मापयत इत्यन्ये ॥
 </p>
@@ -16638,7 +16642,7 @@
 <head>॥ अथ तिङन्तात्मनेपदप्रकरणम्‌ ॥</head>
 अनुदात्तङित आत्मनेपदम्‌ (<div type="SKsandarbhaḥ">2157</div>)| आस्ते । शेते ।
 <div type="sūtra_with_explanation" n="2679">
-<ab type="sūtra" n="2679"><label type="SK">2679</label><label type="AS">1-2-13</label> भावकर्मणोः </ab>
+<ab type="sūtra" n="2679"><label type="SK">2679</label><label type="AS">1-3-13</label> भावकर्मणोः </ab>
 <p> 
 बभूवे । अनुबभूवे ।
 </p>
@@ -17165,7 +17169,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2764">
-<ab type="sūtra" n="2764"><label type="SK">2764</label><label type="AS">6-4-63</label> भञ्जेश्च चिणि </ab>
+<ab type="sūtra" n="2764"><label type="SK">2764</label><label type="AS">6-4-33</label> भञ्जेश्च चिणि </ab>
 <p> 
 नलोपो वा स्यात् । अभाजि । अभञ्जि । 
 </p>
@@ -17230,7 +17234,7 @@
 <head>॥ अथ लकारार्थप्रकरणम्‌ ॥</head>
 
 <div type="sūtra_with_explanation" n="2773">
-<ab type="sūtra" n="2773"><label type="SK">2773</label><label type="AS">3-2-122</label> अभिज्ञावचने लृट् </ab>
+<ab type="sūtra" n="2773"><label type="SK">2773</label><label type="AS">3-2-112</label> अभिज्ञावचने लृट् </ab>
 <p> 
 स्मृतिबोधिन्युपपदे भूतानद्यतने धातोर्लृट् स्यात् । लङोऽपवादः । स्मरसि कृष्ण गोकुले वत्स्यामः । एवं बुध्यसे चेतयसे इत्यादियोगेऽपि । तेषामपि प्रकरणादिवशेन स्मृतौ वृत्तिसंभवात् ॥
 </p>
@@ -17684,7 +17688,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="2847">
-<ab type="sūtra" n="2847"><label type="SK">2847</label><label type="AS">3-4-99</label> शकिसहोश्च </ab>
+<ab type="sūtra" n="2847"><label type="SK">2847</label><label type="AS">3-1-99</label> शकिसहोश्च </ab>
 <p> 
 शक्यम् । सह्यम् ॥
 </p>
@@ -18707,7 +18711,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3016">
-<ab type="sūtra" n="3016"><label type="SK">3016</label><label type="AS">7-2-42</label> रदाभ्यां निष्ठातो नः पूर्वस्य च दः </ab>
+<ab type="sūtra" n="3016"><label type="SK">3016</label><label type="AS">8-2-42</label> रदाभ्यां निष्ठातो नः पूर्वस्य च दः </ab>
 <p> 
 रेफदकाराभ्यां परस्य निष्ठातस्य नः स्यात् । निष्ठापेक्षया पूर्वस्य धातोर्दकारस्य च । शॄ । ऋत इत् <div type="SKsandarbhaḥ">2390</div> । रपरः । णत्वम् । शीर्णः । बहिरङ्गत्वेन वृद्धेरसिद्धत्वान्नेह । कृतस्यापत्यं कार्तिः । भिन्नः । छिन्नः ॥ 
 </p>
@@ -18779,7 +18783,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3028">
-<ab type="sūtra" n="3028"><label type="SK">3028</label><label type="AS">8-3-49</label> दिवोऽविजिगीषायाम् </ab>
+<ab type="sūtra" n="3028"><label type="SK">3028</label><label type="AS">8-2-49</label> दिवोऽविजिगीषायाम् </ab>
 <p> 
 दिवो निष्ठातस्य नः स्यादविजिगीषायाम् । द्यूनः । विजिगीषायां तु द्यूतम् ॥
 </p>
@@ -19050,7 +19054,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3073">
-<ab type="sūtra" n="3073"><label type="SK">3073</label><label type="AS">6-4-94</label> ह्लादो निष्ठायाम् </ab>
+<ab type="sūtra" n="3073"><label type="SK">3073</label><label type="AS">6-4-95</label> ह्लादो निष्ठायाम् </ab>
 <p> 
 ह्रस्वः स्यात् । प्रह्लन्नः ॥ 
 </p>
@@ -20729,7 +20733,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3354">
-<ab type="sūtra" n="3354"><label type="SK">3354</label><label type="AS">3-2-33</label> चेले क्नोपेः </ab>
+<ab type="sūtra" n="3354"><label type="SK">3354</label><label type="AS">3-4-33</label> चेले क्नोपेः </ab>
 <p> 
 चेलार्थेषु कर्मसूपपदेषु क्नोपेर्णमुल् स्याद्वर्षप्रमाणे । चेलक्नोपं वृष्टो देवः । वस्त्रक्नोपम् । वसनक्नोपम् ॥
 </p>
@@ -20960,7 +20964,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3391">
-<ab type="sūtra" n="3391"><label type="SK">3391</label><label type="AS">1-4-8</label> छन्दसि परेऽपि 	</ab>
+<ab type="sūtra" n="3391"><label type="SK">3391</label><label type="AS">1-4-81</label> छन्दसि परेऽपि 	</ab>
 <p> 
  
 </p>
@@ -21015,7 +21019,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3400">
-<ab type="sūtra" n="3400"><label type="SK">3400</label><label type="AS">2-3-73</label> बहुलं छन्दसि 	 </ab>
+<ab type="sūtra" n="3400"><label type="SK">3400</label><label type="AS">2-4-73</label> बहुलं छन्दसि 	 </ab>
 <p> 
 वृत्रं हनति वृत्रहा । अहिः शयत उप पृक्पृथिव्याः (अहिः॑ शयत उप॒ पृक्पृ॑थि॒व्याः) । अत्र लुङ्ग । अदादिभिन्नेऽपि क्वचिल्लुक् । त्राध्वं नो देवाः (त्राध्वं॑ नो दे॒वाः) । जुहोत्यादिभ्यः श्लुः <div type="SKsandarbhaḥ">2489</div> ॥
 </p>
@@ -21281,7 +21285,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3444">
-<ab type="sūtra" n="3444"><label type="SK">3444</label><label type="AS">3-1-47</label> सृपितृदोः कसुन् 	 </ab>
+<ab type="sūtra" n="3444"><label type="SK">3444</label><label type="AS">3-4-17</label> सृपितृदोः कसुन् 	 </ab>
 <p> 
 भावलक्षणे इत्येव । पुरा क्रूरस्य विसृपो विरप्शिन् (पु॒रा क्रू॒रस्य॑ वि॒सृपो॑ विर॒प्शिन्) । पुरा जत्रुभ्य आतृदः (पु॒रा ज॒त्रुभ्य॑ आ॒तृदः॑) ॥ इति तृतीयोऽध्यायः ॥
 </p>
@@ -21666,7 +21670,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3508">
-<ab type="sūtra" n="3508"><label type="SK">3508</label><label type="AS">5-4-148</label> ऋतश्छन्दसि </ab>
+<ab type="sūtra" n="3508"><label type="SK">3508</label><label type="AS">5-4-158</label> ऋतश्छन्दसि </ab>
 <p> 
 ऋदन्ताद्बहुव्रीहेर्न कप् । हता माता यस्य हतमाता ॥ 
 </p>
@@ -21805,7 +21809,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3531">
-<ab type="sūtra" n="3531"><label type="SK">3531</label><label type="AS">6-3-108</label> साढ्यै साढ्वा साढेति निगमे 	</ab>
+<ab type="sūtra" n="3531"><label type="SK">3531</label><label type="AS">6-3-113</label> साढ्यै साढ्वा साढेति निगमे 	</ab>
 <p> 
 सहेः क्त्वाप्रत्यये आद्यं द्वयं तृनि तृतीयं निपात्यते । मरुद्भिरुग्रः पृतनासु साह्ला (म॒रुद्भि॑रु॒ग्रः पृत॑नासु॒ साह्ला॑) । अचोर्मध्यस्थस्य डस्य ळः ढस्य ह्लाश्च प्रातिशाख्ये विहितः । आहहि । द्वयोश्चास्य स्वरयोर्मध्यमेत्य संपद्यते स डकारो ळकारः ह्लाकारतामेति स एव चास्य ढकारः सन्नूष्मणा संप्रयुक्त इति ।
 </p>
@@ -22095,7 +22099,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3579">
-<ab type="sūtra" n="3579"><label type="SK">3579</label><label type="AS">7-1-103</label> ह्रु ह्वरेश्छन्दसि 	 </ab>
+<ab type="sūtra" n="3579"><label type="SK">3579</label><label type="AS">7-2-31</label> ह्रु ह्वरेश्छन्दसि 	 </ab>
 <p> 
 ह्ररेर्निष्ठाया ह्रु आदेशः स्यात् । अह्रुतमसि हविर्धानम् ।
 </p>
@@ -22126,7 +22130,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3584">
-<ab type="sūtra" n="3584"><label type="SK">3584</label><label type="AS">7-2-70</label> घोर्लोपो लेटि वा 	 </ab>
+<ab type="sūtra" n="3584"><label type="SK">3584</label><label type="AS">7-3-70</label> घोर्लोपो लेटि वा 	 </ab>
 <p> 
 दधद्रत्नानि दाशुपे (दध॒द्रत्ना॑नि दा॒शुपे॑) । सोमो ददद्गन्धर्वाय (सोमो॑ ददद्गन्ध॒र्वाय॑) । यदग्निरग्नय ददात् (यद॒ग्निर॒ग्नय॑ ददात्) ।
 </p>
@@ -22199,7 +22203,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3596">
-<ab type="sūtra" n="3596"><label type="SK">3596</label><label type="AS">7-4-62</label> दाधर्तिदर्धर्ति दर्धर्षि बोभूतु तेतिक्तेऽलर्ष्याऽऽपनीफणत्संसनिष्यदत्करिक्रत्कनिक्रदद्भरिभ्रद्दविध्वतोदविद्युतत्तरित्रतः सरीसृपतं वरीवृजन्मर्मृज्याऽऽगनीगन्तीति च </ab>
+<ab type="sūtra" n="3596"><label type="SK">3596</label><label type="AS">7-4-65</label> दाधर्तिदर्धर्ति दर्धर्षि बोभूतु तेतिक्तेऽलर्ष्याऽऽपनीफणत्संसनिष्यदत्करिक्रत्कनिक्रदद्भरिभ्रद्दविध्वतोदविद्युतत्तरित्रतः सरीसृपतं वरीवृजन्मर्मृज्याऽऽगनीगन्तीति च </ab>
 <p> 
 एतेष्टादश निपात्यन्ते । आद्यास्त्रयो धृङो धारयतेर्वा । भवतेर्यङ्लुगन्तस्य गुणाभावः । तेन भाषायां गुणो लभ्यते । तिजेर्यङ्लुगन्तात्तङ् । इयर्तेर्लटि हलादिःशेषापवादो रेफस्य लत्वमित्वाभावश्च निपात्यते । अलर्षि युध्म खजकृत्पुरन्दर (अल॑र्षि युध्म खजकृत्पुरन्दर) । सिपा निर्देशो न तन्त्रम् । अलर्ति दक्ष उत (अल॑र्ति॒ दक्ष॑ उ॒त) । फणतेराङ्पूर्वस्य यङ्लुगन्तस्य शतरि अभ्यासस्य नीगागमो निपात्यते । अन्वापनीफणत् (अन्वा॒पनी॑फणत्) । स्यन्देः संपूर्वस्य यङ्लुकि शतरि अभ्यासस्य निक् । धातुसकारस्य षत्वम् । करोतेर्यङ्लुगन्तस्याभ्यासस्य चुत्वाभावः । क्रन्देर्लुङिच्लेरङ्द्विर्वचनमभ्यासस्य चुत्वाभावो निगागमश्च । कनिक्रदज्जनुपम् (कनि॑क्रदज्ज॒नुप॑म्) । अक्रन्दीदित्यर्थः । बिभर्तेरभ्यासस्य जश्त्वाभावः । वि यो भरिभ्रदोषधीषु (वि यो भरि॑भ्र॒दोष॑धीषु) । ध्वरतेर्यङ्लुगन्तस्य शतरि अभ्यासस्य विगागमो धातोर्ऋकारलोपश्च । दविध्वतो रश्मयः सूर्यस्य (दवि॑ध्वतो र॒श्मयः॒ सूर्य॑स्य) । द्युतेरभ्यासस्य संप्रसारणाभावोऽत्वं विगागमश्च । दविद्युतद्दीद्यच्छोशुचानः (दवि॑द्युत॒द्दीद्य॒च्छोशु॑चानः) । तरतेः शतरि श्लौ द्वितीयैकवचने रीगागमोऽभ्यासस्य । वृजेः शतरि श्लावभ्यासस्य रीक् । मृजेर्लिटि णल् अभ्यासस्य रुक् धातोश्च युक् । गमेराङ्पूर्वस्य लटि श्लावभ्यासस्य चुत्वाभावो नीगागमश्च । वक्ष्यन्ती वेदागनीगन्ति कर्णम् (वक्ष्यन्ती॒ वेदाग॑नीगन्ति कर्ण॑म्) ।
 </p>
@@ -22260,7 +22264,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3606">
-<ab type="sūtra" n="3606"><label type="SK">3606</label><label type="AS">8-2-7</label> ओमभ्यादाने 		</ab>
+<ab type="sūtra" n="3606"><label type="SK">3606</label><label type="AS">8-2-87</label> ओमभ्यादाने 		</ab>
 <p> 
 ओंशब्दस्य प्लुतः स्यादारम्भे । ओ3म् अग्निमीळे पुरोहितम् (ओ3म् अ॒ग्निमी॑ळे पु॒रोहि॑तम्) । अभ्यादाने किम् । ओमित्येकाक्षरम् ।
 </p>
@@ -22392,7 +22396,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3628">
-<ab type="sūtra" n="3628"><label type="SK">3628</label><label type="AS">8-2-1</label> मतुवसो रु संबुद्धौ छन्दसि 	 </ab>
+<ab type="sūtra" n="3628"><label type="SK">3628</label><label type="AS">8-3-1</label> मतुवसो रु संबुद्धौ छन्दसि 	 </ab>
 <p> 
 रु इत्यविभक्तिको निर्देशः । मत्वन्तस्य वस्वन्तस्य च रुः स्यात् । अलोऽन्त्यस्य <div type="SKsandarbhaḥ">42</div> इति परिभाषया नकारस्य । इन्द्र मरुत्व इह पाहि सोमम् (इन्द्र॑ मरुत्व इ॒ह पा॑हि सोम॑म्) । हरिवो मेदिनं त्वा (हरिवो मे॒दिनं॑ त्वा) । छन्दसीरः <div type="SKsandarbhaḥ">3600</div> इति वत्वम् । 
 </p>
@@ -22514,7 +22518,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3648">
-<ab type="sūtra" n="3648"><label type="SK">3648</label><label type="AS">8-4-27</label> छन्दस्यृदवग्रहात् 	 </ab>
+<ab type="sūtra" n="3648"><label type="SK">3648</label><label type="AS">8-4-26</label> छन्दस्यृदवग्रहात् 	 </ab>
 <p> 
 ऋकारान्तादवग्रहात्परस्य नस्य णः । नृमणाः । पितृयाणम् ।
 </p>
@@ -22634,7 +22638,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3667">
-<ab type="sūtra" n="3667"><label type="SK">3667</label><label type="AS">1-3-38</label> देवब्रह्मणोरनुदात्तः </ab>
+<ab type="sūtra" n="3667"><label type="SK">3667</label><label type="AS">1-2-38</label> देवब्रह्मणोरनुदात्तः </ab>
 <p> 
 अनयोः स्वरितस्यानुदात्तः स्यात्सुब्रह्मण्यायाम् । देवाब्रह्माण आगच्छत ।
 </p>
@@ -23415,7 +23419,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3710">
-<ab type="sūtra" n="3710"><label type="SK">3710</label><label type="AS">6-1-63</label> चितः </ab>
+<ab type="sūtra" n="3710"><label type="SK">3710</label><label type="AS">6-1-163</label> चितः </ab>
 <p> 
 अन्त उदात्तः स्यात् ॥ <div type="vārtika">चितः सप्रकृतेर्बह्वकजर्थम् </div> (वा) ॥ चिति प्रत्यये सति प्रकृतिप्रत्ययसमुदायस्यान्त उदात्तो वाच्य इत्यर्थः । नभन्तामन्यके समे (नभ॑न्तामन्य॒के स॑मे) । यके सरस्वतीमनु (य॒के सर॑स्वती॒मनु॑) । तकत्सुते (त॒कत्सुते॑) ।
 </p>
@@ -23457,7 +23461,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3717">
-<ab type="sūtra" n="3717"><label type="SK">3717</label><label type="AS">6-1-176</label> ऊडिदम्पदाद्यप्पुम्रैद्युभ्यः </ab>
+<ab type="sūtra" n="3717"><label type="SK">3717</label><label type="AS">6-1-171</label> ऊडिदम्पदाद्यप्पुम्रैद्युभ्यः </ab>
 <p> 
 एभ्योऽसर्वनामस्थानविभक्तिरुदात्ता । प्रष्ठौहः । प्रष्ठौहा ॥ <div type="vārtika">ऊठ्युपधाग्रहणं कर्तव्यम् </div> (वा) ॥ इह मा भूत् । अक्षद्युवा (अक्ष॒द्युवा॑) । अक्षद्युवे । इदम् । एभिर्नृभिर्नृतमः (ए॒भिर्नृभि॒र्नृत॑मः) । अन्वादेशे न । अन्तोदात्तादित्यनुवृत्तेः । न च तत्रान्तोदात्तताप्यस्तीति वाच्यम् । इदमोन्वादेशेऽशनुदात्तस्तृतीयादौ <div type="SKsandarbhaḥ">350</div> इति सूत्रेणानुदात्तस्य अशो विधानात् । प्रते बभू (प्रते॑ ब॒भ्रू) । मभ्यां गा अनु (माभ्यां॒ गा अनु॑) । पद्दन्नोमास्हृन्निश् <div type="SKsandarbhaḥ">228</div> इति षट् पदादयः । पद्भ्यां भूमिः (प॒द्भ्यां भूमिः॑) । दद्भिर्न जिह्वा (द॒द्भिर्न जि॒ह्वा) । अहरहर्जायते मासिमासि (अह॑रहर्जायते मा॒सिमा॑सि) । मनश्चिन्महेहृद आ (मन॑श्चिन्मेहृ॒द आ) । अप् । अपां फेनेन (अ॒पां॒ फेने॑न) । पुम् । अभ्रातेव पुंसः (अ॒भ्रा॒तेव॑ पुं॒सः) । रै । राया वयम् (रा॒या व॒यम्) । रायोधर्ता विवस्वतः (रा॒योध॒र्ता वि॒वस्व॑तः) । दिव् । उपतत्वाग्ने दिवेदिवे (उप॑त्वाग्ने दिवेदि॑वे) ।
 </p>
@@ -23537,7 +23541,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3730">
-<ab type="sūtra" n="3730"><label type="SK">3730</label><label type="AS">6-1-183</label> तास्यनुदात्तेन्ङिददुपदेशाल्लसार्वधातुकमनुदात्तमह्न्विङोः </ab>
+<ab type="sūtra" n="3730"><label type="SK">3730</label><label type="AS">6-1-186</label> तास्यनुदात्तेन्ङिददुपदेशाल्लसार्वधातुकमनुदात्तमह्न्विङोः </ab>
 <p> 
 अस्मात्परं लसार्वधातुकमनुदात्तं स्यात् । तासि । कर्ता । कर्तारौ । कर्तारः । प्रत्ययस्वरापवादोऽयम् । अनुदात्तेत् । य आस्ते । ङितः । अभिचष्टे अनृतेभिः (अ॒भिच॑ष्टे॒ अनृ॑तेभिः) । अदुपदेशात् । पुरुभुजा चनस्यतम् (पुरु॑भुजा चन॒स्यत॑म्) । चित्स्वरोऽप्यनेन बाध्यते । वर्धमानं स्वे दमे (वर्ध॑मानं॒ स्वे दमे॑) । तास्यादिभ्यः किम् । अभि वृधे गृणीतः (अ॒भि वृ॒धे गृ॑णी॒तः) । उपदेशग्रहणान्नेह । हतो वत्राण्यार्या (ह॒तो वृत्राण्यार्या॑) । लग्रहणं किम् । कितीह पचमानाः । 
 सार्वधातुकं किम् । शिश्ये । अन्ह्विङोः किम् । ह्नुते । यदधीते ॥ <div type="vārtika">विन्दीन्धिखिदिभ्यो नेति वक्तव्यम् </div> (वा) ॥ इन्धे राजा (इ॒न्धे राजा॑) । एतच्च अनुदात्तस्य च यत्र-<div type="SKsandarbhaḥ">3651</div> इति सूत्रे भाष्ये स्थितम् ।
@@ -23672,7 +23676,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3752">
-<ab type="sūtra" n="3752"><label type="SK">3752</label><label type="AS">6-2-98</label> पत्यावैश्वर्ये </ab>
+<ab type="sūtra" n="3752"><label type="SK">3752</label><label type="AS">6-2-18</label> पत्यावैश्वर्ये </ab>
 <p> 
 दमूना गृहपतिर्दमे (दमू॑ना गृ॒हप॑ति॒र्दमे॑) ।
 </p>
@@ -23974,7 +23978,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3802">
-<ab type="sūtra" n="3802"><label type="SK">3802</label><label type="AS">6-2-67</label> पापं च शिल्पिनि </ab>
+<ab type="sūtra" n="3802"><label type="SK">3802</label><label type="AS">6-2-68</label> पापं च शिल्पिनि </ab>
 <p> 
 पापनापितः । पापाणके-<div type="SKsandarbhaḥ">733</div> इति प्रतिपदोक्तस्यैव ग्रहणात् । षष्ठीसमासे न ।
 </p>
@@ -24078,7 +24082,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3819">
-<ab type="sūtra" n="3819"><label type="SK">3819</label><label type="AS">6-2-86</label> घोषादिषु च </ab>
+<ab type="sūtra" n="3819"><label type="SK">3819</label><label type="AS">6-2-85</label> घोषादिषु च </ab>
 <p> 
 दाक्षिघोषः । दाक्षिकटः । दाक्षिह्रदः ।
 </p>
@@ -24103,7 +24107,7 @@
 </p>
 </div>
 <div type="sūtra_with_explanation" n="3823">
-<ab type="sūtra" n="3823"><label type="SK">3823</label><label type="AS">6-2-88</label> अमहन्नवन्नगरेऽनुदीचाम् </ab>
+<ab type="sūtra" n="3823"><label type="SK">3823</label><label type="AS">6-2-89</label> अमहन्नवन्नगरेऽनुदीचाम् </ab>
 <p> 
 नगरे परे महन्नवन्वर्जितं पूर्वमाद्युदात्तं स्यात् तच्चेदुदीचां न । ब्रह्मनगरम् । अमेति किम् । महानगरम् । नवनगरम् । अनुदीचां किम् । कार्तिकनगरम् ।
 </p>

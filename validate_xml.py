@@ -36,7 +36,7 @@ if __name__=="__main__":
 		#read_something('//vArtika[@saMSayaH="1"]')
 		read_something(sys.argv[1])
 	else:
-		#validate_without_dtd()
+		validate_without_dtd()
 		#validate_with_dtd()
-		validate_with_dtd1()
+		#validate_with_dtd1()
 	
