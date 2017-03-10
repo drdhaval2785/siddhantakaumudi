@@ -13,7 +13,7 @@ def issue7():
 	for line in input:
 		m = re.search(u'^([0-5][-][0-9]{,3}) ([^॥]+) ॥(.*)',line)
 		if m:
-			fout.write(u'(उ'+str(counter)+')'+m.group(2).strip()+'    10-'+m.group(1)+'\n'+m.group(3).strip()+'\n')
+			fout.write(u'(उ'+str(counter)+')'+m.group(2).strip()+'    9-'+m.group(1)+'\n'+m.group(3).strip()+'\n')
 			print m.group(1)
 			counter+=1 
 	fout.close()

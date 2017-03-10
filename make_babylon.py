@@ -10,7 +10,7 @@ import transcoder
 
 
 def add_tags1(x):
-	m = re.search(u'{#([0-9]+)#}(.*){@([0-9-]+)@}',x)
+	m = re.search(u'{#([फि।उ]*[0-9]+)#}(.*){@([0-9-]+)@}',x)
 	sutra = m.group(2).strip()
 	num = transcoder.transcoder_processString(m.group(3).strip(),'slp1','deva')
 	result = '\n\n'+num+'|'+sutra+'|'+sutra+' '+num+'|'+num+' '+sutra+'\n'+sutra+' '+num+' <BR> '
@@ -24,7 +24,7 @@ fin.close()
 output = ''
 fout = codecs.open('docs/siddhAnta-kaumudI.babylon','w','utf-8')
 for line in input:
-	if re.match(u'{#([0-9]+)#}(.*){@([0-9-]+)@}',line):
+	if re.match(u'{#([फि।उ]*[0-9]+)#}(.*){@([0-9-]+)@}',line):
 		output += add_tags1(line)
 	elif re.match(u'[X।॥]',line):
 		pass

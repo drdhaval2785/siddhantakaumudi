@@ -54,9 +54,11 @@ def step1(filein,fileout,logfile):
 			sksutranum = re.findall(u'^[(]([0-9]+)[)]',line)
 			line = re.sub(u'^[(]([0-9]+)[)]([^0-9]+)([\-0-9]+)','{#\g<1>#} \g<2>{@\g<3>@}',line) # (1)हलन्त्यम्    1-3-3 -> {#1#} हलन्त्यम्    {@1-3-3@}
 		elif re.match(u'[(]फि([0-9]+)[)]',line):
-			# Points 1,6a,6b
 			sksutranum = re.findall(u'^[(]फि([0-9]+)[)]',line)
 			line = re.sub(u'^[(]फि([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#फि\g<1>#} \g<2>{@\g<3>@}',line) # (फि1)फिषोऽन्त उदात्तः    10-1-1 -> {#फि1#} फिषोऽन्त उदात्तः {@10-1-1@}
+		elif re.match(u'[(]उ([0-9]+)[)]',line):
+			sksutranum = re.findall(u'^[(]फि([0-9]+)[)]',line)
+			line = re.sub(u'^[(]उ([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#उ\g<1>#} \g<2>{@\g<3>@}',line) # (उ1)कृवापाजिमिस्वदिसाध्यशूभ्य उण्    9-1-1 -> {#उ1#} कृवापाजिमिस्वदिसाध्यशूभ्य उण् {@9-1-1@}
 		else:
 			# Internal references of SK / verb numbers in tiGanta prakaraNa.
 			if re.search(u' [0-9]{1,4} ',line):

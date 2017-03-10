@@ -37,6 +37,7 @@ def add_tags1(x):
 	x = re.sub(u'(। इति .*प्रकरणम्‌ ।)',u'</p>\n</div>\n<trailer>\g<0></trailer>',x)
 	x = re.sub(u'{#([0-9]+)#}(.*){@([0-9-]+)@}',u'</p>\n</div>\n<div type="sūtra_with_explanation" n="\g<1>">\n<ab type="sūtra" n="\g<1>"><label type="SK">\g<1></label><label type="AS">\g<3></label>\g<2></ab>\n<p>',x)
 	x = re.sub(u'{#फि([0-9]+)#}(.*){@([0-9-]+)@}',u'</p>\n</div>\n<div type="sūtra_with_explanation" n="फि\g<1>">\n<ab type="sūtra" n="फि\g<1>"><label type="SK">फि\g<1></label><label type="AS">\g<3></label>\g<2></ab>\n<p>',x)
+	x = re.sub(u'{#उ([0-9]+)#}(.*){@([0-9-]+)@}',u'</p>\n</div>\n<div type="sūtra_with_explanation" n="उ\g<1>">\n<ab type="sūtra" n="उ\g<1>"><label type="SK">उ\g<1></label><label type="AS">\g<3></label>\g<2></ab>\n<p>',x)
 	#x = re.sub(u'</p>\n</div>\n<div type="sūtra_with_explanation" n="1">',u'<div type="sūtra_with_explanation" n="1">',x)
 	x = re.sub(u'\n(॥ अथ [^॥]+ ॥)',u'\n<div type="prakaraṇa">\n<head>\g<1></head>',x)
 	x = re.sub(u'</head>\W+</p>\W+</div>',u'</head>\n',x)
