@@ -75,6 +75,7 @@
 2. Added a small description of various features in HTML file. See https://github.com/drdhaval2785/siddhantakaumudi/issues/31. </change>
 <change who="Dr. Dhaval Patel" when="2017-03-09">1.5.2 - 1. Corrected some typographical errors. See https://github.com/drdhaval2785/siddhantakaumudi/issues/32 , https://github.com/drdhaval2785/siddhantakaumudi/issues/34 , https://github.com/drdhaval2785/siddhantakaumudi/issues/36 , https://github.com/drdhaval2785/siddhantakaumudi/issues/38 , https://github.com/drdhaval2785/siddhantakaumudi/issues/39 for details. 
 2. Corrected 26 entries having ?? in sk1.txt. See https://github.com/drdhaval2785/siddhantakaumudi/issues/29. </change>
+<change who="Dr. Dhaval Patel" when="2017-03-10">1.6.0 - 1. Added uṇādi from avg-sanskrit.org/texts/%E0%A4%89%E0%A4%A3%E0%A4%BE%E0%A4%A6%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%B0%E0%A4%A3%E0%A4%AE%E0%A5%8D/. See https://github.com/drdhaval2785/siddhantakaumudi/issues/7.  </change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
