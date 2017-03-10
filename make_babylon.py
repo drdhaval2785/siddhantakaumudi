@@ -30,5 +30,5 @@ for line in input:
 		pass
 	else:
 		output += line.strip()+' '
-fout.write(output+'\n')
+fout.write(output+'\n\n')
 fout.close()
