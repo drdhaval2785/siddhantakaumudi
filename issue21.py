@@ -43,6 +43,7 @@ if __name__=="__main__":
 	xml = etree.parse('sk.xml')
 	matches = xml.findall(u'.//div[@type="dhātvarthaḥ"]')
 
+	logfile = codecs.open('issues/issue21_pending.txt','w','utf-8')
 	counter = 0
 	matchcounter = 0
 	for member in matches:
@@ -65,5 +66,6 @@ if __name__=="__main__":
 				print vbc.madhav+':'+vbc.kshir+':'+vbc.pradipa+':'+vbc.uohyd+':'+vbc.jnu
 				matchcounter += 1				
 			else:
-				print 
+				logfile.write(verbname.decode('utf-8') + ' ' + verbmean.decode('utf-8') + '\n')
+	logfile.close()
 	print matchcounter, '/', counter
