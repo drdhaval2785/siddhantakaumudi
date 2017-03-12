@@ -13,15 +13,28 @@ class vd():
 		[self.verb,self.meaning,self.verbwithoutanubandha,self.gana,self.num,self.pada,self.it,self.pureverb,self.madhav,self.kshir,self.pradipa,self.uohyd,self.jnu] = colonsepline.split(':')
 		interim = self.verb.rstrip('!')
 		interim = interim.replace('i!r','ir')
+		interim = interim.replace('C','cC')
+		self.meaning = re.sub('aH$','AH',self.meaning)
 		self.verb1 = interim
-
+def num_gana(number):
+	upperbounds = [1011,1083,1107,1248,1282,1439,1464,1474,1535,1993]
+	ind = 1
+	for member in upperbounds:
+		if int(number) in xrange(member):
+			return ind
+			break
+		else:
+			ind += 1
+	
 if __name__=="__main__":
 	vbclass = {}
 	vbclass1 = {}
+	vbclass2 = {}
 	for member in verbdata:
 		temp1 = vd(member)
 		vbclass[transcoder.transcoder_processString(temp1.verb1+' '+temp1.meaning,'slp1','deva').encode('utf-8')] = temp1
 		vbclass1[transcoder.transcoder_processString(temp1.verb1,'slp1','deva').encode('utf-8')] = temp1
+		vbclass2[(transcoder.transcoder_processString(temp1.verb1,'slp1','deva')+' '+temp1.gana).encode('utf-8')] = temp1
 	vbnamelist = [transcoder.transcoder_processString(vbclass[member].verb1,'slp1','deva').encode('utf-8') for member in vbclass]
 	xml = etree.parse('sk.xml')
 	matches = xml.findall(u'.//div[@type="dhātvarthaḥ"]')
@@ -41,6 +54,10 @@ if __name__=="__main__":
 				matchcounter += 1
 			elif vbnamelist.count(verbname) == 1:
 				vbc = vbclass1[verbname]
+				print vbc.madhav+':'+vbc.kshir+':'+vbc.pradipa+':'+vbc.uohyd+':'+vbc.jnu
+				matchcounter += 1				
+			elif transcoder.transcoder_processString(verbname,'slp1','deva') + ' ' + str(num_gana(verbnum)) in vbclass2:
+				vbc = vbclass2[transcoder.transcoder_processString(verbname,'slp1','deva') + ' ' + str(num_gana(verbnum))]
 				print vbc.madhav+':'+vbc.kshir+':'+vbc.pradipa+':'+vbc.uohyd+':'+vbc.jnu
 				matchcounter += 1				
 			else:
