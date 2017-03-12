@@ -18,17 +18,18 @@ def add_tags1(x):
 	result = result.replace(u'\n\n०.०.०',u'०.०.०')
 	return result
 
-fin = codecs.open('sk1.txt','r','utf-8')
-input = fin.readlines()	
-fin.close()
-output = ''
-fout = codecs.open('docs/siddhAnta-kaumudI.babylon','w','utf-8')
-for line in input:
-	if re.match(u'{#([फि।उ]*[0-9]+)#}(.*){@([0-9-]+)@}',line):
-		output += add_tags1(line)
-	elif re.match(u'[X।॥]',line):
-		pass
-	else:
-		output += line.strip()+' '
-fout.write(output+'\n\n')
-fout.close()
+if __name__=="__main__":
+	fin = codecs.open('sk1.txt','r','utf-8')
+	input = fin.readlines()	
+	fin.close()
+	output = ''
+	fout = codecs.open('docs/siddhAnta-kaumudI.babylon','w','utf-8')
+	for line in input:
+		if re.match(u'{#([फि।उ]*[0-9]+)#}(.*){@([0-9-]+)@}',line):
+			output += add_tags1(line)
+		elif re.match(u'[X।॥]',line):
+			pass
+		else:
+			output += line.strip()+' '
+	fout.write(output+'\n\n')
+	fout.close()
