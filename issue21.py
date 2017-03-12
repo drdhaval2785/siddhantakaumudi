@@ -66,6 +66,6 @@ if __name__=="__main__":
 				print vbc.madhav+':'+vbc.kshir+':'+vbc.pradipa+':'+vbc.uohyd+':'+vbc.jnu
 				matchcounter += 1				
 			else:
-				logfile.write(verbname.decode('utf-8') + ' ' + verbmean.decode('utf-8') + '\n')
+				logfile.write(verbnum + ' ' + verbname.decode('utf-8') + ' ' + verbmean.decode('utf-8') + '\n')
 	logfile.close()
 	print matchcounter, '/', counter
