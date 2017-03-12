@@ -11,8 +11,8 @@ verbdata=["aMsa:samAGAte:aMsa:10:0460:u:sew:अं॑स॑:1420::1475:aMsa1_aMs
 class vd():
 	def __init__(self,colonsepline):
 		[self.verb,self.meaning,self.verbwithoutanubandha,self.gana,self.num,self.pada,self.it,self.pureverb,self.madhav,self.kshir,self.pradipa,self.uohyd,self.jnu] = colonsepline.split(':')
-		interim = self.verb.rstrip('!')
-		interim = interim.replace('i!r','ir')
+		interim = self.verb.replace('!','')
+		#interim = interim.replace('i!r','ir')
 		interim = interim.replace('C','cC')
 		self.verb1 = interim
 		self.meaning = re.sub('aH$','AH',self.meaning)

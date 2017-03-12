@@ -467,7 +467,7 @@
 234 एजृ कम्पने
 102,134:106,141:108,142:ej1_ejqz_BvAxiH+xIpwO,ej2_ejqz_BvAxiH+kampane:62,79
 235 टुओस्फूर्जा वज्रनिर्घोषे
-
+135:142:143:sPUrj1_tuozsPUrjAz_BvAxiH+vajranirGoRe:
 236 क्षि क्षये
 136:143:144:kRi1_kRi_BvAxiH+kRaye:80
 237 क्षीज अव्यक्तेशब्दे
@@ -745,7 +745,7 @@
 373 लेपृ गतौ
 238:251::lep1_lepqz_BvAxiH+gawO:
 374 त्रपूष् लज्जायाम्
-
+239:253:254:wrap1_wrapUzR_BvAxiH+lajjAyAm:
 375 कपि चलने
 240:254:255:kamp1_kapiz_BvAxiH+calane_kampane_ca:105
 376 रबि शब्दे
@@ -881,7 +881,7 @@
 441 भाम क्रोधे
 274:287:290:BAm1_BAmaz_BvAxiH+kroXe:
 442 क्षमूष् सहने
-
+275:288:291:kRam1_kRamUzR_BvAxiH+sahane:
 443 कमु कान्तौ
 276:289:292:kam1_kamuz_BvAxiH+kAnwO:164
 444 अण शब्दार्थाः
@@ -973,7 +973,7 @@
 487 स्फायी वृद्धौ
 298:313:315:sPAy1_sPAyIz_BvAxiH+vqxXO:113
 488 ओप्यायी वृद्धौ
-
+298:313:315:pyAy1_ozpyAyIz_BvAxiH+vqxXO:
 489 तायृ सन्तानपालनयोः
 299:314:316:wAy1_wAyqz_BvAxiH+saMwAnapAlanayoH:114
 490 शल चलनसंवरणयोः
@@ -1749,7 +1749,7 @@
 875 बुधिर् बोधने
 547:568:579:buX2_buXizr_BvAxiH+boXane:
 876 उबुन्दिर् निशामने
-
+548:569::bunx1_uzbunxizr_BvAxiH+niSAmane:
 877 वेणृ गतिज्ञानचिन्तानिशामनवादित्रग्रहणेषु
 549:570:581:veN1_veNqz_BvAxiH+gawijFAnacinwAniSAmanavAxiwragrahaNeRu:
 878 खनु अवदारणे
@@ -1839,7 +1839,7 @@
 920 पै शोषणे
 582:606:618:pE1_pE_BvAxiH+SoRaNe:
 921 ओवै शोषणे
-
+582:606:618:vE1_ozvE_BvAxiH+SoRaNe:
 922 ष्टै वेष्टने
 :::swE1_RtE_BvAxiH+veRtane:
 923 ष्णै वेष्टने
@@ -1947,7 +1947,7 @@
 974 रभ राभस्ये
 625:650:663:raB1_raBaz_BvAxiH+rABasye:346
 975 डुलभष् प्राप्तौ
-
+626:651:664:laB1_dulaBazR_BvAxiH+prApwO:
 976 स्वञ्च परिष्वङ्गे
 
 977 हद पुरीषोत्सर्गे
@@ -1989,7 +1989,7 @@
 995 शान तेजने
 645:670:683:SAn1_SAnaz_BvAxiH+wejane:
 996 डुपचष् पाके
-
+646:671:684:pac1_dupacazR_BvAxiH+pAke:
 997 षच समवाये
 90,647:94:96,685:sac1_Racaz_BvAxiH+secane_sevane_ca,sac2_Racaz_BvAxiH+samavAye:
 998 भज सेवायाम्
@@ -2017,7 +2017,7 @@
 1009 वद व्यक्तायां वाचि
 659:683:697::178
 1010 टुओश्वि गतिवृद्ध्योः
-
+660:684:698:Svi1_tuozSvi_BvAxiH+gawivqxXayoH:
 1011 अद भक्षणे
 661:685:699:ax1_axaz_axAxiH+BakRaNe:
 1012 हन हिंसागत्योः
@@ -2031,7 +2031,7 @@
 1016 लिह आस्वादने
 666:690:704:lih1_lihaz_axAxiH+AsvAxane:
 1017 चक्षिङ् व्यक्तायां वाचि
-
+667:691:705:cakR1_cakRizf_axAxiH+vyakwAyAM_vAci:
 1018 ईर गतौ कम्पने च
 668:692:706:Ir1_Iraz_axAxiH+gawO+kampane_ca:
 1019 ईड स्तुतौ
@@ -2175,9 +2175,9 @@
 1088 माङ् माने शब्दे च
 737:759:775::365
 1089 ओहाङ् गतौ
-
+738,739:760,761:776,777:hA1_ozhAf_juhowyAxiH+gawO:
 1090 ओहाक् त्यागे
-
+739:761::hA2_ozhAk_juhowyAxiH+wyAge:
 1091 डुदाञ् दाने
 740:762:778:xA3_duxAF_juhowyAxiH+xAne:363
 1092 डुधाञ् धारणपोषणयोः
@@ -2575,13 +2575,13 @@
 1289 जुषी प्रीतिसेवनयोः
 916:937:958:juR1_juRIz_wuxAxiH+prIwisevanayoH:
 1290 ओविजी भयचलनयोः
-
+1061:1079:1112:vij2_ozvijIz_ruXAxiH+BayacalanayoH:
 1291 ओलजी व्रीडायाम्
-
+918:939:960:laj2_ozlajIz_wuxAxiH+vrIdAyAm:
 1292 ओलस्जी व्रीडायाम्
-
+918:939:960:lasj1_ozlasjIz_wuxAxiH+vrIdAyAm:
 1293 ओव्रश्चू छेदने
-
+:::vraSc1_ozvraScUz_wuxAxiH+Cexane:
 1294 व्यच व्याजीकरणे
 920:941:962:vyac1_vyacaz_wuxAxiH+vyAjIkaraNe:
 1295 उछि उञ्छे
@@ -2887,9 +2887,9 @@
 1445 युजिर् योगे
 1045:1064:1097::
 1446 उच्छृदिर् दीप्तिदेवनयोः
-
+1046:1065:1098::
 1447 उतृदिर् हिंसानादरयोः
-
+1047:1066:1099:wqx1_uzwqxizr_ruXAxiH+hiMsAZnAxarayoH:
 1448 कृती वेष्टने
 1048:1067:1100:kqw2_kqwIz_ruXAxiH+veRtane:
 1449 ञि इन्धी
@@ -2917,7 +2917,7 @@
 1460 तञ्जू सङ्कोचने
 
 1461 ओविजी भयचलनयोः
-
+1061:1079:1112:vij2_ozvijIz_ruXAxiH+BayacalanayoH:
 1462 वृजी वर्जने
 1062:1080:1113:vqj2_vqjIz_ruXAxiH+varjane:420
 1463 पृची संपर्के
@@ -3045,7 +3045,7 @@
 1524 अश भोजने
 1123:1138:1176:aS2_aSaz_kryAxiH+Bojane:218
 1525 उध्रस उञ्छे
-
+1124:1139:1177:Xras1_uzXrasaz_kryAxiH+uFCe:
 1526 इष आभीक्ष्ण्ये
 1125:1140:1178:iR3_iRaz_kryAxiH+ABIkRNye:
 1527 विष विप्रयोगे
@@ -3081,7 +3081,7 @@
 1542 मिदि स्नेहने
 1139:1155:1193:minx1_mixiz_curAxiH+snehane:
 1543 ओलडि उत्क्षेपणे
-
+1140:1156:1194:laNd1_ozladiz_curAxiH+uwkRepaNe:
 1544 जल अपवारणे
 1141:1157:1195:jal2_jalaz_curAxiH+apavAraNe:
 1545 पीड अवगाहने
@@ -3481,7 +3481,7 @@
 1742 त्रस धारणे
 1310::1368:wras2_wrasaz_curAxiH+XAraNagrahaNavAraNeRu:250
 1743 उध्रस उञ्छे
-
+1124:1139:1177:Xras1_uzXrasaz_kryAxiH+uFCe:
 1744 मुच प्रमोचने मोदने च
 1312:1336:1370:muc2_mucaz_curAxiH+pramocane_moxane_ca:251
 1745 वस स्नेहच्छेदापहरणेषु
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1822 / 1992
+1844 / 1992
