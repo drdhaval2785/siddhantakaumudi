@@ -107,7 +107,11 @@ def step1(filein,fileout,logfile):
 		line = re.sub(u'॥([0-9])',u'॥ \g<1>',line)
 		# Step 8
 		line = re.sub('[\-]([0-9]{2,4}) ','-{*\g<1>*} ',line)
+		# Typical entry corrections.
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
+		line = line.replace(u'{*1509*} बन्ध बन्धने',u'{$ {!1509 बन्ध!} बन्धने$}') # Some sUtras and dhAtu numbers overlap 1509 rule occurs in the same line as the verb number. 
+		line = line.replace(u'{*15*}{*12*} मन्थ विलोडने',u'{$ {!1509 मन्थ!} विलोडने$}') # Some sUtras and dhAtu numbers overlap 12 rule occurs in the same line as the verb number. 
+		
 		# When there are two same numbers in a line, they are double qouted. Removing the outer one (wrong one).
 		line = re.sub(u'[{][@#$%*][{]','{',line)
 		line = re.sub(u'[}][@#$%*][}]','}',line)
