@@ -43,7 +43,7 @@
 22 खुर्द क्रीडायामेव
 18::19:Kurx1_Kurxaz_BvAxiH+krIdAyAmeva:
 23 गुर्द क्रीडायामेव
-
+18:19::gurx1_gurxaz_BvAxiH+krIdAyAmeva:
 24 गुद क्रीडायामेव
 18:19:19:gux1_guxaz_BvAxiH+krIdAyAmeva:
 25 षूद क्षरणे
@@ -183,7 +183,7 @@
 92 वृक आदाने
 71:70:72:vqk1_vqkaz_BvAxiH+AxAne:
 93 चक तृप्तौ प्रतीघाते च
-
+72,483:71,505:73,511:cak1_cakaz_BvAxiH+wqpwO_prawiGAwe_ca,cak2_cakaz_BvAxiH+wqpwO:46
 94 ककि गत्यर्थाः
 73:72:74:kafk1_kakiz_BvAxiH+gawyarWaH:
 95 वकि गत्यर्थाः
@@ -213,13 +213,13 @@
 107 रघि गत्यर्थाः
 73:72:74:rafG1_raGiz_BvAxiH+gawyarWaH:
 108 लघि गत्यर्थाः
-
+73:72,73:74,91:lafG1_laGiz_BvAxiH+gawyarWaH_BojananivqwwAvapi,lafG2_laGiz_BvAxiH+MISSING:328
 109 अघि गत्याक्षेपे
 74:74:75::
 110 वघि गत्याक्षेपे
 74:74:75::
 111 मघि गत्याक्षेपे
-
+74,87:74,75:75,76,93:mafG1_maGiz_BvAxiH+gawyAkRepe,mafG2_maGiz_BvAxiH+maNdane:
 112 राघृ सामर्थ्ये
 75:76:77:rAG1_rAGqz_BvAxiH+sAmarWye:
 113 लाघृ सामर्थ्ये
@@ -505,7 +505,7 @@
 253 व्रज गतौ
 144:152:153:vraj1_vrajaz_BvAxiH+gawO:81
 254 अट्ट अतिक्रमणहिंसयोः
-
+145:153:154:att1_attaz_BvAxiH+awikramahiMsayoH:
 255 वेष्ट वेष्टने
 146:154:155:veRt1_veRtaz_BvAxiH+veRtane:82
 256 चेष्ट चेष्टायाम्
@@ -517,7 +517,7 @@
 259 घट्ट चलने
 149:157:158:Gatt1_Gattaz_BvAxiH+saMGAwe:84
 260 स्फुट गतौ
-
+150::159:sPut1_sPutaz_BvAxiH+vikasane:85
 261 अठि गतौ
 :158:160:aNT1_aTiz_BvAxiH+gawO:
 262 वठि एकचर्यायाम्
@@ -535,13 +535,13 @@
 268 हिडि गत्यनादरयोः
 157:164:166:hiNd1_hidiz_BvAxiH+gawyanAxarayoH:86
 269 हुडि संघाते
-
+158,166:165,173:168,177:huNd1_hudiz_BvAxiH+saMGAwe:
 270 कुडि दाहे
 159,202:166,212:167,211:kuNd1_kudiz_BvAxiH+xAhe,kuNd2_kudiz_BvAxiH+vEkalye:
 271 वडि विभजने
-
+160:167:169:vaNd1_vadiz_BvAxiH+viBAjane:
 272 मडि च
-
+161,201:168,211:170,210:maNd1_madiz_BvAxiH+viBAjane,maNd2_madiz_BvAxiH+BURAyAm:96
 273 भडि परिभाषणे
 162:169:171:BaNd1_Badiz_BvAxiH+pariBARaNe:
 274 पिडि संघाते
@@ -551,7 +551,7 @@
 276 तुडि तोडने
 165:172:174:wuNd1_wudiz_BvAxiH+wodane:
 277 हुडि वरणे
-
+158,166:165,173:168,177:huNd1_hudiz_BvAxiH+saMGAwe:
 278 चडि कोपे
 167:175:178:caNd1_cadiz_BvAxiH+kope:88
 279 शडि रुजायां संघाते च
@@ -673,15 +673,15 @@
 337 लुठ उपघाते
 213,218,455:476:225,483:luT1_luTaz_BvAxiH+upaGAwe:
 338 उठ उपघाते
-
+213:226:::
 339 पिठ हिंसासंक्लेशनयोः
 214:227:227::
 340 शठ कैतवे च
-
+215:228:228::
 341 शुठ प्रतिघाते
-
+216::229:SuT1_SuTaz_BvAxiH+gawiprawiGAwe:
 342 कुठि च
-
+217:230:211,230:kuNT1_kuTiz_BvAxiH+prawiGAwe:100
 343 लुठि आलस्ये प्रतिघाते च
 206,220:233:231,233:luNT2_luTiz_BvAxiH+gawO:
 344 शुठि शोषणे
@@ -737,7 +737,7 @@
 369 गेपृ च
 237:250:249,251:gep1_gepqz_BvAxiH+kampane:
 370 ग्लेपृ च
-
+235,237:248,250:248,251:glep1_glepqz_BvAxiH+xEnye:
 371 मेपृ गतौ
 238:251::mep1_mepqz_BvAxiH+gawO:
 372 रेपृ गतौ
@@ -755,7 +755,7 @@
 378 अबि शब्दे
 241:255:256:amb1_abiz_BvAxiH+Sabxe:
 379 लबि अवस्रंसने च
-
+241,242:255,256:256,257:lamb1_labiz_BvAxiH+Sabxe:
 380 कबृ वर्णे
 243:257:258:kab1_kabqz_BvAxiH+varNe:
 381 क्लीबृ अधाष्टर्थे
@@ -789,7 +789,7 @@
 395 गुपू रक्षणे
 256:270:271::
 396 धूप संतापे
-
+257:271:272:XUp1_XUpaz_BvAxiH+saMwApe:
 397 जप व्यक्तायां वाचि
 258:272,273:273,274::306
 398 जल्प व्यक्तायां वाचि
@@ -855,15 +855,15 @@
 428 तुबि अर्दने
 266:::wumb1_wubiz_BvAxiH+arxane:
 429 चुबि वक्रसंयोगे
-
+267:280:283:cumb1_cubiz_BvAxiH+vakwrasaMyoge:304
 430 षृभु हिंसार्थौ
 268::284:sqB1_RqBuz_BvAxiH+hiMsAyAm:
 431 षृम्भु हिंसार्थौ
 :281::sqmB1_RqmBuz_BvAxiH+hiMsArWaH:
 432 शुभ भाषणे
-
+269,456:477:285,484:SuB2_SuBaz_BvAxiH+xIpwO:336
 433 शुम्भ भाषणे
-
+269:282:285::
 434 घिणि ग्रहणे
 270:283:286:GiNN1_GiNiz_BvAxiH+grahaNe:
 435 घुणि ग्रहणे
@@ -887,7 +887,7 @@
 444 अण शब्दार्थाः
 277:290:293:aN1_aNaz_BvAxiH+SabxArWaH:
 445 रण शब्दार्थाः
-
+277,489:290,513:293,518:raN1_raNaz_BvAxiH+SabxArWaH,raN2_raNaz_BvAxiH+gawO:
 446 वण शब्दार्थाः
 277:290:293:vaN1_vaNaz_BvAxiH+SabxArWaH:
 447 भण शब्दार्थाः
@@ -923,11 +923,11 @@
 462 वन शब्दे
 285,286:296,299:301,302:van1_vanaz_BvAxiH+Sabxe:
 463 वन संभक्तौ
-
+285,286:296,299:301,302:van1_vanaz_BvAxiH+Sabxe:
 464 षण संभक्तौ
 
 465 अम गत्यादिषु कनी दीप्तिकान्तीत्यत्र गतेः परयोः शब्दसंभक्त्योरादिशब्देन संग्रहः
-
+287:300:303:am1_amaz_BvAxiH+gawiSabxasamBakwiRu:
 466 द्रम गतौ
 288:301:304:xram1_xramaz_BvAxiH+gawO:
 467 हम्म गतौ
@@ -935,7 +935,7 @@
 468 मीमृ गतौ
 288:301,302:304::
 469 चमु अदने
-
+289:303:305::
 470 छमु अदने
 
 471 जमु अदने
@@ -991,7 +991,7 @@
 496 भल्ल परिभाषणहिंसादानेषु
 303:318:320:Ball1_Ballaz_BvAxiH+pariBARaNahiMsAxAneRu:
 497 कल शब्दसंख्यानयोः
-
+304:319:321::116
 498 कल्ल अव्यक्ते शब्दे
 305:320:322:kall1_kallaz_BvAxiH+avyakwe_Sabxe:
 499 तेवृ सेवने
@@ -1089,11 +1089,11 @@
 545 खल संचये
 333:349:350,351::
 546 गल अदने
-
+334:350:352,547:gal1_galaz_BvAxiH+axane:
 547 षल गतौ
 335:::sal1_Ralaz_BvAxiH+gawO:
 548 दल विशरणे
-
+336:352:354:xal1_xalaz_BvAxiH+viSaraNe:128
 549 श्वल आशुगमने
 337::355:Sval1_Svalaz_BvAxiH+ASugamane:
 550 श्वल्ल आशुगमने
@@ -1115,7 +1115,7 @@
 558 मभ्र गत्यर्थाः
 341:357:361:maBr1_maBraz_BvAxiH+gawyarWaH:
 559 चर गत्यर्थाः
-
+341:357:361:car1_caraz_BvAxiH+gawyarWaH:129
 560 ष्ठिवु निरसने
 342:358:362:RTiv1_RTivuz_BvAxiH+nirasane:130
 561 जि जये
@@ -1303,7 +1303,7 @@
 652 घुषि कान्तिकरणे
 397::421:GuMR1_GuRiz_BvAxiH+kAnwikaraNe:
 653 घुषिर् अविशब्दने
-
+398:415:422:GuR1_GuRizr_BvAxiH+aviSabxane:
 654 अक्षू व्याप्तौ
 399:416:423:akR1_akRUz_BvAxiH+vyApwO:
 655 तक्षू तनुकरणे
@@ -1425,7 +1425,7 @@
 713 रस शब्दे
 430:449:456:ras1_rasaz_BvAxiH+Sabxe:
 714 लस श्लेषणक्रीडनयोः
-
+431:450:457:las1_lasaz_BvAxiH+SleRaNakrIdanayoH:
 715 घसॢ अदने
 432:451:::
 716 जर्ज परिभाषणहिंसातर्जनेषु
@@ -1469,7 +1469,7 @@
 735 बृह वृद्धौ
 :465::bqh1_bqhaz_BvAxiH+vqxXO:
 736 बृहि वृद्धौ
-
+:465,466::bqMh1_bqhiz_BvAxiH+vqxXO:
 737 तुहिर् अर्दने
 :467:474:wuh1_wuhizr_BvAxiH+arxane:
 738 दुहिर् अर्दने
@@ -1491,11 +1491,11 @@
 746 घुट परिवर्तने
 454:474:482:Gut1_Gutaz_BvAxiH+parivarwane:
 747 रुट प्रतिघाते अरुटत्
-
+455:475:483:rut1_rutaz_BvAxiH+prawiGAwe:
 748 लुट प्रतिघाते अरुटत्
-
+196,455:205:205,483:lut1_lutaz_BvAxiH+vilodane,lut2_lutaz_BvAxiH+prawiGAwe:93
 749 लुठ प्रतिघाते अरुटत्
-
+213,218,455:476:225,483:luT1_luTaz_BvAxiH+upaGAwe:
 750 शुभ दीप्तौ
 269,456:477:285,484:SuB2_SuBaz_BvAxiH+xIpwO:336
 751 क्षुभ संचलने
@@ -1515,7 +1515,7 @@
 758 वृतु वर्तने
 462:483:489:vqw1_vqwuz_BvAxiH+varwane:330
 759 वृधु वृद्धौ
-
+:484:490:vqX1_vqXuz_BvAxiH+vqxXO:331
 760 शृधु शब्दकुत्सायाम्
 463,546:485:491:SqX1_SqXuz_BvAxiH+SabxakuwsAyAm,SqX2_SqXuz_BvAxiH+unxane:
 761 स्यन्दू प्रस्रवणे
@@ -1537,15 +1537,15 @@
 769 क्षजि गतिदानयोः
 472:495:500:kRaFj1_kRajiz_BvAxiH+gawixAnayoH:
 770 दक्ष गतिहिंसनयोः
-
+367,473:383,496:388,501:xakR1_xakRaz_BvAxiH+vqxXO_SIGrArWe_ca,xakR2_xakRaz_BvAxiH+gawihiMsanayoH:141
 771 क्रप कृपायां गतौ
 474:497:502:krap1_krapaz_BvAxiH+kqpAyAM_gawO_ca:
 772 कदि वैक्लव्ये
-
+57,475:56,498:58,503:kanx1_kaxiz_BvAxiH+AhvAne_roxane_ca,kanx2_kaxiz_BvAxiH+vEkalye:
 773 क्रदि वैक्लव्ये
-
+57,475:56,498:58,503:kranx1_kraxiz_BvAxiH+AhvAne_roxane_ca,kranx2_kraxiz_BvAxiH+vEkalye:39
 774 क्लदि वैक्लव्ये
-
+57,475:56,498:58:klanx1_klaxiz_BvAxiH+AhvAne_roxane_ca,klanx2_klaxiz_BvAxiH+vEkalye_vEkalye_iwyeke:13
 775 ञित्वरा संभ्रमे
 476:499:504:wvar1_FiwvarAz_BvAxiH+saMBrame:
 776 ज्वर रोगे
@@ -1587,13 +1587,13 @@
 794 कण गतौ
 277,489:290,513:293,518:kaN2_kaNaz_BvAxiH+gawO:
 795 रण गतौ
-
+277,489:290,513:293,518:raN1_raNaz_BvAxiH+SabxArWaH,raN2_raNaz_BvAxiH+gawO:
 796 चण दाने च
 490:514:519:caN1_caNaz_BvAxiH+xAne_ca:
 797 शण दाने च
 490::519:SaN1_SaNaz_BvAxiH+xAne_ca:
 798 श्रण दाने च
-
+490:514:519::
 799 श्रथ हिंसार्थाः
 491:515:520:SraW1_SraWaz_BvAxiH+hiMsArWaH:
 800 श्लथ हिंसार्थाः
@@ -1603,7 +1603,7 @@
 802 क्लथ हिंसार्थाः
 491:515:520:klaW1_klaWaz_BvAxiH+hiMsArWaH:
 803 वन हिंसायाम्
-
+285,286:296,299:301,302:van1_vanaz_BvAxiH+Sabxe:
 804 ज्वल दीप्तौ
 494,511:518,529:523,540:jval1_jvalaz_BvAxiH+xIpwO:308
 805 ह्वल चलने
@@ -1631,7 +1631,7 @@
 816 ध्वन शब्दे
 1399:1416:1455:Xvana1_Xvana_curAxiH+Sabxe:
 817 स्वन अवतेसने
-
+509:527:538:svan1_svanaz_BvAxiH+avawaMsane:
 818 (ग) शमो दर्शने
 
 819 यमो ऽपरिवेषणे (ग)
@@ -1677,7 +1677,7 @@
 839 पल गतौ
 517:536:548::
 840 बल प्राणने धान्यवारोधने च
-
+518:537:549::
 841 पुल महत्त्वे
 519:538:550::
 842 कुल संस्त्याने बन्धुषु च
@@ -1711,7 +1711,7 @@
 856 क्रुश आह्वाने रोदने च
 532:553:564:kruS1_kruSaz_BvAxiH+AhvAne_roxane_ca:294
 857 कुच संपर्चनकौटिल्यप्रतिष्टम्भविलेखनेषु
-
+533:109,556:111,565:kuc1_kucaz_BvAxiH+Sabxe_wAre,kuc2_kucaz_BvAxiH+samparcanakOtilyaprawiRtamBavileKaneRu:
 858 बुध अवगमने
 534:554:566:buX1_buXaz_BvAxiH+avagamane:170
 859 रुह बीजजन्मनि प्रादुर्भावे च
@@ -1917,7 +1917,7 @@
 959 रुङ् गतिरेषणयोः
 609:635:648:ru1_ruf_BvAxiH+gawireRaNayoH:
 960 धृङ् अवबन्धने
-
+610:636:649:Xq2_Xqf_BvAxiH+avaXvaMsane:
 961 मेङ् प्रणिदाने
 611:637:650:me1_mef_BvAxiH+praNixAne:
 962 देङ् रक्षणे
@@ -1965,9 +1965,9 @@
 983 सृप्लृ गतौ
 
 984 यम उपरमे
-
+634:659::yam2_yamaz_BvAxiH+uparame:
 985 तप संतापे
-
+635:660:673:wap1_wapaz_BvAxiH+sanwApe:182
 986 त्यज हानौ
 636:661:674::183
 987 षञ्ज सङ्गे
@@ -1983,7 +1983,7 @@
 992 मिह सेचने
 642:667:680:mih1_mihaz_BvAxiH+secane:
 993 कित निवासेरोगापनयने च
-
+643:668:681:kiw1_kiwaz_BvAxiH+nivAse_rogApanayane_ca:291
 994 दान खण्डने
 644:669:682:xAn1_xAnaz_BvAxiH+KaNdane:
 995 शान तेजने
@@ -2053,17 +2053,17 @@
 1027 शिजि अव्यक्ते शब्दे
 677:701:715::
 1028 पिजि वर्णे
-
+678::716::
 1029 वृजी वर्जने
 1062:1080:1113:vqj2_vqjIz_ruXAxiH+varjane:420
 1030 पृची संपर्चने
-
+680:702::pqc1_pqcIz_axAxiH+samparcane:
 1031 षूङ् प्राणिगर्भविमोचने
 681:703:720:sU1_RUf_axAxiH+prANigarBavimocane:
 1032 शीङ् स्वप्ने
 682:704:721:SI1_SIf_axAxiH+svapne:197
 1033 यु मिश्रणेऽमिश्रणे च
-
+683:705:722:yu1_yu_axAxiH+miSraNeZmiSraNe_ca:
 1034 रु शब्दे
 684:706:723:ru2_ru_axAxiH+Sabxe:
 1035 णु स्तुतौ
@@ -2129,7 +2129,7 @@
 1065 अस् भुवि
 
 1066 मृजू शुद्धौ
-
+716::755::
 1067 रुदिर् अश्रुविमोचने
 717:739:756:rux1_ruxizr_axAxiH+aSruvimocane:
 1068 ञिष्वप् शये
@@ -2137,7 +2137,7 @@
 1069 श्वस प्राणने
 719:741:758:Svas1_Svasaz_axAxiH+prANane:358
 1070 अन च
-
+720:742:759:an1_anaz_axAxiH+prANane:
 1071 जक्ष भक्षहसनयोः
 721:743:760:jakR1_jakRaz_axAxiH+BakRahasanayoH:
 1072 जागृ निद्राक्षते
@@ -2211,7 +2211,7 @@
 1106 गा स्तुतौ
 754:777:792:gA2_gA_juhowyAxiH+swuwO:
 1107 दिवु क्रिडाविजिगीषाव्यवहारद्युतिस्तुतिमोदमदस्वप्नकान्तिगतिषु
-
+755:778:793:xiv1_xivuz_xivAxiH+krIdAvijigIRAvyavahAraxyuwiswuwimoxamaxasvapnakAnwigawiRu:372
 1108 षिवु तन्तुसन्ताने
 756:779:794:siv1_Rivuz_xivAxiH+wanwusanwAne:374
 1109 स्रिवु गतिशोषणयोः
@@ -2251,7 +2251,7 @@
 1126 व्रीड चोदने लज्जायां च
 771:793:810::
 1127 इष गतौ
-
+772:794:811:iR1_iRaz_xivAxiH+gawO:
 1128 षह चक्यर्थे
 ::812:sah2_Rahaz_xivAxiH+cakyarWe:
 1129 षुह चक्यर्थे
@@ -2315,9 +2315,9 @@
 1158 चूरी दाहे
 799:820:838:cUr1_cUrIz_xivAxiH+xAhe:
 1159 तप ऐश्वर्ये वा
-
+800:821:839:wap2_wapaz_xivAxiH+ESvarye_vA:
 1160 वृतु वरणे
-
+801::840:vqw2_vqwuz_xivAxiH+varaNe:
 1161 क्लिश उपतापे
 802:823:841:kliS1_kliSaz_xivAxiH+upawApe:368
 1162 काशृ दीप्तौ
@@ -2419,7 +2419,7 @@
 1211 यसु प्रयत्ने
 851:870:890:yas1_yasuz_xivAxiH+prayawne:
 1212 जसु मोक्षणे
-
+852:871:891:jas1_jasuz_xivAxiH+mokRaNe:
 1213 तसु उपक्षये
 853:872:892::
 1214 दसु च
@@ -2431,7 +2431,7 @@
 1217 प्लुष दाहे
 762,856:784,876:801,896:pluR2_pluRaz_xivAxiH+xAhe,pluR3_pluRaz_xivAxiH+xAhe:
 1218 बिस प्रेरणे
-
+857:877:::
 1219 कुस संश्लेषणे
 858:878:898:kus1_kusaz_xivAxiH+saMSleRaNe:
 1220 बुस उत्सर्गे
@@ -2441,13 +2441,13 @@
 1222 मसी परिणामे
 861:881:901:mas1_masIz_xivAxiH+pariNAme:
 1223 लुठ विलोडने
-
+::::
 1224 उच समवाये
 863:883:903:uc1_ucaz_xivAxiH+samavAye:
 1225 भृशु अधः पतने
 864:884:904:BqS1_BqSuz_xivAxiH+aXaHpawane:
 1226 भ्रंशु अधः पतने
-
+:::BraMS2_BraMSuz_xivAxiH+aXaHpawane:
 1227 वृश वरणे
 865:885:906:vqS1_vqSaz_xivAxiH+AvaraNe:
 1228 कृश तनूकरणे
@@ -2457,13 +2457,13 @@
 1230 हृष तृष्टौ
 868:888:908:hqR1_hqRaz_xivAxiH+wuRtO:
 1231 रुष हिंसायाम्
-
+869:889:909:ruR2_ruRaz_xivAxiH+hiMsAyAm:
 1232 रिष हिंसायाम्
 ::::
 1233 डिप क्षेपे
 870:890:910::
 1234 कुप ग्रोदे
-
+871:892:911:kup1_kupaz_xivAxiH+kroXe:367
 1235 गुप व्याकुलत्वे
 872:893:912:gup3_gupaz_xivAxiH+vyAkulawve:
 1236 युप विमोहने
@@ -2473,7 +2473,7 @@
 1238 लुप विमोहने
 873:894:913::
 1239 लुभ गार्ध्ये
-
+874:895:914:luB1_luBaz_xivAxiH+gArXye:
 1240 क्षुभ संचलने
 457:478:485:kRuB1_kRuBaz_BvAxiH+saFcalane:347
 1241 णभ हिंसायाम्
@@ -2485,7 +2485,7 @@
 1244 ञिमिदा स्नेहने
 878:899:918::
 1245 ञिक्ष्विदा स्नेहनमोचनयोः
-
+879:900:919:kRvix2_FikRvixAz_xivAxiH+snahenamocanayoH:
 1246 ऋधु वृद्धौ
 880:901:920:qX1_qXuz_xivAxiH+vqxXO:
 1247 गृधु अभिकाङ्क्षायाम्
@@ -2545,11 +2545,11 @@
 1274 दघ घातने पालने च
 906:927:948:xaG1_xaGaz_svAxiH+GAwane_pAlane_ca:
 1275 चमु भक्षणे
-
+907:928:949:cam3_camuz_svAxiH+BakRaNe:
 1276 रि हिंसायाम्
-
+908::950:ri1_ri_svAxiH+hiMsAyAm:
 1277 क्षि हिंसायाम्
-
+908::950:kRi2_kRi_svAxiH+hiMsAyAm:
 1278 चिरि हिंसायाम्
 908:929:950:ciri1_ciri_svAxiH+hiMsAyAm:
 1279 जिरि हिंसायाम्
@@ -2667,7 +2667,7 @@
 1335 मुण प्रतिज्ञाने
 948:971:991:muN1_muNaz_wuxAxiH+prawijFAne:
 1336 कुण श्ब्दोपकरणयोः
-
+949:972:992:kuN1_kuNaz_wuxAxiH+SabxopakaraNayoH:
 1337 शुन गतौ
 950:973:993:Sun1_Sunaz_wuxAxiH+gawO:
 1338 द्रुण हिंसागतिकौटिल्येषु
@@ -2711,7 +2711,7 @@
 1357 चल विलसने
 967:989:1010:cal2_calaz_wuxAxiH+vilasane:
 1358 इल स्वप्नक्षेपणयोः
-
+968:991:1011:il1_ilaz_wuxAxiH+svapnakRepaNayoH:
 1359 विल संवरणे
 969:990:1016:vil1_vilaz_wuxAxiH+saMvaraNe:
 1360 बिल भेदने
@@ -2745,7 +2745,7 @@
 1374 स्फुट विकसने
 150::159:sPut1_sPutaz_BvAxiH+vikasane:85
 1375 मुट आक्षेपमर्दनयोः
-
+984:1005:1027:mut2_mutaz_wuxAxiH+AkRepamarxanayoH:
 1376 त्रुट छेदने
 985:1006:1028:wrut1_wrutaz_wuxAxiH+Cexane:
 1377 तुट कलहकर्मणि
@@ -2797,7 +2797,7 @@
 1400 गु पुरीषोत्सर्गे
 1002::1054:gu2_gu_wuxAxiH+purIRowsarge:
 1401 ध्रु गतिस्थैर्ययोः
-
+1003:1024:1055::
 1402 कुङ् शब्दे
 1004:1025:1056::
 1403 पृङ् व्यायामे
@@ -2815,7 +2815,7 @@
 1409 षू प्रेरणे
 1010:1031:1062:sU3_RU_wuxAxiH+preraNe:
 1410 कॄ विक्षेपे
-
+1011:1032:1063:kQ1_kQ_wuxAxiH+vikRepe:
 1411 गॄ निगरणे
 1012:1033:1064:gQ1_gQ_wuxAxiH+nigaraNe:
 1412 दृङ् आदरे
@@ -2855,7 +2855,7 @@
 1429 शद्लॄ शातने
 
 1430 मिल सङ्गमे
-
+974,1030::1017,1082:mil1_milaz_wuxAxiH+SleRaNe:406
 1431 मुच्लृ मोक्षणे
 
 1432 लुप्लॄ छेदने
@@ -2869,9 +2869,9 @@
 1436 कृती छेदने
 1036:1055:1088:kqw1_kqwIz_wuxAxiH+Cexane:417
 1437 खिद परिघाते
-
+1037:1056:1089::
 1438 पिश अवयवे
-
+1038:1057:1090:piS1_piSaz_wuxAxiH+avayave:
 1439 रुधिर् आवरणे
 1039:1058:1091:ruX1_ruXizr_ruXAxiH+AvaraNe:
 1440 भिदिर् विदारणे
@@ -2895,7 +2895,7 @@
 1449 ञि इन्धी
 
 1450 खिद दैन्ये खिन्ते
-
+1050:1069:1102:Kix3_Kixaz_ruXAxiH+xEnye:
 1451 विद विचारणे
 1051:1070:1103:vix4_vixaz_ruXAxiH+vicArane:
 1452 शिष्लृ विशेषणे
@@ -2921,7 +2921,7 @@
 1462 वृजी वर्जने
 1062:1080:1113:vqj2_vqjIz_ruXAxiH+varjane:420
 1463 पृची संपर्के
-
+1063:1081:1114:pqc2_pqcIz_ruXAxiH+samparke:
 1464 तनु विस्तारे
 1064:1082:1115:wan1_wanuz_wanAxiH+viswAre:213
 1465 षणु दाने
@@ -2937,7 +2937,7 @@
 1470 घृणु दीप्तौ
 1070:1087:1121:GqN2_GqNuz_wanAxiH+xIpwO:
 1471 वनु याचने
-
+1071:1088:1122:van3_vanuz_wanAxiH+yAcane:217
 1472 मनु अवबोधने
 1072:1089:1123::216
 1473 डुकृञ् करणे
@@ -2945,7 +2945,7 @@
 1474 डुक्रीञ्‌ द्रव्यविनिमये
 
 1475 प्रीञ् तर्पणे कान्तौ च
-
+1075:1092:1126:prI1_prIF_kryAxiH+warpaNe:426
 1476 श्रीञ् पाके
 1076:1093:1127::431
 1477 मीञ् हिंसायाम्
@@ -3029,7 +3029,7 @@
 1516 मृद क्षोदे
 1116:1132:1169:mqx1_mqxaz_kryAxiH+kRoxe:
 1517 मृड च
-
+1117:1133:1170:mqd2_mqdaz_kryAxiH+kRoxe:
 1518 गुध रोषे
 1118::1171:guX1_guXaz_kryAxiH+roRe:
 1519 कुष निष्कर्षे
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1740 / 1992
+1822 / 1992

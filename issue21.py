@@ -14,14 +14,18 @@ class vd():
 		interim = self.verb.rstrip('!')
 		interim = interim.replace('i!r','ir')
 		interim = interim.replace('C','cC')
-		self.meaning = re.sub('aH$','AH',self.meaning)
 		self.verb1 = interim
+		self.meaning = re.sub('aH$','AH',self.meaning)
+
 def num_gana(number):
 	upperbounds = [1011,1083,1107,1248,1282,1439,1464,1474,1535,1993]
 	ind = 1
 	for member in upperbounds:
 		if int(number) in xrange(member):
-			return ind
+			if int(ind) == 10:
+				return str(ind)
+			else:
+				return '0'+str(ind)
 			break
 		else:
 			ind += 1
