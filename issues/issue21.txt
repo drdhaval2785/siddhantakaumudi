@@ -197,11 +197,11 @@
 99 त्रौकृ गत्यर्थाः
 73:72:74:wrOk1_wrOkqz_BvAxiH+gawyarWaH:
 100 ष्वष्क गत्यर्थाः
-
+::::
 101 वष्क गत्यर्थाः
-
+73:72:74:vask1_vaskaz_BvAxiH+gawyarWaH:
 102 मष्क गत्यर्थाः
-
+73:72:74:mask1_maskaz_BvAxiH+gawyarWaH:
 103 टिकृ गत्यर्थाः
 73:72:74:tik1_tikqz_BvAxiH+gawyarWaH:
 104 टीकृ गत्यर्थाः
@@ -1040,8 +1040,8 @@
 316::333:kRmIl1_kRmIlaz_BvAxiH+nimeRaNe:
 521 पील प्रतिष्टम्भे
 317:332:334:pIl1_pIlaz_BvAxiH+prawiRtamBe:
-522 नील वर्णे
-
+522 णील वर्णे
+318:333:335:nIl1_NIlaz_BvAxiH+varNe:
 523 शील समाधौ
 316,319:334:336:SIl1_SIlaz_BvAxiH+samAXO:
 524 काल बन्धने 525 कूल आवरणे
@@ -1230,8 +1230,8 @@
 :::peR1_peRqz_BvAxiH+prayawne:
 616 जेषृ गतौ
 375:391:397:jeR1_jeRqz_BvAxiH+gawO:
-617 णेफृ गतौ
-
+617 णेषृ गतौ
+375:391:::
 618 एषृ गतौ
 374,375:391:397:eR1_eRqz_BvAxiH+prayawne:
 619 प्रेषृ गतौ
@@ -1298,8 +1298,8 @@
 395:412:418:gAh1_gAhUz_BvAxiH+vilodane:154
 650 गृहू गर्हणे
 396::419:gqh1_gqhUz_BvAxiH+grahaNe:155
-651 ग्लह् च
-
+651 ग्लह च
+:::glah1_glahaz_BvAxiH+grahaNe:
 652 घुषि कान्तिकरणे
 397::421:GuMR1_GuRiz_BvAxiH+kAnwikaraNe:
 653 घुषिर् अविशब्दने
@@ -1318,8 +1318,8 @@
 403:420:427:nikR1_NikRaz_BvAxiH+cumbane:
 660 तृक्ष गतौ
 404:421:428:wqkR1_wqkRaz_BvAxiH+gawO:
-661 स्तृक्ष गतौ
-
+661 ष्ट्रक्ष गतौ
+::::
 662 णक्ष गतौ
 404:421:428:nakR1_NakRaz_BvAxiH+gawO:
 663 वक्ष रोषे
@@ -1558,8 +1558,8 @@
 185,480:194,503:193,508::
 780 भट परिभाषणे
 189,480:198,503:198,508:Bat1_Bataz_BvAxiH+BqwO,Bat2_Bataz_BvAxiH+pariBARaNe:
-781 नट नृत्तौ
-
+781 णट नृत्तौ
+192,481:201,504:201,509:nat1_Nataz_BvAxiH+nqwwO,nat2_Nataz_BvAxiH+nqwwO_gawAviwyanye:
 782 ष्टक प्रतीघाते
 :506::swak1_Rtakaz_BvAxiH+prawIGAwe:
 783 चक तृप्तौ
@@ -1570,14 +1570,14 @@
 485:508:513:rag1_ragez_BvAxiH+SafkAyAm:
 786 लगे सङ्गे
 :509:514:lag1_lagez_BvAxiH+safge:
-787 ह्रगे संवहणे
+787 ह्रगे संवरणे
 486:510:515:hrag1_hragez_BvAxiH+saMvaraNe:
-788 ह्लगे संवहणे
+788 ह्लगे संवरणे
 :510:515:hlag1_hlagez_BvAxiH+saMvaraNe:
-789 षगे संवहणे
+789 षगे संवरणे
 486::515:sag1_Ragez_BvAxiH+saMvaraNe:
-790 ष्टगे संवहणे
-
+790 ष्ठगे संवरणे
+:510:::
 791 कगे नोच्यते
 487:511:516:kag1_kagez_BvAxiH+nocyawe:
 792 अक कुटिलायां गतौ
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1851 / 1992
+1860 / 1992

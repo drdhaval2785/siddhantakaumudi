@@ -11,11 +11,15 @@ verbdata=["aMsa:samAGAte:aMsa:10:0460:u:sew:अं॑स॑:1420::1475:aMsa1_aMs
 class vd():
 	def __init__(self,colonsepline):
 		[self.verb,self.meaning,self.verbwithoutanubandha,self.gana,self.num,self.pada,self.it,self.pureverb,self.madhav,self.kshir,self.pradipa,self.uohyd,self.jnu] = colonsepline.split(':')
-		interim = self.verb.replace('!','')
+		interim = listrep(self.verb,['zvaska!','vaska!','maska!',],['zvazka!','vazka!','mazka!'])
+		interim = interim.replace('!','')
 		interim = interim.replace('C','cC')
 		self.verb1 = interim
 		self.meaning = re.sub('aH$','AH',self.meaning)
-
+def listrep(line,inputlist,replist):
+	for x in xrange(len(inputlist)):
+		line = line.replace(inputlist[x],replist[x])
+	return line
 def num_gana(number):
 	upperbounds = [1011,1083,1107,1248,1282,1439,1464,1474,1535,1993]
 	ind = 1
