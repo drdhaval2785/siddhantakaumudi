@@ -11,7 +11,7 @@ verbdata=["aMsa:samAGAte:aMsa:10:0460:u:sew:अं॑स॑:1420::1475:aMsa1_aMs
 class vd():
 	def __init__(self,colonsepline):
 		[self.verb,self.meaning,self.verbwithoutanubandha,self.gana,self.num,self.pada,self.it,self.pureverb,self.madhav,self.kshir,self.pradipa,self.uohyd,self.jnu] = colonsepline.split(':')
-		interim = listrep(self.verb,['zvaska!','vaska!','maska!','zana!','zUrkzya!','x!','Gaslf!'],['zvazka!','vazka!','mazka!','zaRa!','sUrkzya!','lf!','Gasx!'])
+		interim = listrep(self.verb,['zvaska!','vaska!','maska!','zana!','zUrkzya!','x!','Gaslf!','zvaYja!','quvapa!','Yizvapa!','Yitfza!'],['zvazka!','vazka!','mazka!','zaRa!','sUrkzya!','lf!','Gasx!','svaYja!','quvap','Yizvap','YitfzA!'])
 		interim = interim.replace('!','')
 		interim = interim.replace('C','cC')
 		interim = re.sub('^cC','C',interim)
