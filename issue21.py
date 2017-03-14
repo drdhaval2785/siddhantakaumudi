@@ -11,11 +11,11 @@ verbdata=["aMsa:samAGAte:aMsa:10:0460:u:sew:अं॑स॑:1420::1475:aMsa1_aMs
 class vd():
 	def __init__(self,colonsepline):
 		[self.verb,self.meaning,self.verbwithoutanubandha,self.gana,self.num,self.pada,self.it,self.pureverb,self.madhav,self.kshir,self.pradipa,self.uohyd,self.jnu] = colonsepline.split(':')
-		interim = listrep(self.verb,['zanu!','zvaska!','vaska!','maska!','zana!','zUrkzya!','x!','Gaslf!','zvaYja!','quvapa!','Yizvapa!','Yitfza!','saNgrAma'],['zaRu!','zvazka!','vazka!','mazka!','zaRa!','sUrkzya!','lf!','Gasx!','svaYja!','quvap','Yizvap','YitfzA!','saMgrAma'])
+		interim = listrep(self.verb,['zanu!','zvaska!','vaska!','maska!','zana!','zUrkzya!','x!','Gaslf!','Sadlf!','luplf!','pizlf!','zvaYja!','quvapa!','Yizvapa!','Yitfza!','saNgrAma','Saklf!'],['zaRu!','zvazka!','vazka!','mazka!','zaRa!','sUrkzya!','lf!','Gasx!','Sadx!','lupx!','pizx!','svaYja!','quvap','Yizvap','YitfzA!','saMgrAma','Sakx!'])
+		interim = re.sub('gada$','gadI',interim)
 		interim = interim.replace('!','')
 		interim = interim.replace('C','cC')
 		interim = re.sub('^cC','C',interim)
-		interim = re.sub('gada$','gadI',interim)
 		self.verb1 = interim
 		self.meaning = re.sub('aH$','AH',self.meaning)
 def listrep(line,inputlist,replist):
