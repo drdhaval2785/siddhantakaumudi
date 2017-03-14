@@ -15,6 +15,7 @@ class vd():
 		interim = interim.replace('!','')
 		interim = interim.replace('C','cC')
 		interim = re.sub('^cC','C',interim)
+		interim = re.sub('gada$','gadI',interim)
 		self.verb1 = interim
 		self.meaning = re.sub('aH$','AH',self.meaning)
 def listrep(line,inputlist,replist):

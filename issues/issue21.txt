@@ -101,7 +101,7 @@
 51 बद स्थैर्ये
 40:40:42:bax1_baxaz_BvAxiH+sWErye:
 52 गद व्यक्तायां वाचि
-41:41:43::
+
 53 रद विलेखने
 42:42:44:rax1_raxaz_BvAxiH+vileKane:
 54 णद अव्यक्ते शब्दे
@@ -3098,10 +3098,10 @@
 1147:1163:1201:Urj1_Urjaz_curAxiH+balaprANanayoH:
 1551 पक्ष परिग्रहे
 1148:::pakR2_pakRaz_curAxiH+parigrahe:
-1552 वर्ण 1553 चूर्णप्रेरणे
+1552 वर्ण प्रेरणे
 1149:1164:1202:varN1_varNaz_curAxiH+preraNe:267
-1553 चूर्णप्रेरणे 1553 चूर्णप्रेरणे
-
+1553 चूर्ण प्रेरणे
+1149,1222:1165:1202,1274:cUrN1_cUrNaz_curAxiH+preraNe:241
 1554 प्रथ प्रख्याने
 468:490:496:praW1_praWaz_BvAxiH+praKyAne:
 1555 पृथ प्रक्षेपे
@@ -3308,8 +3308,8 @@
 1233:1248:1285:varX1_varXaz_curAxiH+CexanapUraNayoH:243
 1656 कुबि आच्छादने
 265::281,282:kumb1_kubiz_BvAxiH+AcCAxane:
-1657 लुबु अदर्शने
-
+1657 लुबि अदर्शने
+1235:1250:1287:lumb2_lubiz_curAxiH+AcCAxane:
 1658 तुबि अदर्शने
 1235:1250:1287:wumb2_wubiz_curAxiH+axarSane_arxane_iwyeke:
 1659 ह्लप व्यक्तायां वाचि
@@ -3378,8 +3378,8 @@
 1263:1282:1316:wUN1_wUNaz_curAxiH+pUraNe:
 1691 भ्रूण आशाविशङ्कयोः
 1264:1283:1317:BrUN1_BrUNaz_curAxiH+ASAviSafkayoH:
-1692 सठ श्लाघायाम्
-
+1692 शठ श्लाघायाम्
+1158,1265:1173,1284:1212,1318:SaT2_SaTaz_curAxiH+asaMskAragawyoH,SaT3_SaTaz_curAxiH+slAGAyAm:
 1693 यक्ष पूजायाम्
 1266:1285:1319:yakR1_yakRaz_curAxiH+pUjAyAm:
 1694 स्यम वितर्के
@@ -3408,8 +3408,8 @@
 1277:1295::vqR2_vqRaz_curAxiH+SakwibanXane:
 1706 मद तृप्तियोगे
 1278:1296:1329:max3_maxaz_curAxiH+wqpwiyoge:
-1707 दिव परिकूजने
-
+1707 दिवु परिकूजने
+1279:1297,1314:1330,1347:xiv2_xivuz_curAxiH+paripUjane,xiv3_xivuz_curAxiH+marxane:
 1708 गृ विज्ञाने
 596:621:634::
 1709 विद चेतनाख्याननिवासेषु
@@ -3450,7 +3450,7 @@
 1295:1315:1348:arj2_arjaz_curAxiH+prawiyawne_sampAxane_ca:246
 1727 घुषिर् विशब्दने
 1296::1349:GuR2_GuRizr_curAxiH+viSabxane:
-1728 क्रन्द सातत्ये
+1728 आङः क्रन्द सातत्ये
 
 1729 लस शिल्पयोगे
 1298::1351:las2_lasaz_curAxiH+Silpayoge:
@@ -3580,8 +3580,8 @@
 1322:::ruMs1_rusiz_curAxiH+BARArWaH:
 1792 नट भाषार्थाः
 1143,1322:1159:1197:nat3_nataz_curAxiH+avasyanxane:
-1793 पुटु भाषार्थाः
-
+1793 पुटि भाषार्थाः
+1322:::puNt1_putiz_curAxiH+BARArWaH:
 1794 जि भाषार्थाः
 ::::
 1795 चि भाषार्थाः
@@ -3658,7 +3658,7 @@
 1057:1075:1108:hiMs1_hisiz_ruXAxiH+hiMsAyAm:419
 1831 अर्ह पूजायाम्
 448:468:476:arh1_arhaz_BvAxiH+pUjAyAM_yogyawve_ca:
-1832 षद पद्यर्थे
+1832 आङः षद पद्यर्थे
 
 1833 शुन्ध शौचकर्मणि
 1348::1401:SunX2_SunXaz_curAxiH+SOcakarmaNi:
@@ -3717,7 +3717,7 @@
 1860 स्तन देवशब्दे
 1372:1389:1426:swana1_swana_curAxiH+xevaSabxe:
 1861 गदी देवशब्दे
-
+::::
 1862 पत गतौ वा
 1373:1390:1427::
 1863 पष अनुपसर्गात्
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1910 / 1992
+1915 / 1992
