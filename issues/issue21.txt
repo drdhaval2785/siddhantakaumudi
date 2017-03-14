@@ -1427,7 +1427,7 @@
 714 लस श्लेषणक्रीडनयोः
 431:450:457:las1_lasaz_BvAxiH+SleRaNakrIdanayoH:
 715 घसॢ अदने
-
+432:451:::
 716 जर्ज परिभाषणहिंसातर्जनेषु
 924:947::jarj2_jarjaz_wuxAxiH+pariBARANahiMsAwarjaneRu:
 717 चर्च परिभाषणहिंसातर्जनेषु
@@ -1777,7 +1777,7 @@
 889 चष भक्षणे
 560:581:592:caR1_caRaz_BvAxiH+BakRaNe:
 890 छष हिंसायाम्
-
+561:582:594:CaR1_CaRaz_BvAxiH+hiMsAyAm:
 891 झष आदानसंवरणयोः
 421,562:438,583:447,595:JaR2_JaRaz_BvAxiH+AxAnasaMvaraNayoH:
 892 भ्रक्ष अदने
@@ -2289,7 +2289,7 @@
 1145 शो तनूकरणे
 788:809:827:So1_So_xivAxiH+wanUkaraNe:
 1146 छो छदने
-
+789:810:828:Co1_Co_xivAxiH+Cexane:
 1147 षो ऽन्तकर्मणि
 790:811:829:so1_Ro_xivAxiH+anwakarmaNi:
 1148 दो अवखण्डने
@@ -2741,7 +2741,7 @@
 1372 डिप क्षेपे
 870:890:910::
 1373 छुर छेदने
-
+982:1003:1025:Cur1_Curaz_wuxAxiH+Cexane:
 1374 स्फुट विकसने
 150::159:sPut1_sPutaz_BvAxiH+vikasane:85
 1375 मुट आक्षेपमर्दनयोः
@@ -2753,7 +2753,7 @@
 1378 चुट छेदने
 1197:1252:1253:cut2_cutaz_curAxiH+Cexane:
 1379 छुट छेदने
-
+987:1008:1030::
 1380 जुड बन्धने
 941,988:1009:984,1031::
 1381 कड मदे
@@ -2833,7 +2833,7 @@
 1418 भुजो कौटिल्ये
 1019:1039:1071::
 1419 छुप स्पर्शे
-
+1020:1040:1072:Cup1_Cupaz_wuxAxiH+sparSe:
 1420 रुश हिंसायाम्
 1021:1041:1073:ruS1_ruSaz_wuxAxiH+hiMsAyAm:
 1421 रिश हिंसायाम्
@@ -2877,7 +2877,7 @@
 1440 भिदिर् विदारणे
 1040:1059:1092:Bix1_Bixizr_ruXAxiH+vixAraNe:
 1441 छिदिर् द्वैधिकरणे
-
+1041:1060:1093:Cix1_Cixizr_ruXAxiH+xvEXIkaraNe:
 1442 रिचिर् विरेचने
 1042:1061:1094:ric1_ricizr_ruXAxiH+virecane:
 1443 विचिर् पृथग्भावे
@@ -3151,7 +3151,7 @@
 1577 पिच्छ कुट्टने
 1167::1223:piC1_piCaz_curAxiH+kuttane:
 1578 छदि संवरणे
-
+1168::1224:Canx1_Caxiz_curAxiH+saMvaraNe:
 1579 श्रण दाने
 :1184:1225:SraN2_SraNaz_curAxiH+xAne:
 1580 तड आघाते
@@ -3175,7 +3175,7 @@
 1589 भडि कल्याणे
 1177:1193:1233:BaNd2_Badiz_curAxiH+kalyANe:
 1590 छर्द वमने
-
+1178:1194:1234:Carx1_Carxaz_curAxiH+vamane:
 1591 पुस्त आदरानादरयोः
 1179:1195:1235,1270:pusw1_puswaz_curAxiH+AxarAnAxarayoH:
 1592 बुस्त आदरानादरयोः
@@ -3239,7 +3239,7 @@
 1621 क्षपि क्षान्त्याम्
 1203:1219:1258:kRamp1_kRapiz_curAxiH+kRAnwyAm:
 1622 छजि कृच्छ्रजीवने
-
+:::CaFj1_Cajiz_curAxiH+kqcCrajIvane:
 1623 श्वर्त गत्याम्
 1205::1260:Svarw1_Svarwaz_curAxiH+gawyAm:
 1624 श्वभ्र च
@@ -3637,7 +3637,7 @@
 1820 तृप तृप्तौ
 931:::wqp3_wqpaz_wuxAxiH+wqpwO:
 1821 छृदी सन्दीपने
-
+1337::1390:Cqx2_CqxIz_curAxiH+saMxIpane:
 1822 दृभी भये
 1338:1356:1391:xqB2_xqBIz_curAxiH+granWe:
 1823 दृभ संदर्भे
@@ -3663,7 +3663,7 @@
 1833 शुन्ध शौचकर्मणि
 1348::1401:SunX2_SunXaz_curAxiH+SOcakarmaNi:
 1834 छद अपवारणे
-
+::::
 1835 जुष परितर्कणे
 1350:1365:1403:juR2_juRaz_curAxiH+pariwarkaNe:
 1836 धूञ् कम्पने
@@ -3845,7 +3845,7 @@
 1924 स्तोम श्लाघायाम्
 ::::
 1925 छिद्र कर्णभेदने
-
+1426::1482:Cixra1_Cixra_curAxiH+karNaBexane:
 1926 अन्ध दृष्ट्युपघाते
 1427::1483:anXa1_anXa_curAxiH+xqRtyupaGAwe:
 1927 दण्ड दण्डनिपातने
@@ -3865,9 +3865,9 @@
 1934 रूप रूपक्रियायाम्
 1434:1452:1490:rUpa1_rUpa_curAxiH+rUpakriyAyAm:286
 1935 छेद द्वैधीकरणे
-
+1435:1453:1491:Cexa1_Cexa_curAxiH+xvEXIkaraNe:
 1936 छद अपवारण इत्येके
-
+1349:1183:1402:Cax2_Caxaz_curAxiH+MISSING:
 1937 लाभ प्रेरणे
 1436:1455:1494:lABa1_lABa_curAxiH+preraNe:
 1938 व्रण गात्रविचूर्णने
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1875 / 1992
+1890 / 1992
