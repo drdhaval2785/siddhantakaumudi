@@ -2782,8 +2782,8 @@
 996,998::1046:sPud1_sPudaz_wuxAxiH+samvaraNe:
 1393 चुड संवरणे
 998:::cud1_cudaz_wuxAxiH+samvaraNe:
-1394 वृड संवरणे
-
+1394 व्रुड संवरणे
+998:1017::vrud1_vrudaz_wuxAxiH+samvaraNe:
 1395 क्रुड निमज्जन इत्येके
 ::1047:krud1_krudaz_wuxAxiH+samvaraNe:
 1396 भृड निमज्जन इत्येके
@@ -3982,4 +3982,4 @@
 
 1993 संवर संभरणे
 
-1922 / 1992
+1923 / 1992
