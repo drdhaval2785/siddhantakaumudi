@@ -106,7 +106,7 @@
 <xsl:template match="t:ab[@type='sūtra']">
   <span class="sutra" title="सूत्रम्‌"><xsl:apply-templates/></span>
   <xsl:choose>
-    <xsl:when test="t:label[@type='AS']='0-0-0' or t:label[@type='AS']='0-0-1'">
+    <xsl:when test="substring-before(t:label[@type='AS'],'-')=0 orsubstring-before(t:label[@type='AS'],'-')>8">
        (<xsl:value-of select="./t:label[@type='AS']"/>)
     </xsl:when>
     <xsl:otherwise>
