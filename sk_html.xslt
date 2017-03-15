@@ -44,6 +44,90 @@
 	<tr> <td>धातु:</td><td><span class="dhatu"> <span id="D1" class="dhatu" title="धातुः">1 भू</span> सत्तायाम्</span></td>
 	</tr>
       </table>
+      <h2 class="index">सूत्रसूचि: (संगणितः)</h2>
+      <h3 class="index">सूत्राणि वर्णक्रमेण</h3>
+      <xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
+        <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
+        <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+	<div class="indexelem">
+	   <span>
+		<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/text())"/></span>
+	        <xsl:text> </xsl:text>
+		<a href="#SK{./t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+		   <xsl:value-of select="./t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+		   </a>
+	</div>
+	</xsl:if>  
+      </xsl:for-each>
+   <h3 class="index">सूत्राणि पाठक्रमेण</h3>
+      <xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
+        <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>
+        <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+	<div class="indexelem">
+	  <span>
+	    (<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>)
+	    <xsl:text> </xsl:text>
+
+		<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/text())"/></span>
+	        <xsl:text> </xsl:text>
+		<a href="#SK{./t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+		   <xsl:value-of select="./t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+		   </a>
+	</div>
+	</xsl:if>  
+      </xsl:for-each>
+      <h3 class="index">उणादिसूत्राणि</h3>
+      <xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
+        <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
+        <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)='उ'">
+	<div class="indexelem">
+	   <span>
+		<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/text())"/></span>
+	        <xsl:text> </xsl:text>
+		<a href="#SK{./t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+		   <xsl:value-of select="./t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+		   </a>
+	</div>
+	</xsl:if>
+      </xsl:for-each>
+      <h3 class="index">फिट्सूत्राणि</h3>
+      <xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
+        <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
+        <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)='फ'">
+	<div class="indexelem">
+	   <span>
+		<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/text())"/></span>
+	        <xsl:text> </xsl:text>
+		<a href="#SK{./t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+		   <xsl:value-of select="./t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+		   </a>
+	</div>
+	</xsl:if>
+      </xsl:for-each>
+      <h2 class="index">वार्तिकसूचि: (संगणितः)</h2>
+      <xsl:for-each select="//t:div[@type='vārtika']">
+        <xsl:sort select="normalize-space(.)"/>
+	<div class="indexelem">
+	   <span><xsl:value-of select="normalize-space(.)"/></span>
+	   <xsl:text> </xsl:text>
+		<a href="#SK{ancestor::t:div[@type='sūtra_with_explanation']/t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+		   <xsl:value-of select="ancestor::t:div[@type='sūtra_with_explanation']/t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+		   </a>
+	</div>	 
+      </xsl:for-each>
+
+      <h2 class="index">परिभाषासूचि: (संगणितः)</h2>
+      <xsl:for-each select="//t:div[@type='paribhāṣā']">
+        <xsl:sort select="normalize-space(.)"/>
+	<div class="indexelem">
+	  <span><xsl:value-of select="normalize-space(.)"/></span>
+	  <xsl:text> </xsl:text>
+	  <a href="#SK{ancestor::t:div[@type='sūtra_with_explanation']/t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
+	    <xsl:value-of select="ancestor::t:div[@type='sūtra_with_explanation']/t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
+	  </a>
+	</div>
+      </xsl:for-each>
+      
       <h2 class="index">धातुसूचि: (संगणितः)</h2>
       <xsl:for-each select="//t:div[@type='dhātuḥ']">
         <xsl:sort select="substring-after(./text(),' ')"/>
