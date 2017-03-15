@@ -61,7 +61,7 @@
       </xsl:for-each>
    <h3 class="index">सूत्राणि पाठक्रमेण</h3>
       <xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
-        <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>
+        <xsl:sort select="number(translate(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),'-',''))"/>
         <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
 	<div class="indexelem">
 	  <span>
