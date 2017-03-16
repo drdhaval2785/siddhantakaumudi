@@ -153,7 +153,41 @@
 	    <span class="dhatu" title="धातुः"><xsl:value-of select="substring-after(./text(),' ')"/></span><xsl:text> </xsl:text>
 	    <xsl:for-each select="parent::t:div[@type='dhātvarthaḥ']/text()">
 	      <xsl:value-of select="normalize-space(.)"/><xsl:text> </xsl:text>
-	    </xsl:for-each>	
+	    </xsl:for-each>
+	    <!-- gaNa -->
+	    <xsl:choose>
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1011">
+		भ्वादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1083">
+		अदादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1107">
+		जुहोत्यादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1248">
+		दिवादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1282">
+		स्वादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1439">
+		तुदादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1464">
+		रुधादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1474">
+		तनादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1535">
+		क्र्यादिः
+	      </xsl:when> 
+	      <xsl:when test="number(substring-before(./text(),' '))&lt;1994">
+		चुरादिः
+	      </xsl:when> 
+	    </xsl:choose>
+	    <xsl:text> </xsl:text>
 	    <a href="#D{substring-before(./text(),' ')}">
 	    <xsl:value-of select="substring-before(./text(),' ')"/></a>
 	  </div>
