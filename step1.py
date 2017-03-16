@@ -111,6 +111,7 @@ def step1(filein,fileout,logfile):
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
 		line = line.replace(u'{*1509*} बन्ध बन्धने',u'{$ {!1509 बन्ध!} बन्धने$}') # Some sUtras and dhAtu numbers overlap 1509 rule occurs in the same line as the verb number. 
 		line = line.replace(u'{*15*}{*12*} मन्थ विलोडने',u'{$ {!1509 मन्थ!} विलोडने$}') # Some sUtras and dhAtu numbers overlap 12 rule occurs in the same line as the verb number. 
+		line = line.replace(u'{#99#} ई{@3@} चाऽक्रवर्मणस्य 6-1-{*130*}',u'{#99#} ई3 चाऽक्रवर्मणस्य {@6-1-130@}') # See https://github.com/drdhaval2785/siddhantakaumudi/issues/58.
 		
 		# When there are two same numbers in a line, they are double qouted. Removing the outer one (wrong one).
 		line = re.sub(u'[{][@#$%*][{]','{',line)
