@@ -52,7 +52,8 @@
 	<h3 class="index">सूत्राणि वर्णक्रमेण</h3>
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
           <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
-          <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+          <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ'
+			  and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
 	    <div class="indexelem">
 	      <span>
 		(<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>)
@@ -66,16 +67,31 @@
 	  </xsl:if>  
 	</xsl:for-each>
 	<h3 class="index">सूत्राणि पाठक्रमेण</h3>
+	<!-- Sutras sorted by AS order -->
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
-          <xsl:sort select="number(translate(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),'-',''))"/>
-          <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
-	    <div class="indexelem">
+	  <!-- AS Sutra number is given as X-Y-Z, where 0<X<9, 0<Y<5 and Z can be between 1 and 3 digits.
+	       To sort this properly, strip out X and Y, pad Z with zeros to three digits,
+	       then concatenate, and lexically sort -->
+          <xsl:sort select="concat(
+			    substring-before(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),'-'),
+			    substring-before(substring-after(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),'-'),'-'),
+			    substring(concat('00',
+			    substring-after(substring-after(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),'-'),'-')),
+			    string-length(substring-after(substring-after(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),
+			    '-'),'-'))))			    
+			    "/>
+	  <!-- Skip phiT and uNAdi -->
+          <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and
+			  substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+	    <div class="indexelem"> <!-- Assemble index element -->
 	      <span>
+		<!-- AS Sutra Number in parantheses -->
 		(<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>)
-		<xsl:text> </xsl:text>
-
+		<xsl:text> </xsl:text> <!-- spacer -->
+              <!-- sUtra text -->
 	      <xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/text())"/></span>
-	      <xsl:text> </xsl:text>
+	      <xsl:text> </xsl:text> <!-- spacer -->
+	      <!-- Link to sUtra (based on SK number)" -->
 	      <a href="#SK{./t:ab[@type='sūtra']/t:label[@type='SK']/text()}">
 		<xsl:value-of select="./t:ab[@type='sūtra']/t:label[@type='SK']/text()"/>
 	      </a>
@@ -242,7 +258,7 @@
   <xsl:template match="t:ab[@type='sūtra']">
     <span class="sutra" title="सूत्रम्‌"><xsl:apply-templates/></span>
     <xsl:choose>
-      <xsl:when test="substring-before(t:label[@type='AS'],'-')=0 orsubstring-before(t:label[@type='AS'],'-')>8">
+      <xsl:when test="substring-before(t:label[@type='AS'],'-')=0 or substring-before(t:label[@type='AS'],'-')>8">
 	(<xsl:value-of select="./t:label[@type='AS']"/>)
       </xsl:when>
       <xsl:otherwise>
