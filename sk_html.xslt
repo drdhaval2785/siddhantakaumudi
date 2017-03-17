@@ -53,7 +53,9 @@
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
           <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
           <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ'
-			  and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+			  and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ' and
+			  substring(./t:ab[@type='sūtra']/t:label[@type='AS']/text(),1,1)!='0'
+			  ">
 	    <div class="indexelem">
 	      <span>
 		(<xsl:value-of select="normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text())"/>)
@@ -80,9 +82,11 @@
 			    string-length(substring-after(substring-after(normalize-space(./t:ab[@type='sūtra']/t:label[@type='AS']/text()),
 			    '-'),'-'))))			    
 			    "/>
-	  <!-- Skip phiT and uNAdi -->
+	  <!-- Skip phiT uNAdi, and 0 numbered sUtras -->
           <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ' and
-			  substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ'">
+			  substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ' and
+			  substring(./t:ab[@type='sūtra']/t:label[@type='AS']/text(),1,1)!='0'
+			  ">
 	    <div class="indexelem"> <!-- Assemble index element -->
 	      <span>
 		<!-- AS Sutra Number in parantheses -->
