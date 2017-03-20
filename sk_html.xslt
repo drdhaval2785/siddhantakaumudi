@@ -51,6 +51,20 @@
 	<h2 class="index">सूत्रसूचि: (संगणितः)</h2>
 	<h3 class="index">सूत्राणि वर्णक्रमेण</h3>
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
+	  <!-- Workaround to handle the fact that RR and LL are encoded in the wrong place in Unicode, and hence sort has issues -->
+	  <!-- first, sort up to ऋ . The inversion of logic is necessary to handle the way xsl:sort works -->
+          <xsl:sort select="substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='अ' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='आ' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='इ' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='ई' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='उ' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='ऊ' and
+			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='ऋ' 
+			    "/> 
+ 	  <!-- Second, sort  ॠ  . The inversion of logic is necessary to handle the way xsl:sort works -->
+          <xsl:sort select="substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='ॠ'"/>
+	  <!-- Everything else now. It helps that ॠ is placed beyond the consonants -->
+	  <!-- We do not handle LL as there are no sutras starting with it -->
           <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
           <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ'
 			  and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ' and
@@ -168,7 +182,21 @@
 	
 	<h2 class="index">धातुसूचि: (संगणितः)</h2>
 	<xsl:for-each select="//t:div[@type='dhātuḥ']">
-          <xsl:sort select="substring-after(./text(),' ')"/>
+          <!-- Workaround to handle the fact that RR and LL are encoded in the wrong place in Unicode, and hence sort has issues -->
+	  <!-- first, sort up to ऋ . The inversion of logic is necessary to handle the way xsl:sort works -->
+          <xsl:sort select="substring(substring-after(./text(),' '),1,1)!='अ' and
+			    substring(substring-after(./text(),' '),1,1)!='आ' and
+			    substring(substring-after(./text(),' '),1,1)!='इ' and
+			    substring(substring-after(./text(),' '),1,1)!='ई' and
+			    substring(substring-after(./text(),' '),1,1)!='उ' and
+			    substring(substring-after(./text(),' '),1,1)!='ऊ' and
+			    substring(substring-after(./text(),' '),1,1)!='ऋ' 
+			    "/> 
+ 	  <!-- Second, sort  ॠ  . The inversion of logic is necessary to handle the way xsl:sort works -->
+          <xsl:sort select="substring(substring-after(./text(),' '),1,1)!='ॠ'"/>
+	  <!-- Everything else now. It helps that ॠ is placed beyond the consonants -->
+	  <!-- We do not handle LL as there are no sutras starting with it -->
+	  <xsl:sort select="substring-after(./text(),' ')"/>
 	  <div class="indexelem">
 	    <span class="dhatu" title="धातुः"><xsl:value-of select="substring-after(./text(),' ')"/></span><xsl:text> </xsl:text>
 	    <xsl:for-each select="parent::t:div[@type='dhātvarthaḥ']/text()">
