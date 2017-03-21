@@ -42,32 +42,97 @@
 </editorialDecl>
 </encodingDesc>
 <revisionDesc>
-<change who="Dr. Dhaval Patel" when="2016-12-27">1.0.0 - First version. 1. There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt. 
-2. Added missing 2139-2150 sUtras manually in sk0.txt. 
-3. sarvasamAsazeSaprakaraNam is missing.  - Added manually. 
-4. prakaraNa headings were missing. - Added manually. 
-5. तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually. 
-6. Last one portion of svaraprakaraNam page 775 is missing. Added manually. 
-8. Correct verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि 
-9. 1209 verb number are missing in original. Made adjustment in step1.py logic. 
-10. Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-06">1.1.0 - Added missing vArtika markup manually. See https://github.com/drdhaval2785/siddhantakaumudi/issues/4 </change>
-<change who="Karthikeyan Madathil" when="2017-02-12">1.1.1 - 1. Added sUtra detail on mouse hover. 
-2. External links open in new tab. 
-3. Latest HTML file is hosted on https://drdhaval2785.github.io/siddhantakaumudi for online viewing. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-12">1.2.0 - 1. Captured all verbs with meaning and number in XML itself. See https://github.com/drdhaval2785/siddhantakaumudi/issues/6 for details. 
-2. Added pratyAhAra section and maGgalAcaraNam. See issue 12. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-15">1.3.0 - 1. Added paribhāṣās. See issue 11. </change>
-<change who="Karthikeyan Madathil" when="2017-02-15">1.3.1 - 1. Added minimal stylesheet in HTML. See issue 25. </change>
-<change who="Karthikeyan Madathil" when="2017-02-19">1.3.2 - 1. Added dhātu meaning inside boldface. See issue 26. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-19">1.4.0 - 1. Added phiṭsūtras. See issue 8. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-23">1.4.1 - 1. Made spelling corrections in the sUtras. See issue #2 for details. </change>
-<change who="Dr. Dhaval Patel" when="2017-02-23">1.5.0 - 1. Added .babylon format for stardict dictionary usage. See https://github.com/sanskrit-coders/stardict-sanskrit/issues/15 for details. </change>
-<change who="Karthikeyan Madathil" when="2017-03-09">1.5.1 - 1. Added Siddhanta font as default web fonts. See https://github.com/drdhaval2785/siddhantakaumudi/issues/27. 
-2. Added a small description of various features in HTML file. See https://github.com/drdhaval2785/siddhantakaumudi/issues/31. </change>
-<change who="Dr. Dhaval Patel" when="2017-03-09">1.5.2 - 1. Corrected some typographical errors. See https://github.com/drdhaval2785/siddhantakaumudi/issues/32 , https://github.com/drdhaval2785/siddhantakaumudi/issues/34 , https://github.com/drdhaval2785/siddhantakaumudi/issues/36 , https://github.com/drdhaval2785/siddhantakaumudi/issues/38 , https://github.com/drdhaval2785/siddhantakaumudi/issues/39 for details. 
-2. Corrected 26 entries having ?? in sk1.txt. See https://github.com/drdhaval2785/siddhantakaumudi/issues/29. </change>
-<change who="Dr. Dhaval Patel" when="2017-03-10">1.6.0 - 1. Added uṇādi from avg-sanskrit.org/texts/%E0%A4%89%E0%A4%A3%E0%A4%BE%E0%A4%A6%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%B0%E0%A4%A3%E0%A4%AE%E0%A5%8D/. See https://github.com/drdhaval2785/siddhantakaumudi/issues/7.  </change>
+<change who="Dr. Dhaval Patel" when="2016-12-27">
+<version>1.0.0</version>
+<list rend="numbered">
+<item>There are misorders in this file. So created a list of misordered sUtra numbers by step0.py in step0_notes.txt and made corrections in sk0.txt.</item>
+<item>Added missing 2139-2150 sUtras manually in sk0.txt.</item>
+<item>sarvasamAsazeSaprakaraNam is missing.  - Added manually.</item>
+<item>prakaraNa headings were missing. - Added manually.</item>
+<item>तिङन्तप्रत्ययमालाप्रकरणम्‌ is missing. - Added manually.</item>
+<item>Last one portion of svaraprakaraNam page 775 is missing. Added manually.</item>
+<item>Corrected verb number errors. They should be in chronologic order. When not, it means it is wrong. e.g. 157 वगि -> 147 वगि.</item>
+<item>1209 verb number is missing in original. Made adjustment in step1.py logic.</item>
+<item>Some missing data for verbs was also incorporated. The diff file is logged in sk0_manual.txt file.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-06">
+<version>1.1.0</version>
+<list rend="numbered">
+<item>Added missing vArtika markup manually. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/4">issue 4</a></item>
+</list> 
+</change>
+<change who="Karthikeyan Madathil" when="2017-02-12">
+<version>1.1.1</version>
+<list rend="numbered">
+<item>Added sUtra detail on mouse hover.</item>
+<item>External links open in new tab.</item>
+<item>Latest HTML file is hosted <a href="https://drdhaval2785.github.io/siddhantakaumudi">here</a> for online viewing.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-12">
+<version>1.2.0</version>
+<list rend="numbered">
+<item>Captured all verbs with meaning and number in XML itself. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/6">issue 6</a> for details.</item>
+<item>Added pratyAhAra section and maGgalAcaraNam. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/12">issue 12</a>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-15">
+<version>1.3.0</version>
+<list rend="numbered">
+<item>Added paribhāṣās. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/11">issue 11</a>.</item>
+</list> 
+</change>
+<change who="Karthikeyan Madathil" when="2017-02-15">
+<version>1.3.1</version>
+<list rend="numbered">
+<item>Added minimal stylesheet in HTML. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/25">issue 25</a>.</item>
+</list> 
+</change>
+<change who="Karthikeyan Madathil" when="2017-02-19">
+<version>1.3.2</version>
+<list rend="numbered">
+<item>Added dhātu meaning inside boldface. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/26">issue 26</a>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-19">
+<version>1.4.0</version>
+<list rend="numbered">
+<item>Added phiṭsūtras. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/8">issue 8</a>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-23">
+<version>1.4.1</version>
+<list rend="numbered">
+<item>Made spelling corrections in the sUtras. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/2">issue 2</a> for details.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-02-23">
+<version>1.5.0</version>
+<list rend="numbered">
+<item>Added .babylon format for stardict dictionary usage. See <a href="https://github.com/sanskrit-coders/stardict-sanskrit/issues/15">stardict-sanskrit issue 15</a> for details.</item>
+</list> 
+</change>
+<change who="Karthikeyan Madathil" when="2017-03-09">
+<version>1.5.1</version>
+<list rend="numbered">
+<item>Added Siddhanta font as default web fonts. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/27">issue 27</a>.</item>
+<item>Added a small description of various features in HTML file. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/31">issue 31</a>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-03-09">
+<version>1.5.2</version>
+<list rend="numbered">
+<item>Corrected some typographical errors. See issues <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/32">32</a>, <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/34">34</a>, <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/36">36</a>, <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/38">38</a>, <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/39">39</a> for details.</item>
+<item>Corrected 26 entries having ?? in sk1.txt. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/29">29</a>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-03-10">
+<version>1.6.0</version>
+<list rend="numbered">
+<item>Added uṇādi from <a href="avg-sanskrit.org/texts/%E0%A4%89%E0%A4%A3%E0%A4%BE%E0%A4%A6%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%95%E0%A4%B0%E0%A4%A3%E0%A4%AE%E0%A5%8D/">AVG-sanskrit site</a>. See <a href="https://github.com/drdhaval2785/siddhantakaumudi/issues/7">7</a>.</item>
+</list> 
+</change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
