@@ -168,6 +168,25 @@
 <item>phiṭsūtras sorted alphabetically in HTML. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/40">issue 40</ref>.</item>
 </list> 
 </change>
+<change who="Karthikeyan Madathil" when="2017-03-20">
+<version>1.8.1</version>
+<list rend="numbered">
+<item>Made minor corrections after implementation of version 1.8.0. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/47">issue 47</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/51">issue 51</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/52">issue 52</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/53">issue 53</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/54">issue 54</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/56">issue 56</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/59">issue 59</ref>, <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/62">issue 62</ref> and <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/65">issue 65</ref>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-03-20">
+<version>1.8.2</version>
+<list rend="numbered">
+<item>Corrected typos based on submission by a scholar. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/50">issue 50</ref>.</item>
+</list> 
+</change>
+<change who="Dr. Dhaval Patel" when="2017-03-20">
+<version>1.8.3</version>
+<list rend="numbered">
+<item>Typo corrections in uṇādis. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/62">issue 62</ref>.</item>
+<item>Captured missing vārtikas. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/63">issue 63</ref>.</item>
+</list> 
+</change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
