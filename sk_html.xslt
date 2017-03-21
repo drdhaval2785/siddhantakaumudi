@@ -6,7 +6,8 @@
   <!-- Using the Muenchian method to group vArtikas and paribhaShAs (q.v)-->
   <xsl:key name="vartika" match="t:div[@type='vārtika']" use="normalize-space(.)" />
   <xsl:key name="paribhasha" match="t:div[@type='paribhāṣā']" use="normalize-space(.)" />
-  
+
+  <!-- start for the TEI tag -->
   <xsl:template match="//t:TEI">
     <html>
       <head>
@@ -38,8 +39,12 @@
       </head>
       <body>
 	<h1 class="center">सिद्धान्तकौमुदी</h1>
-	<xsl:apply-templates/>
+	<!-- Main body - this is where the action starts -->
+        <xsl:apply-templates/>
+	<!-- Main body is done, move on to appendices -->
+
 	<h2 class="index">प्रदर्शनदृष्टान्तसूचि:</h2>
+	<!-- Table showing how various categories are displayed -->
 	<table>
 	  <tr> <td>सूत्रम्‌</td><td><span class="sutra" title="सूत्रम्‌"><span id="SK1">1:</span> हलन्त्यम् </span> (1-3-3)</td></tr>
 	  <tr> <td>परिभाषा</td><td><span class="paribhasha">यत्रानेकविधमान्तर्यं तत्र स्थानत आन्तर्यं बलीयः</span></td></tr>
@@ -48,11 +53,16 @@
 	  <tr> <td>धातु:</td><td><span class="dhatu"> <span id="D1" class="dhatu" title="धातुः">1 भू</span> सत्तायाम्</span></td>
 	  </tr>
 	</table>
+
+	<!-- Appendixes of Sutras -->
 	<h2 class="index">सूत्रसूचि: (संगणितः)</h2>
+	<!-- Sutras in alphabetical order -->
 	<h3 class="index">सूत्राणि वर्णक्रमेण</h3>
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
 	  <!-- Workaround to handle the fact that RR and LL are encoded in the wrong place in Unicode, and hence sort has issues -->
-	  <!-- first, sort up to ऋ . The inversion of logic is necessary to handle the way xsl:sort works -->
+	  <!-- first, sort up to ऋ . The inversion of logic is necessary to handle the way xsl:sort works.
+	       XPATH1.0 does not support lexicographic comparisons of characters, else a simple &lt; would've worked
+	  -->
           <xsl:sort select="substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='अ' and
 			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='आ' and
 			    substring(normalize-space(./t:ab[@type='sūtra']/text()),1,1)!='इ' and
@@ -66,6 +76,7 @@
 	  <!-- Everything else now. It helps that ॠ is placed beyond the consonants -->
 	  <!-- We do not handle LL as there are no sutras starting with it -->
           <xsl:sort select="normalize-space(./t:ab[@type='sūtra']/text())"/>
+	  <!-- we skip phiT and uNAdi as well as zero numbered sUtras -->
           <xsl:if   test="substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='फ'
 			  and substring(./t:ab[@type='sūtra']/t:label[@type='SK']/text(),1,1)!='उ' and
 			  substring(./t:ab[@type='sūtra']/t:label[@type='AS']/text(),1,1)!='0'
@@ -82,8 +93,8 @@
 	    </div>
 	  </xsl:if>  
 	</xsl:for-each>
-	<h3 class="index">सूत्राणि पाठक्रमेण</h3>
 	<!-- Sutras sorted by AS order -->
+	<h3 class="index">सूत्राणि पाठक्रमेण</h3>
 	<xsl:for-each select="//t:div[@type='sūtra_with_explanation']">
 	  <!-- AS Sutra number is given as X-Y-Z, where 0<X<9, 0<Y<5 and Z can be between 1 and 3 digits.
 	       To sort this properly, strip out X and Y, pad Z with zeros to three digits,
@@ -179,8 +190,11 @@
 	    </xsl:for-each>	    
 	  </div>
 	</xsl:for-each>
-	
+
+	<!-- appendix of dhAtus -->
 	<h2 class="index">धातुसूचि: (संगणितः)</h2>
+	
+	<!-- substring-after(./text(),' ') strips the sutra number and spaces before the Sutra name -->
 	<xsl:for-each select="//t:div[@type='dhātuḥ']">
           <!-- Workaround to handle the fact that RR and LL are encoded in the wrong place in Unicode, and hence sort has issues -->
 	  <!-- first, sort up to ऋ . The inversion of logic is necessary to handle the way xsl:sort works -->
@@ -197,12 +211,16 @@
 	  <!-- Everything else now. It helps that ॠ is placed beyond the consonants -->
 	  <!-- We do not handle LL as there are no sutras starting with it -->
 	  <xsl:sort select="substring-after(./text(),' ')"/>
+	  <!-- Now that we're all sorted, we can start with introducing the dhAtus one by one -->
 	  <div class="indexelem">
+	    <!-- first, the dhatu itself -->
 	    <span class="dhatu" title="धातुः"><xsl:value-of select="substring-after(./text(),' ')"/></span><xsl:text> </xsl:text>
+	    <!-- Next, each of the meanings separated by space - there can be more than one! -->
 	    <xsl:for-each select="parent::t:div[@type='dhātvarthaḥ']/text()">
 	      <xsl:value-of select="normalize-space(.)"/><xsl:text> </xsl:text>
 	    </xsl:for-each>
 	    <!-- gaNa -->
+	    <!-- substring-before(./text(),' ') gets the sUtra number -->
 	    <xsl:choose>
 	      <xsl:when test="number(substring-before(./text(),' '))&lt;1011">
 		भ्वादिः
@@ -236,27 +254,33 @@
 	      </xsl:when> 
 	    </xsl:choose>
 	    <xsl:text> </xsl:text>
+	    <!-- Hyperlink to dhatu reference -->
+	    <!-- substring-before(./text(),' ') gets the sUtra number -->
 	    <a href="#D{substring-before(./text(),' ')}">
 	    <xsl:value-of select="substring-before(./text(),' ')"/></a>
 	  </div>
 	</xsl:for-each>
+	<!-- Document Information -->
 	<h2 class="index">Document Information</h2>
 	<h3>Licence</h3>
 	<xsl:apply-templates select="//t:teiHeader/t:fileDesc//t:availability"/>
 	<h3>Original Source</h3>
 	<xsl:apply-templates select="//t:teiHeader/t:fileDesc/t:notesStmt/t:note"/>
 	<h3>Revision History</h3>
+	<!-- We cast the revision history into a table based on the following format -->
 	<table border="1">
 	  <tr>
             <th>Date</th>
 	    <th>Person</th>
+            <th>Version</th>
 	    <th>Changelog</th>
 	  </tr>
 	  <xsl:for-each select="//t:teiHeader/t:revisionDesc/t:change">
             <tr>
               <td><xsl:value-of select="./@when"/></td>
               <td><xsl:value-of select="./@who"/></td>
-              <td><xsl:value-of select="."/></td>
+              <td><xsl:value-of select="./t:version"/></td>
+              <td><xsl:apply-templates select="."/></td>
             </tr>
 	  </xsl:for-each>
 	</table>
@@ -330,14 +354,29 @@
   </xsl:template>
 
   <xsl:template match="t:list">
-    <ul>
-      <xsl:apply-templates/>
-    </ul>
+    <xsl:choose>
+      <xsl:when test="@rend='numbered'">
+	<ol>
+	  <xsl:apply-templates/>
+	</ol>
+      </xsl:when>
+      <xsl:otherwise>
+	<ul>
+	  <xsl:apply-templates/>
+	</ul>
+      </xsl:otherwise>
+    </xsl:choose>
+
   </xsl:template>
+  
   <xsl:template match="t:item">
     <li>
       <xsl:apply-templates/>
     </li>
+  </xsl:template>
+  
+  <!-- suppress output for version tag, as it's taken care of separately -->
+  <xsl:template match="t:version">
   </xsl:template>
 
 
