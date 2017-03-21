@@ -190,7 +190,7 @@
 <change who="Karthikeyan Madathil" when="2017-03-20">
 <version>1.8.4</version>
 <list rend="numbered">
-<item>XSLT commented for better understanding.<ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/63">issue 63</ref>.</item>
+<item>XSLT commented for better understanding. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/63">issue 63</ref>.</item>
 </list> 
 </change>
 </revisionDesc>
