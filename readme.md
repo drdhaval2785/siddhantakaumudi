@@ -9,6 +9,38 @@
 7. txt file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk1.txt
 8. docx file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/Siddhanta%20Kaumudi%20-%20Text%20only.doc
 
+# Workflow
+
+0. [redo.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/redo.sh) - Runs all points mentioned below, except last.
+
+1. [sk0.txt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk0.txt) - basic file where all manual corrections are made. All others are derived from scripts.
+
+2. [step1.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/step1.py) - Converts sk0.txt into tagged file sk1.txt.
+
+3. [sk1.txt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk1.txt) - File derived from sk0.txt which has tagged all important features.
+
+4. [make_xml.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/make_xml.py) - Converts sk1.txt to sk.xml.
+
+5. [sk.xml](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk.xml) - XML file
+
+6. [validate_xml.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/validate_xml.py) - Checks whether the XML is well formed or not.
+
+7. [sk_html.xslt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk_html.xslt) - XSLT file which has information about how to generate sk.html file from sk.xml.
+
+8. [run_xslt.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/run_xslt.sh) - Converts sk.xml to sk.html file.
+
+9. [sk.html](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.html) - HTML file with appendices and changelog display etc.
+
+10. [run_epub.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/run_epub.sh) - Converts sk.html to sk.epub file.
+
+11. [sk.epub](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.epub) - EPUB file for viewing in epub readers.
+
+10. [make_babylon.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/make_babylon.py) - Makes .babylon file from sk1.txt.
+
+11. [siddhAnta-kaumudI.babylon](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/siddhAnta-kaumudI.babylon) - Babylon file which serves as input for generating stardict dictionary files.
+
+12. [siddhAnta-kaumudI.babylon_final, siddhAnta-kaumudI.dict.dz, siddhAnta-kaumudI.idx, siddhAnta-kaumudI.ifo, siddhAnta-kaumudI.syn](https://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-vyAkaraNa/siddhAnta-kaumudI) - Stardict files generated via processing in an [external repository](https://github.com/sanskrit-coders/stardict-sanskrit/).
+
 # Download and extraction
 
 1. Downloaded Siddhanta Kaumudi - Text only.zip file from mail of Dr. H. N. Bhat dated 26 Dec 2016.
@@ -94,34 +126,3 @@ Validate XML
 
 4c. Run `python make_babylon.py` to produce siddhAnta-kaumudI.babylon file.
 
-# Workflow
-
-0. [redo.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/redo.sh) - Runs all points mentioned below, except last.
-
-1. [sk0.txt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk0.txt) - basic file where all manual corrections are made. All others are derived from scripts.
-
-2. [step1.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/step1.py) - Converts sk0.txt into tagged file sk1.txt.
-
-3. [sk1.txt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk1.txt) - File derived from sk0.txt which has tagged all important features.
-
-4. [make_xml.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/make_xml.py) - Converts sk1.txt to sk.xml.
-
-5. [sk.xml](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk.xml) - XML file
-
-6. [validate_xml.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/validate_xml.py) - Checks whether the XML is well formed or not.
-
-7. [sk_html.xslt](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk_html.xslt) - XSLT file which has information about how to generate sk.html file from sk.xml.
-
-8. [run_xslt.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/run_xslt.sh) - Converts sk.xml to sk.html file.
-
-9. [sk.html](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.html) - HTML file with appendices and changelog display etc.
-
-10. [run_epub.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/run_epub.sh) - Converts sk.html to sk.epub file.
-
-11. [sk.epub](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/sk.epub) - EPUB file for viewing in epub readers.
-
-10. [make_babylon.py](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/make_babylon.py) - Makes .babylon file from sk1.txt.
-
-11. [siddhAnta-kaumudI.babylon](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/docs/siddhAnta-kaumudI.babylon) - Babylon file which serves as input for generating stardict dictionary files.
-
-12. [siddhAnta-kaumudI.babylon_final, siddhAnta-kaumudI.dict.dz, siddhAnta-kaumudI.idx, siddhAnta-kaumudI.ifo, siddhAnta-kaumudI.syn](https://github.com/sanskrit-coders/stardict-sanskrit/tree/master/sa-vyAkaraNa/siddhAnta-kaumudI) - Stardict files generated via processing in an [external repository](https://github.com/sanskrit-coders/stardict-sanskrit/).
