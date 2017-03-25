@@ -9,6 +9,13 @@
 7. txt file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/sk1.txt
 8. docx file - https://github.com/drdhaval2785/siddhantakaumudi/blob/master/Siddhanta%20Kaumudi%20-%20Text%20only.doc
 
+# LICENCE
+
+MIT licence for all items, except the following:
+1. Siddhanta Kaumudi - Text only.doc and .zip - No licence (Lent by Mr. H. N. Bhat on a mailing list).
+
+2. transcoder.py and data/transcoder - GPL licence (owner Jim Funderburk).
+
 # Workflow
 
 0. [redo.sh](https://github.com/drdhaval2785/siddhantakaumudi/blob/master/redo.sh) - Runs all points mentioned below, except last.

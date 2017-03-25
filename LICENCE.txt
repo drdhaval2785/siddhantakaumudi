@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+N.B. - ITEMS not covered under MIT licence are as follows:
+
+1. Siddhanta Kaumudi - Text only.doc and .zip - No licence (Lent by Mr. H. N. Bhat on a mailing list).
+
+2. transcoder.py and data/transcoder - GPL licence (owner Jim Funderburk).
