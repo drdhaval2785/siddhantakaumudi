@@ -193,6 +193,13 @@
 <item>XSLT commented for better understanding. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/63">issue 63</ref>.</item>
 </list> 
 </change>
+<change who="Dr. Dhaval Patel" when="2017-03-25">
+<version>1.9.0</version>
+<list rend="numbered">
+<item>Internal references made for uṇādis. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/67">issue 67</ref>.</item>
+<item>Updated readme and wrote extensive comments in code. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/55">issue 55</ref>.</item>
+</list> 
+</change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
