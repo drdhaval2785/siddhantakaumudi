@@ -7,90 +7,140 @@ python step1.py sk0.txt sk1.txt step1_notes.txt
 """
 import re,codecs,sys
 import transcoder
+
+# Tag the verb, meaning etc.
 def tryverb(filein,fileout,logfile):
+	# open input file, output file, log file.
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
 	fillog = codecs.open(logfile,'w','utf-8')
+	# Initialize lastverb with 0. Whenever a verb is encountered, it will be increased by 1.
 	lastverb = 0
+	# Initialize output list.
 	output = []
+	# For every line in file,
 	for line in fin:
+		# Line has pattern match e.g. `। 6 नाथृ 7 नाधृ याच्ञोपतापैस्वर्याशीःषु।`
 		if re.search(u'। [0-9]{1,4} [^ ]+ [^।]+।',line):
+			# Separate sentences in line.
 			lin = line.split(u'।')
+			# For each sentence,
 			for mem in lin:
+				# Find all matches e.g. ` 6 नाथृ 7 नाधृ याच्ञोपतापैस्वर्याशीःषु`
 				out = re.findall(u' [0-9]{1,4} [^ ]+ [^।]+',mem)
+				# For each such match,
 				for member in out:
+					# ['6','7']
 					verbnums = re.findall('[0-9]{1,4}',member)
+					# If the first member of list == last verb number + 1
+					# e.g. in present case, first member is 6 and last stored verb number is 5. So it matches.
 					if int(verbnums[0]) == lastverb + 1:
+						# Convert to `{$ {!6 नाथृ!} {!7 नाधृ!} याच्ञोपतापैस्वर्याशीःषु$}`
 						tagged = '{$' + re.sub(' ([0-9]{1,4} [^ ]+)',' {!\g<1>!}',member) + '$}'
+						# Write to log file
 						fillog.write(member+'\n')
 						fillog.write(tagged+'\n')
+						# Append to output list a tupple of (input,tagged)
 						output.append((member,tagged))
+						# After processing everything, change lastverb to the last treated verb e.g. 7 in our case.
 						lastverb = int(verbnums[-1])
+					# 1209 is missing in data. Jump it.
 					if int(verbnums[-1]) == 1208:
 						lastverb = int(verbnums[0]) + 1
+	# Return the output list
 	return output
-		
+
+# Run step1.py main algorithm.
 def step1(filein,fileout,logfile):
+	# Open input, output, log files.
 	fin = codecs.open(filein,'r','utf-8')
 	fout = codecs.open(fileout,'w','utf-8')
 	fillog = codecs.open(logfile,'w','utf-8')
+	# Write explanation item as first line in log file.
 	fillog.write('; denotes unchanged item. $ denotes verb number. * denotes internal SK reference\n')
+	# Initialize blank list of sUtra number of SK.
 	sksutranum = []
+	# verb number is initialized to 0.
 	rootnum = 0
+	# Write the lines containing verbs and their tagged version in verbdata.txt. This can be manually examined to identified if any verb is missing chronologically.
 	replistforverbs = tryverb(filein,fileout,'verbdata.txt')
+	# For each line in input file,
 	for line in fin:
-		# Point 5a
+		# Point 5.1 - Tag vArtikas.
 		if re.search(u'।([^।{]+)([(]वा[)][ ]*।)',line):
 			line = re.sub(u'।([^।{]+)([(]वा[)][ ]*।)',u'।{%\g<1>%} (वा)।',line)
-		# Point 5b. 
+		# Point 5.2 - Tag questionable vArtikas. 
 		# Questionable vArtikas. Noted in sk1_notes.txt. Needs manual examination. If they are not vArtikas, their preceding and ending | need correction in sk0.txt for future automated generation of sk1.txt from sk0.txt.
+		# N.B. - As on 25/03/2017, there is no questionable vArtikas pending. They have all been examined and corrected.
 		if re.search(u'।[^ ।{]([^।]+)।।',line):
 			line = re.sub(u'।([^ ।{][^।0-9]+)।।',u'।{%?\g<1>?%} ।।',line)
+		# Point 5.3 - As above.
 		if re.search(u'।[^ ।{]([^।{]+)।',line):
 			line = re.sub(u'।([^ ।{][^।0-9]+)।',u'।{%??\g<1>??%} ।',line)
 		# sUtra references
 		if re.match('[(]([0-9]+)[)]',line):
-			# Points 1,6a,6b
+			# Points 1, 6.1, 6.2
 			sksutranum = re.findall(u'^[(]([0-9]+)[)]',line)
-			line = re.sub(u'^[(]([0-9]+)[)]([^0-9]+)([\-0-9]+)','{#\g<1>#} \g<2>{@\g<3>@}',line) # (1)हलन्त्यम्    1-3-3 -> {#1#} हलन्त्यम्    {@1-3-3@}
+			# (1)हलन्त्यम्    1-3-3 -> {#1#} हलन्त्यम्    {@1-3-3@}
+			line = re.sub(u'^[(]([0-9]+)[)]([^0-9]+)([\-0-9]+)','{#\g<1>#} \g<2>{@\g<3>@}',line)
+		# Tag phiTsUtras. # (फि1)फिषोऽन्त उदात्तः    10-1-1 -> {#फि1#} फिषोऽन्त उदात्तः {@10-1-1@}
 		elif re.match(u'[(]फि([0-9]+)[)]',line):
 			sksutranum = re.findall(u'^[(]फि([0-9]+)[)]',line)
-			line = re.sub(u'^[(]फि([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#फि\g<1>#} \g<2>{@\g<3>@}',line) # (फि1)फिषोऽन्त उदात्तः    10-1-1 -> {#फि1#} फिषोऽन्त उदात्तः {@10-1-1@}
+			line = re.sub(u'^[(]फि([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#फि\g<1>#} \g<2>{@\g<3>@}',line) 
+		# Tag uNAdisUtras.  # (उ1)कृवापाजिमिस्वदिसाध्यशूभ्य उण्    9-1-1 -> {#उ1#} कृवापाजिमिस्वदिसाध्यशूभ्य उण् {@9-1-1@}
 		elif re.match(u'[(]उ([0-9]+)[)]',line):
 			sksutranum = re.findall(u'^[(]उ([0-9]+)[)]',line)
-			line = re.sub(u'^[(]उ([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#उ\g<1>#} \g<2>{@\g<3>@}',line) # (उ1)कृवापाजिमिस्वदिसाध्यशूभ्य उण्    9-1-1 -> {#उ1#} कृवापाजिमिस्वदिसाध्यशूभ्य उण् {@9-1-1@}
+			line = re.sub(u'^[(]उ([0-9]+)[)]([^0-9]+)([\-0-9]+)',u'{#उ\g<1>#} \g<2>{@\g<3>@}',line)
+		# Other than these
 		else:
 			# Internal references of SK / verb numbers in tiGanta prakaraNa.
 			if re.search(u' [0-9]{1,4} ',line):
+				# Find internal SK references or verb numbers.
 				m = re.findall(u' ([0-9]{1,4}) ',line)
-				#print '1', sksutranum[0], m
+				# For all matches,
 				for member in m:
+					# Verbs start from sUtra 2164 to 2829. And the verb number == previous verb number + 1
 					if int(sksutranum[0]) > 2164 and int(sksutranum[0]) < 2829 and int(member) == rootnum+1: # Ignore roots having the same markup as internal references to SK.
 						rootnum = int(member)
-						pass
-						#line = line.replace(member,'{$'+member+'$}')
+						# Write to log file.
 						fillog.write('$ '+sksutranum[0]+' '+member+'\n')
-						#print '$', sksutranum[0], member
 						if member == '1208': # 1209 is missing in original too.
 							rootnum = int(member)+1
+					# Usually verses / shlokavArtikas etc have numbers < 5, so separating them.
 					elif int(member) <= 5:
-						#print ';', sksutranum[0], member
+						# Write to log file.
 						fillog.write('; '+sksutranum[0]+' '+member+'\n')
+					# Else, they are SK internal references.
 					else:
-						#print '*', sksutranum[0], member
+						# Tag for SK internal references.
 						line = line.replace(member,'{*'+member+'*}')
+						# Write to log file.
 						fillog.write('* '+sksutranum[0]+' '+member+'\n')
+			# Catching the SK internal references which do not have space before or space after the number.
 			if re.search(u'[^*]([0-9]{2,4})([^0-9\-@#$%^*])',line):
 				m = re.findall(u'[^*]([0-9]{2,4})[^ 0-9\-@#$%^*]',line)
-				#print '3', sksutranum[0], m
+				# Tag them as internal SK references.
 				line = re.sub(u'([^*])([0-9]{2,4})([^ 0-9\-@#$%^*])',u'\g<1>{*\g<2>*}\g<3>',line)
+				# For each match,
 				for member in m:
-					#print '*', sksutranum[0], member
+					# Write to log file.
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
 			# Add internal references to phiTsUtras
 			if re.search(u' फि[0-9]{1,4} ',line):
+				# Find matches
 				m = re.findall(u' (फि[0-9]{1,4}) ',line)
+				# Tag them
 				line = re.sub(u' (फि[0-9]{1,4}) ',u' {*\g<1>*} ',line)
+				# Write to log file
+				for member in m:
+					fillog.write('* '+sksutranum[0]+' '+member+'\n')
+			# Add internal references to uNAdisUtras
+			if re.search(u' उ[0-9]{1,4} ',line):
+				# Find matches
+				m = re.findall(u' (उ[0-9]{1,4}) ',line)
+				# Tag them
+				line = re.sub(u' (उ[0-9]{1,4}) ',u' {*\g<1>*} ',line)
+				# Write to log file.
 				for member in m:
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
 		# Point 4

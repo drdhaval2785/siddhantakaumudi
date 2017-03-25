@@ -2,6 +2,7 @@
 """
 This file was used in initial phase of program to find out errors in numbering of sUtras.
 Now no longer used. Legacy purpose.
+So not documenting it in detail.
 
 Usage:
 python step0.py sk0.txt step0_notes.txt
