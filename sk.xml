@@ -201,6 +201,12 @@
 <item>Updated readme and wrote extensive comments in code. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/55">issue 55</ref>.</item>
 </list> 
 </change>
+<change who="Dr. Dhaval Patel" when="2017-03-25">
+<version>2.0.0</version>
+<list rend="numbered">
+<item>Changed licence to MIT. See <ref target="https://github.com/drdhaval2785/siddhantakaumudi/issues/22">issue 22</ref>.</item>
+</list> 
+</change>
 </revisionDesc>
 </teiHeader>
 <text xml:id="__SK" xml:lang="sa-Deva">
