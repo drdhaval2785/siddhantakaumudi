@@ -143,21 +143,22 @@ def step1(filein,fileout,logfile):
 				# Write to log file.
 				for member in m:
 					fillog.write('* '+sksutranum[0]+' '+member+'\n')
-		# Point 4
+		# Point 4. Convert accent marks [ (अ) -> ॒ and (स्व) -> ॑ ]
 		line = line.replace(u'(अ)',u'॒')
 		line = line.replace(u'(स्व)',u'॑')
-		# Point 2
+		# Point 2. Add space after the sentence हल्संज्ञायाम्।। -> हल्संज्ञायाम् ।।
 		line = re.sub(u'([^ ])।',u'\g<1> ।',line)
-		# Point 3
+		# Point 3. Change ।। -> ॥
 		line = line.replace(u'।।',u'॥')
 		line = line.replace(u'। ।',u'॥')
 		# Club multiple spaces into one.
 		line = re.sub('[ ]+',' ',line)
-		# Issue 29
+		# Issue 29.  Add space after double danda.
 		line = re.sub(u'॥([0-9])',u'॥ \g<1>',line)
-		# Step 8
+		# Catch some missed SK internal reference tags.
 		line = re.sub('[\-]([0-9]{2,4}) ','-{*\g<1>*} ',line)
-		# Typical entry corrections.
+		# Typical entry corrections. Mostly caused by a string in one SK reference forming part of another reference e.g. 12 and 1512.
+		# They need to be manually corrected.
 		line = line.replace(u'2528 इत्यादिसूत्रद्वये',u'{*2528*} इत्यादिसूत्रद्वये') # Only single item where there are two consecutive numbers.
 		line = line.replace(u'{*1509*} बन्ध बन्धने',u'{$ {!1509 बन्ध!} बन्धने$}') # Some sUtras and dhAtu numbers overlap 1509 rule occurs in the same line as the verb number. 
 		line = line.replace(u'{*15*}{*12*} मन्थ विलोडने',u'{$ {!1509 मन्थ!} विलोडने$}') # Some sUtras and dhAtu numbers overlap 12 rule occurs in the same line as the verb number. 
@@ -168,19 +169,27 @@ def step1(filein,fileout,logfile):
 		line = re.sub(u'[}][@#$%*][}]','}',line)
 		for (base,rep) in replistforverbs:
 			line = line.replace(base,rep)
+		# Making corrections for some convertor issues which corrupted the input file. See steps 7, 8, 9.
 		line = line.replace(u'ञ्ञ',u'ञ')
 		line = line.replace(u'ःढ़द्य;',u'ऊ')
 		line = line.replace(u'श्र्व',u'श्व')
 		# [^#@*$%\?\-][0-9]+[^0-9#@*$%\?\-] is the regex which gave missed out internal references. Smaller than 10 can be ignored (accent/verse number etc). Now completed incorporating it in code.
+		# Write the modified text to the output file.
 		fout.write(line)
+	# Close the files.
 	fin.close()
 	fout.close()
 	fillog.close()
 			
 if __name__=="__main__":
+	# sk0.txt
 	filein = sys.argv[1]
+	# sk1.txt
 	fileout = sys.argv[2]
+	# step1_notes.txt
 	logfile = sys.argv[3]
+	# Run step1 module.
 	step1(filein,fileout,logfile)
+
 	#tryverb(filein,fileout,'verbdata.txt')
 	
