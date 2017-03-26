@@ -18,10 +18,10 @@
 <publisher>Dr. Dhaval Patel</publisher>
 <authority>Dr. Dhaval Patel</authority>
 <availability status="free">
-<licence target="https://opensource.org/licences/MIT">MIT licence</licence>
+<licence target="https://opensource.org/licenses/MIT">MIT licence</licence>
 <p>Copyright Notice</p>
 <p>Copyright 2017 Dr. Dhaval Patel</p>
-<p>Distributed by <ref target="https://github.com/drdhaval2785/siddhantakaumudi/" type="url">Dr. Dhaval Patel</ref> under a <ref target="https://opensource.org/licences/MIT" type="licence">MIT License</ref>.</p>
+<p>Distributed by <ref target="https://github.com/drdhaval2785/siddhantakaumudi/" type="url">Dr. Dhaval Patel</ref> under <ref target="https://opensource.org/licenses/MIT" type="licence">MIT License</ref>.</p>
 <p>Dr. Dhaval Patel assumes no responsibility for unauthorised use that infringes the rights of any copyright owners, known or unknown.</p>
 </availability>
 <date>2017-02-06</date>
