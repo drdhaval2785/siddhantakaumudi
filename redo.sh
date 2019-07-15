@@ -7,7 +7,7 @@ python make_xml.py
 echo "Step 3 - Validating sk.xml file for errors."
 python validate_xml.py
 echo "Step 4 - Creating HTML from XML. (Requires libxslt)"
-./run_xslt.sh
+bash run_xslt.sh
 echo "Step5 - Creating babylon file from sk1.txt"
 python make_babylon.py
 #echo "Step 6 - Creating epub from HTML. (Requires Calibre)"
