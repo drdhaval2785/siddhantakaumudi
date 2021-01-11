@@ -401,7 +401,7 @@
       </xsl:when>
       <!-- For AshTAdhyAyI sutras,  add link to ashtadhyayi.com. target=_blank results in the link opening in a new tab -->
       <xsl:otherwise>
-        (<a href="http://ashtadhyayi.com/sutraani/{t:label[@type='AS']}" title="Ashtadhyayi.com {./t:label[@type='AS']}" target="_blank"><xsl:value-of select="./t:label[@type='AS']"/></a>)
+        (<a href="https://ashtadhyayi.com/sutraani/{t:label[@type='AS']}" title="Ashtadhyayi.com {./t:label[@type='AS']}" target="_blank"><xsl:value-of select="./t:label[@type='AS']"/></a>)
       </xsl:otherwise>
     </xsl:choose>   
   </xsl:template>
