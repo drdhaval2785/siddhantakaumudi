@@ -30,5 +30,5 @@
   - It had numbered केत, the variant reading after पाठान्तरम्, as a root.
 
 ## Open
-- 53 dhātu names differ from the Dhātupāṭha data only in spelling. Examples are 1605 बिल / विल and 633 बहि / वहि. They wait for the reading of the print.
+- 53 dhātu names differ from the Dhātupāṭha data only in spelling. Examples are 1605 बिल / विल and 1771 वल्ह / बल्ह. They wait for the reading of the print.
 - A second word-by-word pass against the 1910 print is still to be done, to catch faults that both typed texts share.
