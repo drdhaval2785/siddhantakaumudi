@@ -1,14 +1,14 @@
 #diff sk0.txt siddhantakaumudi.txt > sk0_notes.txt
 echo "Step 1 - Creating sk1.txt from sk0.txt by adding markup."
-python step1.py sk0.txt sk1.txt step1_notes.txt
+python3 step1.py sk0.txt sk1.txt step1_notes.txt
 #diff sk1.txt sk0.txt > sk1_notes.txt
 echo "Step 2 - Creating sk.xml from sk1.txt file."
-python make_xml.py
+python3 make_xml.py
 echo "Step 3 - Validating sk.xml file for errors."
-python validate_xml.py
+python3 validate_xml.py
 echo "Step 4 - Creating HTML from XML. (Requires libxslt)"
 bash run_xslt.sh
 echo "Step5 - Creating babylon file from sk1.txt"
-python make_babylon.py
+python3 make_babylon.py
 #echo "Step 6 - Creating epub from HTML. (Requires Calibre)"
 #./run_epub.sh
