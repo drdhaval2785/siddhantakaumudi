@@ -166,7 +166,7 @@ def transcoder_fsm(sfrom,to) :
   fdbg = codecs.open(filedbg,"w","utf-8")
   fdbg.write("fsmentries=...\n")
   keys = ['starts','in','regex','out','next','inraw','outraw']
-  for i in xrange(0,len(fsmentries)):
+  for i in range(0,len(fsmentries)):
    fsmentry = fsmentries[i]
    s = []
    #for key in fsmentry:
@@ -212,7 +212,7 @@ def to_unicode(x):
     z1 = z[:4]
     z2 = z[4:]
    zint= int(z1,16)
-   zuni = unichr(zint)
+   zuni = chr(zint)
    ans += zuni
    ans += z2
   return ans
@@ -337,7 +337,7 @@ def transcoder_processString_match(line,n,m,fsmentry) :
    for vowel_sign1 in vowel_signs_unicode:
     vowel_sign1_len = len(vowel_sign1)
     found=True
-    for j in xrange(0,vowel_sign1_len):
+    for j in range(0,vowel_sign1_len):
      k = n1 + j
      if k >= m:
       found=False

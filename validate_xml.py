@@ -41,39 +41,39 @@ def validate_without_dtd():
 	# If there is error, it will be printed. Correct and retry.
 	root = ET.fromstring(out.encode('utf-8'))
 	# If there is no error, this line will be printed on screen.
-	print "No error found in XML file."
+	print("No error found in XML file.")
 
 # Function to vailidate with DTD.
 def validate_with_dtd():
 	parser = ET.XMLParser(dtd_validation=True)
 	tree = ET.parse('sk.xml', parser)
 	# If no error found, print this line.
-	print "No error found in XML file."
+	print("No error found in XML file.")
 
 # Function to validate with DTD, with printing of errors also on screen.
 def validate_with_dtd1():
 	dtd = ET.DTD('sk.dtd')
 	tree = ET.parse('sk.xml')
-	print dtd.validate(tree)
+	print(dtd.validate(tree))
 	# Print errors on screen for debug.
-	print dtd.error_log.filter_from_errors()[0]
+	print(dtd.error_log.filter_from_errors()[0])
 
 # Function to read XPATH from given XML.
 def read_something(xpathexpression):
 	parser = ET.XMLParser(dtd_validation=True)
 	tree = ET.parse('sk.xml', parser)
 	for member in tree.xpath(xpathexpression):
-		children = member.getchildren()
+		children = list(member)
 		memtag = member.tag
 		memtext = member.text
 		if len(children) > 0:
 			for child in children:
 				# Print the data in given XPATH.
-				print child.tag, child.text.encode('utf-8')
-				print child.items()
+				print(child.tag, child.text)
+				print(child.items())
 		else:
-			print memtag, memtext.encode('utf-8')
-			print member.items()
+			print(memtag, memtext)
+			print(member.items())
 			
 if __name__=="__main__":
 	if len(sys.argv) > 1:
