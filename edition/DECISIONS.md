@@ -31,6 +31,18 @@
   - It had put व्रज and मार्ग under one number.
   - It had numbered केत, the variant reading after पाठान्तरम्, as a root.
 
+## Doubtful readings (settled 2026-11-20)
+- **D1. Emended** (each on grammatical ground):
+  - SK 2894 वोढुं वशक्यो → वोढुं शक्यो: stray व; वोढव्यः is glossed as वोढुं शक्यः (शकि लिङ् च, 3.3.172).
+  - SK 2687 उपसर्गेन समा → उपसर्गेण समा: णत्व by रषाभ्यां नो णः समानपदे (8.4.1).
+  - SK 2387 इतात्वं → इतीत्वं: घुमास्थागापाजहातिसां हलि (6.4.66) gives ईत्व, read इति + ईत्वं.
+  - SK 3650 अन्त्रेति → अन्यत्रेति: pratīka of the vārttika सतिशिष्टस्वरबलीयस्त्वमन्यत्र विकरणेभ्यः.
+  - SK 836 र्दानीयरूपा → दर्शनीयरूपा: the series दर्शनीयकल्पा … दर्शनीयपाशा; Tattvabodhinī दर्शनीयरूपेत्यादि.
+  - Dhātu 1739 अञ्चु निशेषणे → विशेषणे, and 1851 धृष प्रहसने → प्रसहने: Dhātupāṭha.
+- **D2. Kept**:
+  - SK 836 बहुथा: थाल् (प्रकारवचने थाल्, 5.3.23) applies to बहु under किंसर्वनामबहुभ्यः (5.3.2), after pumvadbhāva of बह्वी; the word is attested in the kośas (Apte: बहुथा "in several ways").
+  - Dhātu 1735 शृधु प्रहसने: the Dhātupāṭha data itself records both प्रहसने and प्रसहने.
+  - The other dhātu-name differences from the Dhātupāṭha data are notation (dental न् and छ् for the nasal and च्छ in the data) or recension variants that the Kaumudī's own forms support (बहि: बंहते; ऊर्ज, चूर्ण, घूर्ण, बिल, वल्ह, क्षिवु, रघि, दण्डनिपातने). They are the Kaumudī's readings and stay.
+
 ## Open
-- 53 dhātu names differ from the Dhātupāṭha data only in spelling. Examples are 1605 बिल / विल and 1771 वल्ह / बल्ह. They wait for the reading of the print.
 - A second word-by-word pass against the 1910 print is still to be done, to catch faults that both typed texts share.
