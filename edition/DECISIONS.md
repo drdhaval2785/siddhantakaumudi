@@ -44,5 +44,11 @@
   - Dhātu 1735 शृधु प्रहसने: the Dhātupāṭha data itself records both प्रहसने and प्रसहने.
   - The other dhātu-name differences from the Dhātupāṭha data are notation (dental न् and छ् for the nasal and च्छ in the data) or recension variants that the Kaumudī's own forms support (बहि: बंहते; ऊर्ज, चूर्ण, घूर्ण, बिल, वल्ह, क्षिवु, रघि, दण्डनिपातने). They are the Kaumudī's readings and stay.
 
+## Upstream issues (drdhaval2785/siddhantakaumudi, read 2026-11-20)
+- **I1.** #74 SK 325 दादेर्धातोर्धः → दादेर्धातोर्घः (8.2.32 substitutes घ). Fixed.
+- **I2.** #73 SK 311 यस्येति च number 6-4-184 → 6-4-148: already right in this text. #69 (ॠदुपध), #58 (ई३) and #71 were fixed upstream before the fork.
+- **I3.** #64 special markup. The three passages had their numbers turned into SK links. Now the Liṅgānuśāsana citations read (लि १२१) and (लि १७) (त्वान्तं क्लीबम् is Liṅgānuśāsana 121 त्वष्यञौ तद्धितौ, not 120 निष्ठा च), the Māheśvarasūtra citation reads (मा.सू.-१४), and sk.json gives them as `cite` segments; the verse vārttika under SK 1088 carries `sloka: true`.
+- **I4.** Not text issues, left as they are: #3 (n-gram check; superseded by the print checks here), #21 (links to dhātuvṛtti sites), #24 (DTD), #25 (CSS), #66 (Stardict placeholder).
+
 ## Open
 - A second word-by-word pass against the 1910 print is still to be done, to catch faults that both typed texts share.

@@ -1,5 +1,4 @@
 ; denotes unchanged item. $ denotes verb number. * denotes internal SK reference
-* 1 14
 * 14 13
 * 14 324
 * 43 45
@@ -455,8 +454,6 @@
 * 1701 1683
 * 1742 1761
 * 1754 1683
-* 1781 120
-* 1781 17
 * 1817 1671
 * 1817 1154
 * 1896 435
