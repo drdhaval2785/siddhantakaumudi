@@ -6,7 +6,8 @@ Usage: python3 edition/build.py      (run from the repository root, after redo.s
 One record per Kaumudi serial (SK number), in text order, with the Ashtadhyayi
 sutra number, the prakarana, the sutra text, the commentary as plain text, and
 the commentary as typed segments (text, varttika, paribhasha, dhatu, SK
-cross-reference). Text that opens a prakarana before its first sutra (e.g. the
+cross-reference, citation of the Liṅgānuśāsana or Māheśvarasūtras;
+vārttikas in verse carry sloka=true). Text that opens a prakarana before its first sutra (e.g. the
 first dhatu of a gana) is kept as the next record's preamble. Also writes edition/index-by-sutra.json (sutra -> SK serials).
 """
 import json, re, sys
@@ -90,6 +91,33 @@ def clean(segs):
     return out
 
 
+DEV = str.maketrans('०१२३४५६७८९', '0123456789')
+CITE = re.compile(r'\((लि|मा\.सू\.-) ?([०-९]+)\)')
+CITE_KIND = {'लि': 'linganushasana', 'मा.सू.-': 'maheshvarasutra'}
+
+
+def mark(segs):
+    """Type the citations of other texts, and mark śloka-vārttikas (upstream issue #64)."""
+    out = []
+    for s in segs:
+        if s['t'] != 'text':
+            out.append(s)
+            continue
+        v, i = s['v'], 0
+        for m in CITE.finditer(v):
+            if m.start() > i:
+                out.append({'t': 'text', 'v': v[i:m.start()]})
+            out.append({'t': 'cite', 'text': CITE_KIND[m.group(1)], 'n': int(m.group(2).translate(DEV)), 'v': m.group(0)})
+            i = m.end()
+        if i < len(v):
+            out.append({'t': 'text', 'v': v[i:]})
+    for k, s in enumerate(out):
+        if s['t'] == 'varttika' and k + 1 < len(out) and out[k + 1]['t'] == 'text' \
+                and re.match(r'\s*\(वा\)\s*[।॥]*\s*\(श्लो\.वा\.\)', out[k + 1]['v']):
+            s['sloka'] = True
+    return out
+
+
 def main():
     root = ET.parse('sk.xml').getroot()
     body = root.find(f'.//{NS}body')
@@ -116,7 +144,7 @@ def main():
                 segs = []
                 for p in ch.findall(f'{NS}p'):
                     segments(p, segs)
-                segs = clean(segs)
+                segs = mark(clean(segs))
                 a = labels.get('AS', '')
                 sk = labels.get('SK')
                 rec = {
