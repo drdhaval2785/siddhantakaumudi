@@ -43,6 +43,7 @@
   - SK 836 बहुथा: थाल् (प्रकारवचने थाल्, 5.3.23) applies to बहु under किंसर्वनामबहुभ्यः (5.3.2), after pumvadbhāva of बह्वी; the word is attested in the kośas (Apte: बहुथा "in several ways").
   - Dhātu 1735 शृधु प्रहसने: the Dhātupāṭha data itself records both प्रहसने and प्रसहने.
   - The other dhātu-name differences from the Dhātupāṭha data are notation (dental न् and छ् for the nasal and च्छ in the data) or recension variants that the Kaumudī's own forms support (बहि: बंहते; ऊर्ज, चूर्ण, घूर्ण, बिल, वल्ह, क्षिवु, रघि, दण्डनिपातने). They are the Kaumudī's readings and stay.
+- **D3.** Readings reported during the encoding of SK 1680–1690: शूर्पाभ्यां (1683) and चात्वारिंशत्कः (1687) emended; त्रिंशत्कः (1689) emended from the typed त्रिंशतिकः, which has no derivation (कन् takes no इट् here; Kāśikā त्रिंशत्कः), the typed reading being kept on record here; आर्धकौडबिकम् (1685) kept, since कुडब/कुडव is a ब/व spelling variant and the Bālamanoramā spells it with ब as well.
 
 ## Upstream issues (drdhaval2785/siddhantakaumudi, read 2026-11-20)
 - **I1.** #74 SK 325 दादेर्धातोर्धः → दादेर्धातोर्घः (8.2.32 substitutes घ). Fixed.
