@@ -20,6 +20,8 @@
 - **U7. ZWNJ.** The ZWNJ after a final virāma is removed.
 - **U8. Pratīka dash.** A pratīka quoted with a cross-reference is joined to the number by one hyphen (उपसर्गादृति-74). The introductory dash after अत्र भाष्यम्, तदाहुः, स्मरन्ति हि and उक्तं च is an em dash.
 
+- **U9. Pluta and split इति.** The pluta mark is written with the Devanāgarī numeral ३ (याति३). Numerals that count repeated forms (युवाभ्याम् 3) stay in ASCII. Where an SK number split a pratīka from its इति, the full pratīka is restored and इति is written separately (घेर्ङिति 245 इति).
+
 ## Numbering
 - **N1. Sūtra numbers and serial order.**
   - Sūtra numbers follow the Aṣṭādhyāyī. Twelve wrong numbers were corrected.
